@@ -32,7 +32,6 @@ Startuply = {
         smoothScrollSpeed: 800,
         ajaxedForm: true,
         ajaxedFormSuccessMsg: 'Success',
-        ajaxedFormErrorMsg: 'An error occured. Please try again later.',
         toastrPositionClass: 'toast-top-full-width'
     },
 
@@ -439,25 +438,8 @@ Startuply = {
             }
         };
 
-        doneHandler = function (msg, form) {
-            if( msg === 'ok' ) {
-                form.reset();
 
-                if ( typeof toastr != 'undefined' ) toastr.success('Success');
-                else alert('Success');
 
-            } else {
-                if ( typeof toastr != 'undefined' ) toastr.error('An error occured. Please try again later.');
-                else alert('An error occured. Please try again later.');
-
-                _this.log( 'Form message', msg );
-            }
-        };
-
-        failHandler = function () {
-            if ( typeof toastr != 'undefined' ) toastr.error('An error occured. Please try again later.');
-            else alert('An error occured. Please try again later.');
-        }
 
         if ( $('form').length ) {
             $('form').each(function() {
@@ -1126,3 +1108,33 @@ Startuply = {
         this.hidePreloader();
     }
 }
+
+  $(".req-demo").click(function() {
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var company = $("#company").val();
+      if (validation()) // Calling validation function.
+    {
+      $("#form_id").submit(); // Form submission.
+      alert(" Form Submitted Successfully, We will get back to you shortly!!");
+      $("#form_id").trigger("reset");
+    }
+  });
+
+  function validation() {
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var company = $("#company").val();
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    if (name === '' || email === '' || company=== '') {
+      alert("Please fill all fields...!!!!!!");
+      return false;
+    }
+    else if (!(email).match(emailReg)) {
+      alert("Invalid Email...!!!!!!");
+      return false;
+    }
+    else {
+      return true;
+    }
+  }
