@@ -148,12 +148,11 @@
 				</article>
 			</div>
 			<div class="col-sm-12 col-lg-7 animated" data-animation="fadeInRight" data-duration="500">
-				<form class="form mailchimp-form subscribe-form" style="padding-top: 10px;" action="<?=$_SERVER['PHP_SELF']; ?>" method="post">
+				<form class="form mailchimp-form subscribe-form" style="padding-top: 10px;" action="https://formspree.io/dhilipsiva@gmail.com" method="post">
 					<div class="form-group form-inline">
 						<input size="15" type="text" class="form-control required" name="FULLNAME" placeholder="Your name" />
 						<input size="25" type="email" class="form-control required" name="EMAIL" placeholder="your@email.com" />
 						<input type="submit" class="btn btn-outline" value="SUBSCRIBE" />
-						<span class="response"><? require_once('assets/mailchimp/inc/store-address.php'); if($_GET['submit']){ echo storeAddress(); } ?></span>
 					</div>
 				</form>
 			</div>
