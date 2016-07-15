@@ -1127,11 +1127,11 @@ Startuply = {
     var company = $("#company").val();
     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
     if (name === '' || email === '' || company=== '') {
-      alert("Please fill all fields...!!!!!!");
+
       return false;
     }
     else if (!(email).match(emailReg)) {
-      alert("Invalid Email...!!!!!!");
+      
       return false;
     }
     else {
