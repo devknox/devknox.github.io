@@ -121,6 +121,11 @@ GEM
     parallel (1.9.0)
     pkg-config (1.1.7)
     public_suffix (1.5.3)
+    rack (1.6.4)
+    rack-jekyll (0.4.5)
+      jekyll (>= 1.3)
+      listen (>= 1.3)
+      rack (~> 1.5)
     rake (11.2.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
@@ -162,6 +167,7 @@ DEPENDENCIES
   github-pages
   html-proofer
   jekyll
+  rack-jekyll
   reduce
 
 BUNDLED WITH
