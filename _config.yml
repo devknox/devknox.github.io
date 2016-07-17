@@ -1,0 +1,27 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Devknox - Appknox for Developers
+email: devknox@appknox.com
+description: > # this means to ignore newlines until "baseurl:"
+  Devknox is a free Android app security testing widget for
+  developers which can resolve security issues and optimize Android app
+  with just a click.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://devknox.io" # the base hostname & protocol for your site
+keywords: "devknox, appknox, mobile security, android studio plugin, appknox for developers, developer, android security"
+# Build settings
+markdown: kramdown
+
+exclude:
+  - Rakefile
+  - README.md
+  - circle.yml
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
