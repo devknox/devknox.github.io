@@ -1,0 +1,17 @@
+machine:
+  ruby:
+    version: 2.2.3
+
+dependencies:
+  override:
+    - gem install bundler --conservative
+    - bundle check || bundle install
+    - bundle update
+
+test:
+  pre:
+    - bundle exec jekyll build
+  override:
+    - bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --check-favicon --enforce-https --check-html
+  post:
+    - bundle exec coveralls push
