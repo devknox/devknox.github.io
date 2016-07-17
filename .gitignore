@@ -16,3 +16,4 @@ _site
 Gemfile.lock
 .bundle/
 coverage
+assets/
