@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
 @import "lib/font-lineicons.css";
 @import "lib/toastr.min.css";
 @import "lib/bootstrap.min.css";
@@ -628,7 +628,7 @@ input[type=submit]:not(.default).btn-no-border.pressed,
 div.bg-low-poly,
 footer.bg-low-poly,
 section.bg-low-poly {
-	background-image: url("../img/background/low_poly_background.jpg");
+	background-image: url("/img/background/low_poly_background.jpg");
 	background-repeat: no-repeat;
 	background-position: center top;
 }
@@ -682,12 +682,12 @@ blockquote:after {
 
 blockquote:before {
 	left: 0;
-	content: url('../img/icon/quotes-a.png');
+	content: url('/img/icon/quotes-a.png');
 }
 
 blockquote:after {
 	right: 0;
-	content: url('../img/icon/quotes-b.png');
+	content: url('/img/icon/quotes-b.png');
 }
 
 .logo-placeholder {
@@ -2065,7 +2065,7 @@ input[type=checkbox]:focus {
 	color: #ffffff;
 	opacity: 0.5;
 	z-index: 1;
-	cursor: url('../img//magnify-cur.png') 20 20, auto;
+	cursor: url('/img/magnify-cur.png') 20 20, auto;
 }
 
 .thumb-wrapper:hover .overlay {
@@ -3049,7 +3049,7 @@ input[type=checkbox]:focus {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #f0f0f0;
-	background-image: url("../img/products/product-no-img-800x560.jpg");
+	background-image: url("/img/products/product-no-img-800x560.jpg");
 }
 
 .product-list .product-content {
@@ -4216,7 +4216,7 @@ td.cart-list-item-price {
 }
 
 .ytp-player-background.no-video-bg {
-	background: transparent url('../img/background/low_poly_background.jpg') top center no-repeat;
+	background: transparent url('/img/background/low_poly_background.jpg') top center no-repeat;
 }
 
 .ytp-player-background.no-video-bg .video-conrols {
@@ -4243,7 +4243,7 @@ td.cart-list-item-price {
 	display: block;
 	width: 56px;
 	height: 82px;
-	background: transparent url('../img/icon/yt_play_big_56x82.png') center no-repeat;
+	background: transparent url('/img/icon/yt_play_big_56x82.png') center no-repeat;
 	cursor: pointer;
 	z-index: 999;
 }
@@ -4313,7 +4313,7 @@ td.cart-list-item-price {
 	left: 0;
 	bottom: 0;
 	display: block;
-	background: transparent url('../img/icon/yt_controls_40x40.png') no-repeat;
+	background: transparent url('/img/icon/yt_controls_40x40.png') no-repeat;
 }
 
 .ytp-player-background .controls-container .yt-play-toggle:before {
@@ -4424,7 +4424,7 @@ td.cart-list-item-price {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
-	background: #6f186c url("../img/background/low_poly_background.jpg") top center no-repeat;
+	background: #6f186c url("/img/background/low_poly_background.jpg") top center no-repeat;
 }
 
 .navigation-header .navigation-brand {
@@ -4443,7 +4443,7 @@ td.cart-list-item-price {
 	background-size: contain;
 	display: block;
 	height: 30px;
-	background-image: url("../img/logo.png");
+	background-image: url("/img/logo.png");
 	background-repeat: no-repeat;
 	background-position: left center;
 	line-height: 30px;
@@ -4455,7 +4455,7 @@ td.cart-list-item-price {
 	background-size: contain;
 	display: block;
 	height: 30px;
-	background-image: url("../img/logo.png");
+	background-image: url("/img/logo.png");
 	background-repeat: no-repeat;
 	background-position: left center;
 	line-height: 30px;
@@ -4463,7 +4463,7 @@ td.cart-list-item-price {
 
 .navigation-header .navigation-brand .brand-logo .logo.logo-alt {
 	display: none;
-	background-image: url("../img/logo-inverted.png");
+	background-image: url("/img/logo-inverted.png");
 }
 
 .navigation-header .navigation-brand .brand-logo h4 {
@@ -5076,7 +5076,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 	background-size: cover;
 	padding: 0 0 30px;
 	font-weight: 300;
-	background-image: url('../img//background/low_poly_background.jpg');
+	background-image: url('/img/background/low_poly_background.jpg');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-attachment: fixed;
@@ -5088,7 +5088,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 		background-size: cover;
 		padding: 0 0 0px;
 		font-weight: 300;
-		background-image: url('../img//background/low_poly_background.jpg');
+		background-image: url('/img/background/low_poly_background.jpg');
 		background-repeat: no-repeat;
 		background-position: top center;
 		background-attachment: fixed;
@@ -5506,7 +5506,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 	-moz-background-size: cover;
 	background-size: cover;
 	position: relative;
-	background-image: url("../img/background/low_poly_background.jpg");
+	background-image: url("/img/background/low_poly_background.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-attachment: fixed;
@@ -5539,7 +5539,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 }
 
 .static-header.register-version {
-	background-image: url("../img/background/smb_owner.jpg");
+	background-image: url("/img/background/smb_owner.jpg");
 }
 
 .static-header.register-version .signup-wrapper {
@@ -5548,7 +5548,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 }
 
 .static-header.clickthrough-version {
-	background-image: url("../img/background/golden-gate-bridge.jpg");
+	background-image: url("/img/background/golden-gate-bridge.jpg");
 }
 
 .static-header.clickthrough-version .overlay {
@@ -5566,7 +5566,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 	-webkit-background-size: auto;
 	-moz-background-size: auto;
 	background-size: auto;
-	background-image: url("../img/background/pattern-icons.png");
+	background-image: url("/img/background/pattern-icons.png");
 	background-repeat: repeat;
 }
 
@@ -5665,7 +5665,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 	-moz-background-size: contain;
 	background-size: contain;
 	padding: 35px 0 0;
-	background-image: url("../img/features/video-container.png");
+	background-image: url("/img/features/video-container.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -5791,7 +5791,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
-	background-image: url('../img/background/low_poly_background.jpg');
+	background-image: url('/img/background/low_poly_background.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
@@ -5890,7 +5890,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 	-moz-background-size: cover;
 	background-size: cover;
 	position: relative;
-	background: url("../img/background/low_poly_background.jpg") no-repeat center center;
+	background: url("/img/background/low_poly_background.jpg") no-repeat center center;
 	background-attachment: fixed;
 }
 
@@ -5899,7 +5899,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 }
 
 .color-landing-page .navigation-brand .brand-logo .logo {
-	background-image: url("../img/logo.png");
+	background-image: url("/img/logo.png");
 }
 
 .color-landing-page .static-header {
@@ -5907,11 +5907,11 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 }
 
 .color-landing-page blockquote:before {
-	content: url("../img/icon/quotes-a-white.png");
+	content: url("/img/icon/quotes-a-white.png");
 }
 
 .color-landing-page blockquote:after {
-	content: url("../img/icon/quotes-b-white.png");
+	content: url("/img/icon/quotes-b-white.png");
 }
 
 .color-landing-page header:not(.fixed-menu) .navigation-toggle {
@@ -5946,7 +5946,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 }
 
 .waiting-list-page .navigation-header .navigation-brand .brand-logo .logo {
-	background-image: url("../img/logo-inverted.png");
+	background-image: url("/img/logo-inverted.png");
 }
 
 /* Media queries */
