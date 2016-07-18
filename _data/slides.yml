@@ -1,0 +1,108 @@
+installation:
+  - slider:
+     className: active
+     slideImage:
+      img: /img/gallery/installation/Step-1.jpg
+      alt : android application security tool
+     stepNum: Step 1
+     slideDesc: In the Intellij  IDE select File menu and choose Settings(Ctrl+Alt+S).
+  - slider:
+     className:
+     slideImage:
+      img: /img/gallery/installation/Step-2.jpg
+      alt : android application security tool
+     stepNum: Step 2
+     slideDesc: On the left hand pane select Plugins.
+  - slider:
+     className:
+     slideImage:
+      img: /img/gallery/installation/Step-3.jpg
+      alt : android application security tool
+     stepNum: Step 3
+     slideDesc: On the Plugins page that opens in the right-hand part of the dialog, click Install plugin from disk.
+  - slider:
+     className:
+     slideImage:
+      img: /img/gallery/installation/Step-4.jpg
+      alt : android application security tool
+     stepNum: Step 4
+     slideDesc: On the file explorer menu traverse or type the path to the plugin file which is the archive file. Select the plugin archive &amp; click Ok.
+  - slider:
+     className:
+     slideImage:
+      img: /img/gallery/installation/Step-5.jpg
+      alt : android application security tool
+     stepNum: Step 5
+     slideDesc: Click on Apply and check if Devknox is installed and checked on the Plugins Page menu.
+  - slider:
+     className:
+     slideImage:
+      img: /img/gallery/installation/Step-6.jpg
+      alt : android application security tool
+     stepNum: Step 6
+     slideDesc: Click ok. The IDE will propmpt for a restart. Restart the IDE. After restart Devknox is added to the menu bar.
+
+usage:
+  - slider:
+     className: active
+     slideImage:
+      img: /img/gallery/usage/Step-7.jpg
+      alt : android application security tool
+     stepNum: Step 1
+     slideDesc: On the menu bar click on Devknox and select Login.
+  - slider:
+     className:
+     slideImage:
+      img: /img/gallery/usage/Step-8.jpg
+      alt : android application security tool
+     stepNum: Step 2
+     slideDesc: On the login dialog box provide the credentials and click Login.
+  - slider:
+     className:
+     slideImage:
+      img: /img/gallery/usage/Step-9.jpg
+      alt : android application security tool
+     stepNum: Step 3
+     slideDesc: After succesfull login to Devknox select your module in the project pane which is in the left side of the IDE. Right click on selected module and select Devknox Scan->Scan Module.
+  - slider:
+     className:
+     slideImage:
+      img: /img/gallery/usage/Step-10.jpg
+      alt : android application security tool
+     stepNum: Step 4
+     slideDesc: If the report window does'nt pop up automatically, go to View->Tool Windows and select Devknox Report:- The Report Window has two parts. The left part shows the issues in a tree structure and the right part shows the overview of the issues.
+  - slider:
+     className:
+     slideImage:
+      img: /img/gallery/usage/Step-11.jpg
+      alt : android application security tool
+     stepNum: Step 5
+     slideDesc: Expand the tree structure to see all the issues. Click on the issue to see the details of the issue like the location, suggestion etc on the right pane of devknox report window.
+  - slider:
+     className:
+     slideImage:
+      img: /img/gallery/usage/Step-12.jpg
+      alt : android application security tool
+     stepNum: Step 6
+     slideDesc: Double Click on an issue on the left part of devknox report window to go to the exact location of the issue on the IDE. The issue is marked with an mine icon on the gutter area.
+  - slider:
+     className:
+     slideImage:
+      img: /img/gallery/usage/Step-13.jpg
+      alt : android application security tool
+     stepNum: Step 7
+     slideDesc: Use the intention(bulb icon) to fix the issue automatically.
+  - slider:
+     className:
+     slideImage:
+      img: /img/gallery/usage/Step-14.jpg
+      alt : android application security tool
+     stepNum: Step 8
+     slideDesc: Select Enable Devknox on Devknox menu to toggle viewing issue locations.
+  - slider:
+     className:
+     slideImage:
+      img: /img/gallery/usage/Step-15.jpg
+      alt : android application security tool
+     stepNum: Step 9
+     slideDesc: Select Logout on Devknox menu to logout from Devknox which disables functionality of Devknox.
