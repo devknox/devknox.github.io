@@ -6178,20 +6178,28 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 
 @media (min-width: 425px) and (max-width: 767px) {
 		.installation-slider{
-			margin-left: 65px;
+			margin-left: 0px;
+			margin-top: 20px;
 			line-height: 2.5;
+			width: 100%;
 		}
 
 		.usage-slider{
-			margin-left: 65px;
+			margin-left: 0px;
+			margin-top: 20px;
 			line-height: 2.5;
+			width: 100%;
 		}
 
 		.controls{
 			height: 200px;
 		}
+		.slide-desc{
+			margin-top: 20px;
+		}
 		.slide-desc1{
-			height: 250px;
+			margin-top: 20px;
+			height: 220px;
 		}
 		.gif-animate {
 			margin-left: 0px;
@@ -6213,21 +6221,28 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		.mobile-gif{
 			display: block;
 		}
-
-
-
-
-
 }
 
 
 @media (min-width: 375px) and (max-width: 424px) {
 		.installation-slider{
-			margin-left: 55px;
+			margin-left: 0px;
+			margin-top: 20px;
+			width: 100%;
+			line-height: 2.5;
 		}
 		.usage-slider{
-			margin-left: 55px;
-
+			margin-left: 0px;
+			margin-top: 20px;
+			width: 100%;
+			line-height: 2.5;
+		}
+		.slide-desc{
+			margin-top: 20px;
+		}
+		.slide-desc1{
+			margin-top: 20px;
+			height: 230px;
 		}
 		.controls{
 			height: 150px;
@@ -6257,22 +6272,27 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 
 @media (min-width: 320px) and (max-width: 374px) {
 		.installation-slider{
-			margin-left: 45px;
+			margin-left: 0px;
+			margin-top: 20px;
 			line-height: 2.5;
+			width: 100%;
 		}
 		.usage-slider{
-			margin-left: 45px;
+			margin-left: 0px;
+			margin-top: 20px;
 			line-height: 2.5;
-
+			width: 100%;
 		}
 		.controls{
 			height: 130px;
 		}
 		.slide-desc{
-			height: 250px;
+			margin-top: 20px;
+			height: 180px;
 		}
 		.slide-desc1{
-			height: 330px;
+			margin-top: 20px;
+			height: 250px;
 		}
 		.gif-animate {
 			margin-left: 0px;
