@@ -321,9 +321,7 @@ Startuply = {
         }
 
         var validateOptions,
-            submitHandler,
-            doneHandler,
-            failHandler;
+            submitHandler;
 
         mailchimpHandler = function (event) {
             event.preventDefault();
@@ -390,10 +388,10 @@ Startuply = {
                 type: 'POST',
                 data: $(form).serialize()
             }).done(function(msg) {
-                doneHandler(msg, form);
+
 
             }).fail(function() {
-                failHandler(form);
+
 
             });
         }
@@ -429,10 +427,10 @@ Startuply = {
                     type: 'POST',
                     data: $(form).serialize()
                 }).done(function(msg) {
-                    doneHandler(msg, form);
+
 
                 }).fail(function() {
-                    failHandler(form);
+
 
                 });
             }
@@ -1117,7 +1115,7 @@ Startuply = {
     {
       $("#form_id").submit(); // Form submission.
       alert(" Form Submitted Successfully, We will get back to you shortly!!");
-      $("#form_id").trigger("reset");
+      $("#form_id")[0].reset();
     }
   });
 
@@ -1127,11 +1125,12 @@ Startuply = {
     var company = $("#company").val();
     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
     if (name === '' || email === '' || company=== '') {
-
+      alert("All the forms are not filled");
       return false;
+
     }
     else if (!(email).match(emailReg)) {
-      
+      alert("Enter an valid Email ID")
       return false;
     }
     else {
