@@ -4746,6 +4746,11 @@ header {
 	width: 70%;
 }
 
+.appknox-hyperlink:link, .appknox-hyperlink:visited{
+	color:#ffffff;
+	text-decoration: underline;
+}
+
 .controls{
 	height: 500px;
 }
