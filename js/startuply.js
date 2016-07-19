@@ -10,6 +10,7 @@ var Startuply;
 ;(function($){
 
     $(document).on('ready', function () {
+        $(".show-thanks").hide();
         Startuply.init();
     });
 
@@ -1118,6 +1119,9 @@ Startuply = {
       $("#form_id").submit(); // Form submission.
       alert(" Form Submitted Successfully, We will get back to you shortly!!");
       $("#form_id").trigger("reset");
+       $(".show-form").hide();
+       $(".show-thanks").show();
+
     }
   });
 
@@ -1131,7 +1135,7 @@ Startuply = {
       return false;
     }
     else if (!(email).match(emailReg)) {
-      
+
       return false;
     }
     else {
