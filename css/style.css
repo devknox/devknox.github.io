@@ -6201,6 +6201,9 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		.marginTop{
 			margin-top: 0px!important;
 		}
+		#leftCol{
+			display: none;
+		}
 
 
 
@@ -6252,6 +6255,9 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		.mobile-gif{
 			display: block;
 		}
+		#leftCol{
+			display: none;
+		}
 }
 
 
@@ -6297,6 +6303,9 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		}
 		.mobile-gif{
 			display: block;
+		}
+		#leftCol{
+			display: none;
 		}
 
 }
@@ -6353,6 +6362,9 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		}
 		.mobile-gif{
 			display: block;
+		}
+		#leftCol{
+			display: none;
 		}
 
 }
