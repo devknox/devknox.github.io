@@ -4740,6 +4740,32 @@ header {
 	margin-left: 170px;
 }
 
+.gif-position{
+		margin-left: 0px!important;
+		margin-top: 20px;
+}
+ul.circle {
+	list-style-type: disc;
+	margin-left: 20px;
+	line-height: 24px;
+}
+
+ul.square {
+	list-style-type: square;
+	margin-left: 20px;
+	line-height: 24px;
+}
+
+.repo-url{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.usage-section{
+	margin-bottom: 30px;
+}
+
 .installation-slider{
 	margin-top: 100px;
 	margin-left: 160px;
@@ -8160,5 +8186,5 @@ blockquote {
 }
 
 .docs-header{
-	
+
 }
