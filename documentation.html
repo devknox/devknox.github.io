@@ -4,94 +4,79 @@ title: Devknox - Documentation
 permalink: /documentation/
 ---
 
-
 <div class="static-header light-text clearfix" style="min-height: 69px;">
   <div class="container">
     <div class="heading-block animated align-center fadeIn" data-animation="fadeIn" data-duration="700" style="padding-top: 70px; animation-delay: 0ms; animation-duration: 0.7s;">
-
     </div>
-
+  </div>
+  <div class="docs-header" id="content">
+    <div class="container">
+      <h1>Getting started</h1>
+      <p>An overview of Less, how to download and use, examples and more.</p>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="container">
+      less v2.7.1 has been released -
+      <strong>
+        <a href="">See what&apos;s new</a>
+      </strong>
+    </div>
   </div>
 </div>
 
-<section>
-    <div class="container">
-      <div class="installation-slider">
-        <div class="installation-heading align-center">
-            <h2> INSTALLING DEVKNOX </h2>
-        </div>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Carousel indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
-            <li data-target="#myCarousel" data-slide-to="5"></li>
-          </ol>
-          <!-- Wrapper for carousel items -->
-
-          <div class="carousel-inner">
-            {% for slide in site.data.slides.installation %}
-            <div class="item {{slide.slider.className}}">
-              <img src="{{slide.slider.slideImage.img}}" alt="{{slide.slider.slideImage.alt}}">
-              <div class="carousel-caption slide-desc">
-                <h3>{{slide.slider.stepNum}}</h3>
-                <p>{{slide.slider.slideDesc}}</p>
-              </div>
-            </div>
-              {% endfor %}
-          </div>
-
-          <!-- Carousel controls -->
-          <a class="carousel-control left controls" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="carousel-control right controls" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div>
-      </div>
-      <div class="usage-slider">
-        <div class="installation-heading align-center">
-          <h2> USING DEVKNOX </h2>
-        </div>
-        <div id="myCarousel1" class="carousel slide" data-ride="carousel">
-          <!-- Carousel indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel1" data-slide-to="1"></li>
-            <li data-target="#myCarousel1" data-slide-to="2"></li>
-            <li data-target="#myCarousel1" data-slide-to="3"></li>
-            <li data-target="#myCarousel1" data-slide-to="4"></li>
-            <li data-target="#myCarousel1" data-slide-to="5"></li>
-            <li data-target="#myCarousel1" data-slide-to="6"></li>
-            <li data-target="#myCarousel1" data-slide-to="7"></li>
-            <li data-target="#myCarousel1" data-slide-to="8"></li>
-          </ol>
-  
-          <!-- Wrapper for carousel items -->
-          <div class="carousel-inner">
-            {% for slide in site.data.slides.usage %}
-            <div class="item {{slide.slider.className}}">
-              <img src="{{slide.slider.slideImage.img}}" alt="{{slide.slider.slideImage.alt}}">
-              <div class="carousel-caption slide-desc1">
-                <h3>{{slide.slider.stepNum}}</h3>
-                <p>{{slide.slider.slideDesc}}</p>
-              </div>
-            </div>
-              {% endfor %}
-          </div>
-
-          <!-- Carousel controls -->
-          <a class="carousel-control left controls" href="#myCarousel1" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="carousel-control right controls" href="#myCarousel1" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div>
-      </div>
+<div class="container">
+	<div class="row">
+    <div class="col-md-3" id="leftCol">
+    	<ul class="nav nav-stacked" id="sidebar">
+        <li><a href="#sec0">INSTALLING DEVKNOX</a></li>
+        <li><a href="#sec1">USING DEVKNOX</a></li>
+    	</ul>
     </div>
-</section>
+    <div class="col-md-9" id="mainCol"><br>
+    	<h2 id="sec0">Content</h2>
+        At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can
+    	   find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
+
+    	<hr class="col-md-12">
+      	Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores
+        eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut.
+      	Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores
+        eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut!
+
+    	<h2 id="sec1">Content</h2>
+    	 <p>
+        Rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut.
+      </p>
+    	<div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h3>Hello.</h3></div>
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+              Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
+              dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+              Aliquam in felis sit amet augue.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+              <div class="panel-heading"><h3>Hello.</h3></div>
+               <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+                  Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
+                  dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+                  Aliquam in felis sit amet augue.
+              </div>
+            </div>
+        </div>
+    	</div>
+    </div>
+  </div>
+</div>
