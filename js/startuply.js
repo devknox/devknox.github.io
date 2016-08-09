@@ -28,7 +28,7 @@ Startuply = {
         alwaysMobileMenuMode: false,
         mobileMenuMaxWidth: 768,
         stickyMenuMode: true,
-        stickyMenuOffset: 500,
+        stickyMenuOffset: 200,
         smoothScroll: false,
         smoothScrollSpeed: 800,
         ajaxedForm: true,
@@ -1142,3 +1142,17 @@ Startuply = {
       return true;
     }
   }
+
+  $('#sidebar').affix({
+      offset: {
+        top: 245
+      }
+});
+
+var $body   = $(document.body);
+var navHeight = $('.navbar').outerHeight(true) + 10;
+
+$body.scrollspy({
+	target: '#leftCol',
+	offset: navHeight
+});
