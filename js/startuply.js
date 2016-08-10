@@ -28,7 +28,7 @@ Startuply = {
         alwaysMobileMenuMode: false,
         mobileMenuMaxWidth: 768,
         stickyMenuMode: true,
-        stickyMenuOffset: 850,
+        stickyMenuOffset: 300,
         smoothScroll: false,
         smoothScrollSpeed: 800,
         ajaxedForm: true,
