@@ -4741,6 +4741,7 @@ header {
 }
 
 .gif-position{
+		width: 70%;
 		margin-left: 0px!important;
 		margin-top: 20px;
 }
@@ -4760,6 +4761,10 @@ ul.square {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-left: 10px;
+}
+
+.nav-top{
+	background: rgba(78,78,78,0.4);
 }
 
 .usage-section{
@@ -6204,6 +6209,21 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		#leftCol{
 			display: none;
 		}
+		.dropdown-list{
+				margin-left: 15px;
+		}
+		.drop-button{
+			width: 40%;
+		}
+		.glyphi-align{
+			margin-left: 100px;
+		}
+		.gif-position{
+				width: 100%;
+				margin-left: -15px!important;
+				margin-top: 20px;
+		}
+
 
 
 
@@ -6238,6 +6258,7 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		.gif-animate {
 			margin-left: 0px;
 			width:100%;
+			display: none;
 		}
 		.hero-section{
 			min-height: 300px!important;
@@ -6245,9 +6266,7 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		.marginTop{
 			margin-top: 0px!important;
 		}
-		.gif-animate{
-			display: none;
-		}
+
 		.static-header.image-version .heading-block,
 		.static-header.video-version .heading-block {
 			padding-bottom: 0;
@@ -6257,6 +6276,17 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		}
 		#leftCol{
 			display: none;
+		}
+		.dropdown-list{
+				margin-left: 15px;
+		}
+		.glyphi-align{
+			margin-left: 50px;
+		}
+		.gif-position{
+				width: 100%;
+				margin-left: 0px!important;
+				margin-top: 20px;
 		}
 }
 
@@ -6287,15 +6317,13 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		.gif-animate {
 			margin-left: 0px;
 			width:100%;
+			display: none;
 		}
 		.hero-section{
 			min-height: 300px!important;
 		}
 		.marginTop{
 			margin-top: 0px!important;
-		}
-		.gif-animate{
-			display: none;
 		}
 		.static-header.image-version .heading-block,
 		.static-header.video-version .heading-block {
@@ -6306,6 +6334,17 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		}
 		#leftCol{
 			display: none;
+		}
+		.dropdown-list{
+				margin-left: 15px;
+		}
+		.glyphi-align{
+			margin-left: 40px;
+		}
+		.gif-position{
+				width: 100%;
+				margin-left: 0px!important;
+				margin-top: 20px;
 		}
 
 }
@@ -6366,6 +6405,18 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		#leftCol{
 			display: none;
 		}
+		.dropdown-list{
+				margin-left: 15px;
+		}
+		.glyphi-align{
+			margin-left: 30px;
+		}
+		.gif-position{
+				width: 100%;
+				margin-left: 0px!important;
+				margin-top: 20px;
+		}
+
 
 }
 

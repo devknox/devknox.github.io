@@ -1156,3 +1156,12 @@ $body.scrollspy({
 	target: '#leftCol',
 	offset: navHeight
 });
+
+$("#docs-page").click(function(ev){
+   var doc = $(document);
+   if(doc.width()<760){
+     ev.preventDefault;
+   }else{
+     document.location = ev.currentTarget.href;
+   }
+ })
