@@ -28,7 +28,7 @@ Startuply = {
         alwaysMobileMenuMode: false,
         mobileMenuMaxWidth: 768,
         stickyMenuMode: true,
-        stickyMenuOffset: 500,
+        stickyMenuOffset: 300,
         smoothScroll: false,
         smoothScrollSpeed: 800,
         ajaxedForm: true,
@@ -1143,3 +1143,26 @@ Startuply = {
       return true;
     }
   }
+
+  $('#sidebar').affix({
+      offset: {
+        top: 245
+      }
+});
+
+var $body   = $(document.body);
+var navHeight = $('.navbar').outerHeight(true) + 10;
+
+$body.scrollspy({
+	target: '#leftCol',
+	offset: navHeight
+});
+
+$("#docs-page").click(function(ev){
+   var doc = $(document);
+   if(doc.width()<760){
+     ev.preventDefault;
+   }else{
+     document.location = ev.currentTarget.href;
+   }
+ })

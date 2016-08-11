@@ -4,94 +4,125 @@ title: Devknox - Documentation
 permalink: /documentation/
 ---
 
-
 <div class="static-header light-text clearfix" style="min-height: 69px;">
   <div class="container">
     <div class="heading-block animated align-center fadeIn" data-animation="fadeIn" data-duration="700" style="padding-top: 70px; animation-delay: 0ms; animation-duration: 0.7s;">
-
     </div>
-
+  </div>
+  <div class="docs-header" id="content">
+    <div class="container">
+      <h1>Getting started</h1>
+      <p>An overview of Devknox, how to download and use, examples and more.</p>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="container">
+      devknox v2.7.1 has been released -
+      <strong>
+        <a href="#sec1">See what&apos;s new</a>
+      </strong>
+    </div>
   </div>
 </div>
+<div class="container">
+	<div class="row">
+    <div class="col-md-3" id="leftCol">
+    	<ul class="nav nav-stacked" id="sidebar">
+        <li><a href="#sec0">INTRODUCTION</a></li>
+        <li><a href="#sec1">WHAT'S NEW</a></li>
+        <li><a href="#sec2">PREREQUISITES</a></li>
+        <li><a href="#sec3">INSTALLING DEVKNOX</a></li>
+        <li><a href="#sec4">USING DEVKNOX</a></li>
+    	</ul>
+    </div>
 
-<section>
-    <div class="container">
-      <div class="installation-slider">
-        <div class="installation-heading align-center">
-            <h2> INSTALLING DEVKNOX </h2>
-        </div>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Carousel indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
-            <li data-target="#myCarousel" data-slide-to="5"></li>
-          </ol>
-          <!-- Wrapper for carousel items -->
+    <div class="col-md-9 docs-section" id="mainCol">
+      <div id="sec0" class="intro-section">
+      <h3>INTRODUCTION</h3>
+        At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can
+    	   find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
+       </div>
+    	<hr class="col-md-12">
 
-          <div class="carousel-inner">
-            {% for slide in site.data.slides.installation %}
-            <div class="item {{slide.slider.className}}">
-              <img src="{{slide.slider.slideImage.img}}" alt="{{slide.slider.slideImage.alt}}">
-              <div class="carousel-caption slide-desc">
-                <h3>{{slide.slider.stepNum}}</h3>
-                <p>{{slide.slider.slideDesc}}</p>
-              </div>
-            </div>
-              {% endfor %}
-          </div>
-
-          <!-- Carousel controls -->
-          <a class="carousel-control left controls" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="carousel-control right controls" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div>
+      <div id="sec1">
+      <h3>WHAT'S NEW</h3>
+        <p>
+      The new roll-out of Devknox contains following improvements and features:
+      </p>
+         <ul class="circle">
+           <li>Multiple IDE window support</li>
+           <li>Enhancement</li>
+           <li>OTA Installation and Update Support</li>
+         </ul>
+       </div>
+    	<hr class="col-md-12">
+      <div id="sec2">
+      <h3>MINIMUM REQUIREMENTS</h3>
+      <p>
+        If you want to run Devknox on your PC, here's what it takes:
+      </p>
+        <ul class="circle">
+          <li>Java : 1.7</li>
+          <li>Android Studio : 2.1.2</li>
+        </ul>
       </div>
-      <div class="usage-slider">
-        <div class="installation-heading align-center">
-          <h2> USING DEVKNOX </h2>
-        </div>
-        <div id="myCarousel1" class="carousel slide" data-ride="carousel">
-          <!-- Carousel indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel1" data-slide-to="1"></li>
-            <li data-target="#myCarousel1" data-slide-to="2"></li>
-            <li data-target="#myCarousel1" data-slide-to="3"></li>
-            <li data-target="#myCarousel1" data-slide-to="4"></li>
-            <li data-target="#myCarousel1" data-slide-to="5"></li>
-            <li data-target="#myCarousel1" data-slide-to="6"></li>
-            <li data-target="#myCarousel1" data-slide-to="7"></li>
-            <li data-target="#myCarousel1" data-slide-to="8"></li>
-          </ol>
-  
-          <!-- Wrapper for carousel items -->
-          <div class="carousel-inner">
-            {% for slide in site.data.slides.usage %}
-            <div class="item {{slide.slider.className}}">
-              <img src="{{slide.slider.slideImage.img}}" alt="{{slide.slider.slideImage.alt}}">
-              <div class="carousel-caption slide-desc1">
-                <h3>{{slide.slider.stepNum}}</h3>
-                <p>{{slide.slider.slideDesc}}</p>
-              </div>
-            </div>
-              {% endfor %}
-          </div>
-
-          <!-- Carousel controls -->
-          <a class="carousel-control left controls" href="#myCarousel1" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="carousel-control right controls" href="#myCarousel1" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
+    	<hr class="col-md-12">
+      <div id="sec3">
+      <h3>INSTALLING DEVKNOX</h3>
+      <p>
+      To be able to use Devknox, you should specify the URLs of such Devknox repository in Android Studio. Follow the steps outlined below to add the URL:
+    </p>
+         <ul class="circle">
+           <li>Go to <b>File</b> menu and click <b>Settings</b></li>
+           <li>In the Settings dialog, click <b>Plugins</b></li>
+           <li>Click <b>Browse repositories</b></li>
+           <li>In the Browse Repositories dialog that opens, click <b>Manage repositories</b></li>
+           <li>Use the Custom Plugin Repositories dialog that opens, to manage the list of URLs
+             for custom (enterprise) plugin repositories:
+            <ul class="square">
+               <li>To add a repository URL, click <img src="/img/icon/add.png" alt="Appknox Devknox" /> (⌘N). In the Add Repository dialog, specify the repository URL and click OK.
+                 (You can use the Check Now button to make sure that the specified URL is correct: IntelliJ IDEA will try to connect
+                 to the repository)</li>
+                 <div class="repo-url">
+                     <pre><b>Repository URL</b> : http://repo.devknox.io</pre>
+                 </div>
+               <li>To edit a repository URL, select the URL and click <img src="/img/icon/edit.png" alt="Appknox Devknox" /> (⏎). In the Edit Repository dialog, edit the URL and click OK.</li>
+               <li>To remove a URL from the list, select the URL and click <img src="/img/icon/delete.png" alt="Appknox Devknox" /> (⌘⌦)</li>
+               Click <b>OK</b> in the Custom Plugin Repositories dialog.
+            </ul>
+           </li>
+           <li>In the Browse repositories window search for <b>Devknox</b></li>
+           <li>In the right pane click on the green <b>Install</b> button</li>
+           <li>Restart the IDE to start using Devknox</li>
+         </ul>
+      <div class="image-wrapper">
+        <div class="container">
+          <img src="/img/features/devknox-install.gif" alt="Devknox android application security tool" class="img-responsive gif-position"  />
         </div>
       </div>
     </div>
-</section>
+    <hr class="col-md-12">
+      <div id="sec4" class="usage-section">
+    	<h3>USING DEVKNOX</h3>
+    	 <p>
+        Once installed, you can use Devknox as follows:
+      </p>
+      <ul class="circle">
+       <li>On the menu bar click on <b>Devknox</b> and select <b>Login</b></li>
+       <li>On the login dialog box provide the credentials and click <b>Login</b></li>
+       <li>After succesfull login to Devknox select your module in the project pane which is in the left side of the IDE.
+         Right click on selected module and select <b>Devknox Scan</b> -> <b>Scan Module</b></li>
+       <li>If the report window doesn't pop up automatically, go to <b>View</b>-><b>Tool Windows</b> and select <b>Devknox Report:</b>
+         The Report Window has two parts. The left part shows the issues in a tree structure and the right part shows the overview of the issues</li>
+       <li>Expand the tree structure in the Devknox Report window to see all the issues. Click on the issue to see the details of the issue like the location,
+         suggestion etc on the right pane of devknox report window</li>
+       <li>Double Click on an issue on the left part of devknox report window to go to the exact location of the issue on the IDE. The issue is marked with
+          an mine icon <img src="/img/icon/mine.png" alt="Appknox Devknox" /> on the gutter area</li>
+       <li>Use the intention(bulb icon) <img src="/img/icon/bulb.png" alt="Appknox Devknox" /> to fix the issue automatically</li>
+       <li>Select <b>Devknox</b> in the menu bar and click on <b>Enable Devknox</b> to toggle viewing issue locations</li>
+       <li>Select <b>Devknox</b> in the menu bar and click on <b>Logout</b> logout from Devknox which disables functionality of Devknox</li>
+      </ul>
+     </div>
+    </div>
+  </div>
+</div>

@@ -4740,6 +4740,37 @@ header {
 	margin-left: 170px;
 }
 
+.gif-position{
+		width: 70%;
+		margin-left: 0px!important;
+		margin-top: 20px;
+}
+ul.circle {
+	list-style-type: disc;
+	margin-left: 20px;
+	line-height: 24px;
+}
+
+ul.square {
+	list-style-type: square;
+	margin-left: 20px;
+	line-height: 24px;
+}
+
+.repo-url{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.nav-top{
+	background: rgba(78,78,78,0.4);
+}
+
+.usage-section{
+	margin-bottom: 30px;
+}
+
 .installation-slider{
 	margin-top: 100px;
 	margin-left: 160px;
@@ -6175,6 +6206,24 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		.marginTop{
 			margin-top: 0px!important;
 		}
+		#leftCol{
+			display: none;
+		}
+		.dropdown-list{
+				margin-left: 15px;
+		}
+		.drop-button{
+			width: 40%;
+		}
+		.glyphi-align{
+			margin-left: 100px;
+		}
+		.gif-position{
+				width: 100%;
+				margin-left: -15px!important;
+				margin-top: 20px;
+		}
+
 
 
 
@@ -6209,6 +6258,7 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		.gif-animate {
 			margin-left: 0px;
 			width:100%;
+			display: none;
 		}
 		.hero-section{
 			min-height: 300px!important;
@@ -6216,15 +6266,27 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		.marginTop{
 			margin-top: 0px!important;
 		}
-		.gif-animate{
-			display: none;
-		}
+
 		.static-header.image-version .heading-block,
 		.static-header.video-version .heading-block {
 			padding-bottom: 0;
 		}
 		.mobile-gif{
 			display: block;
+		}
+		#leftCol{
+			display: none;
+		}
+		.dropdown-list{
+				margin-left: 15px;
+		}
+		.glyphi-align{
+			margin-left: 50px;
+		}
+		.gif-position{
+				width: 100%;
+				margin-left: 0px!important;
+				margin-top: 20px;
 		}
 }
 
@@ -6255,6 +6317,7 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		.gif-animate {
 			margin-left: 0px;
 			width:100%;
+			display: none;
 		}
 		.hero-section{
 			min-height: 300px!important;
@@ -6262,15 +6325,26 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		.marginTop{
 			margin-top: 0px!important;
 		}
-		.gif-animate{
-			display: none;
-		}
 		.static-header.image-version .heading-block,
 		.static-header.video-version .heading-block {
 			padding-bottom: 0;
 		}
 		.mobile-gif{
 			display: block;
+		}
+		#leftCol{
+			display: none;
+		}
+		.dropdown-list{
+				margin-left: 15px;
+		}
+		.glyphi-align{
+			margin-left: 40px;
+		}
+		.gif-position{
+				width: 100%;
+				margin-left: 0px!important;
+				margin-top: 20px;
 		}
 
 }
@@ -6328,6 +6402,21 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		.mobile-gif{
 			display: block;
 		}
+		#leftCol{
+			display: none;
+		}
+		.dropdown-list{
+				margin-left: 15px;
+		}
+		.glyphi-align{
+			margin-left: 30px;
+		}
+		.gif-position{
+				width: 100%;
+				margin-left: 0px!important;
+				margin-top: 20px;
+		}
+
 
 }
 
@@ -8088,5 +8177,77 @@ blockquote {
 	transform: scale(0.8);
 	margin-left: 0;
 }
+
+}
+
+#masthead {
+	min-height:270px;
+	background-color:#000044;
+  	color:#aaaacc;
+}
+
+#masthead h1 {
+	font-size: 55px;
+	line-height: 1;
+}
+
+#masthead .well {
+	margin-top:13%;
+	background-color:#111155;
+  	border-color:#000033;
+}
+
+.icon-bar {
+	background-color:#fff;
+}
+
+@media screen and (min-width: 768px) {
+	#masthead h1 {
+		font-size: 100px;
+	}
+}
+
+.navbar-bright {
+	background-color:#111155;
+    color:#fff;
+}
+
+.navbar-bright a, #masthead a, #masthead .lead {
+  	color:#aaaacc;
+}
+
+.navbar-bright li > a:hover {
+    background-color:#000033;
+}
+
+.affix-top,.affix{
+	position: static;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+  	margin-top:30px;
+  	width:228px;
+  }
+
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+}
+
+#sidebar li.active {
+  	border:0 #eee solid;
+  	border-right-width:4px;
+}
+
+#mainCol h2 {
+	padding-top: 55px;
+    margin-top: -55px;
+}
+
+.docs-header{
 
 }
