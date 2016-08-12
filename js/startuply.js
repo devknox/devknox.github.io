@@ -1159,7 +1159,7 @@ $body.scrollspy({
 
 $("#docs-page").click(function(ev){
    var doc = $(document);
-   if(doc.width()<760){
+   if(doc.width()<800){
      ev.preventDefault;
    }else{
      document.location = ev.currentTarget.href;

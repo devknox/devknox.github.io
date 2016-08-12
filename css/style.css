@@ -4757,6 +4757,10 @@ ul.square {
 	line-height: 24px;
 }
 
+.docs-menu{
+	margin-left: -80px!important;
+}
+
 .repo-url{
 	margin-top: 10px;
 	margin-bottom: 10px;
