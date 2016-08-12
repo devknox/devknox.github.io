@@ -5401,6 +5401,15 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 }
 
 /* ----------------------------------------------------------------------------
+    Custom Styles
+---------------------------------------------------------------------------- */
+.devknox-image {
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* ----------------------------------------------------------------------------
     Theme styles
 ---------------------------------------------------------------------------- */
 
@@ -6129,6 +6138,7 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 }
 
 }
+
 
 @media (min-width: 768px) and (max-width: 991px) {
 
