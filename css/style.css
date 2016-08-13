@@ -8254,6 +8254,7 @@ blockquote {
 
 #sidebar li.active {
   	border:0 #eee solid;
+    background-color: #eee;
   	border-right-width:4px;
 }
 
