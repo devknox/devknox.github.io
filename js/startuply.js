@@ -1123,6 +1123,70 @@ Startuply = {
     }
   });
 
+
+$(".validate-registration").click(function() {
+  var username = $("#username").val();
+  var first_name = $("#first_name").val();
+  var last_name = $("#last_name").val();
+  var email = $("#email").val();
+  var pass1 = document.getElementById("password1").value;
+  var pass2 = document.getElementById("password2").value;
+  var phone = $("#company").val();
+  var company = $("#company").val();
+
+    if (username === '' || first_name === '' || last_name === '' || email === '' || phone === '' || company=== '') {
+      alert("All the forms are not filled");
+      return false;
+    }
+    else if ((pass1.length) < 8) {
+      alert("Password length should be more than 8 characters");
+      return false;
+    }
+    else if (pass1 != pass2) {
+      alert("Password did not match");
+      return false;
+    }
+    else {
+      return true;
+    }
+
+  var params = {
+      "username" : username
+    };
+
+  $.ajax({
+    type: "GET",
+    url: "https://api.appknox.com/api/devknox_register",
+    data: params,
+    success: function(data){
+      if(data.response="") {
+         alert("Registered Successfully");
+      }
+      else {
+       alert("Username already exists");
+      }
+    }
+  });
+
+  var data = {
+    "username" : username,
+    "first_name" : first_name,
+    "last_name" : last_name,
+    "email" : email,
+    "pass1" : pass1,
+    "phone" : phone,
+    "company" : company
+};
+  $.ajax({
+    type: "POST",
+    url: "",
+    data: data,
+    success: function(data){
+      /////////
+    }
+  });
+});
+
   function validation() {
     var name = $("#name").val();
     var email = $("#email").val();
