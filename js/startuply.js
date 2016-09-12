@@ -401,11 +401,11 @@ Startuply = {
             rules: {
                 password: {
                     required: true,
-                    minlength: 5
+                    minlength: 8
                 },
                 confirmPassword: {
                     required: true,
-                    minlength: 5,
+                    minlength: 8,
                     equalTo: '#password'
                 }
             },
@@ -413,11 +413,11 @@ Startuply = {
             messages: {
                 password: {
                     required: 'Please provide a password',
-                    minlength: 'Your password must be at least 5 characters long'
+                    minlength: 'Your password must be at least 8 characters long'
                 },
                 confirmPassword: {
                     required: 'Please provide a password',
-                    minlength: 'Your password must be at least 5 characters long',
+                    minlength: 'Your password must be at least 8 characters long',
                     equalTo: 'Please enter the same password as above'
                 }
             },
@@ -1125,31 +1125,7 @@ Startuply = {
 
 
 $(".validate-registration").click(function() {
-  var username = $("#username").val();
-  var first_name = $("#first_name").val();
-  var last_name = $("#last_name").val();
-  var email = $("#email").val();
-  var pass1 = document.getElementById("password1").value;
-  var pass2 = document.getElementById("password2").value;
-  var phone = $("#company").val();
-  var company = $("#company").val();
-
-    if (username === '' || first_name === '' || last_name === '' || email === '' || phone === '' || company=== '') {
-      alert("All the forms are not filled");
-      return false;
-    }
-    else if ((pass1.length) < 8) {
-      alert("Password length should be more than 8 characters");
-      return false;
-    }
-    else if (pass1 != pass2) {
-      alert("Password did not match");
-      return false;
-    }
-    else {
-      return true;
-    }
-
+  
   var params = {
       "username" : username
     };
@@ -1173,7 +1149,7 @@ $(".validate-registration").click(function() {
     "first_name" : first_name,
     "last_name" : last_name,
     "email" : email,
-    "pass1" : pass1,
+    "pass1" : password,
     "phone" : phone,
     "company" : company
 };

@@ -4,74 +4,72 @@ title: Devknox - Registration
 permalink: /registration/
 ---
 
-<div class="static-header light-text clearfix" style="min-height: 69px;">
-  <div class="container">
-    <div class="heading-block animated align-center fadeIn" data-animation="fadeIn" data-duration="700" style="padding-top: 70px; animation-delay: 0ms; animation-duration: 0.7s;">
+<div id="hero" class="static-header window-height hero-section light-text">
+  <div class="centered-block" style="padding: 50px 0;">
+    <div class="heading-block align-center">
+      <h1>Register Now</h1>
     </div>
-  </div>
-  <div class="docs-header" id="content">
+
     <div class="container">
-      <h1>Registration Form</h1>
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+          <form class="form form-register dark-text" id="registration" method="post">
+            <div class="form-group">
+              <label for="fullname" class="col-sm-4 col-xs-12 control-label">User Name</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control required" name="username" id="username" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="first_name" class="col-sm-4 col-xs-12 control-label">First Name</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control required" name="first_name" id="first_name" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="last_name" class="col-sm-4 col-xs-12 control-label">Last Name</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control required" name="last_name" id="last_name" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-sm-4 col-xs-12 control-label">Email</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="email" class="form-control required email" name="email" id="email" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password" class="col-sm-4 col-xs-12 control-label">Password</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="password" class="form-control required" name="password" id="password" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword" class="col-sm-4 col-xs-12 control-label">Confirm Password</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="password" class="form-control required" name="confirmPassword" id="confirmPassword" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="col-sm-4 col-xs-12 control-label">Phone Number</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control required" name="phone" id="phone" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="company" class="col-sm-4 col-xs-12 control-label">Company Name</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control required" name="company" id="company" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-9 col-sm-offset-3">
+                 <input type="submit" class="btn-solid btn-lg btn-block validate-registration" value="Register" id="reg-form-submit" />
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-<div class="container registration-form">
-  <div id="RegForm"></div>
-            <form class="form-horizontal" role="form" method="post">
-                <div class="form-group">
-                    <label for="username" class="col-sm-3 control-label">User Name</label>
-                    <div class="col-sm-9">
-                        <input type="text" id="username" placeholder="User Name" class="form-control" autofocus>
-                    </div>
-                    <div id="resultarea"></div>
-                </div>
-                <div class="form-group">
-                    <label for="first_name" class="col-sm-3 control-label">First Name</label>
-                    <div class="col-sm-9">
-                        <input type="text" id="first_name" placeholder="First Name" class="form-control">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="last_name" class="col-sm-3 control-label">Last Name</label>
-                    <div class="col-sm-9">
-                        <input type="text" id="last_name" placeholder="Last Name" class="form-control">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="email" class="col-sm-3 control-label">Email</label>
-                    <div class="col-sm-9">
-                        <input type="email" id="email" placeholder="Email" class="form-control">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="password" class="col-sm-3 control-label">Password</label>
-                    <div class="col-sm-9">
-                        <input type="password" id="password1" placeholder="Password(Min 8 Characters)" class="form-control">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="password" class="col-sm-3 control-label">Confirm Password</label>
-                    <div class="col-sm-9">
-                        <input type="password" id="password2" placeholder="Confirm Password" class="form-control">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="mobile" class="col-sm-3 control-label">Phone Number</label>
-                    <div class="col-sm-9">
-                        <input type="text" id="mobile" placeholder="Phone Number" class="form-control">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="company" class="col-sm-3 control-label">Company Name</label>
-                    <div class="col-sm-9">
-                        <input type="text" id="company" placeholder="Company Name" class="form-control" autofocus>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-9 col-sm-offset-3">
-                        <button type="submit" id="reg-form-submit" class="btn btn-primary btn-block validate-registration">Register</button>
-                    </div>
-                </div>
-            </form> <!-- /form -->
-</div> <!-- ./container -->
