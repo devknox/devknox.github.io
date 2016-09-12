@@ -1179,7 +1179,7 @@ $(".validate-registration").click(function() {
 };
   $.ajax({
     type: "POST",
-    url: "",
+    url: "https://hawkins.appknox.com/register_devknox/",
     data: data,
     success: function(data){
       /////////
@@ -1230,3 +1230,12 @@ $("#docs-page").click(function(ev){
      document.location = ev.currentTarget.href;
    }
  })
+function getParameterByName(name) {
+ name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+ var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+     results = regex.exec(location.search);
+ return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+$("input#first_name").val(getParameterByName("name"));
+$("input#email").val(getParameterByName("email"));
+$("input#company").val(getParameterByName("company"));
