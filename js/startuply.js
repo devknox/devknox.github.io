@@ -1109,11 +1109,13 @@ Startuply = {
 }
 
   $(".req-demo").click(function() {
+      event.preventDefault();
       var name = $("#name").val();
       var email = $("#email").val();
       var company = $("#company").val();
       if (validation()) // Calling validation function.
     {
+      event.preventDefault();
       var submitform = $("#form_id"); // Form submission.
       $.ajax({
           url: form.action,
