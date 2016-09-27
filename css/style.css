@@ -4745,6 +4745,11 @@ header {
 		margin-left: 0px!important;
 		margin-top: 20px;
 }
+
+.registration-form{
+	padding-bottom: 200px;
+}
+
 ul.circle {
 	list-style-type: disc;
 	margin-left: 20px;
@@ -8261,8 +8266,4 @@ blockquote {
 #mainCol h2 {
 	padding-top: 55px;
     margin-top: -55px;
-}
-
-.docs-header{
-
 }

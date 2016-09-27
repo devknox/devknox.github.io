@@ -401,11 +401,11 @@ Startuply = {
             rules: {
                 password: {
                     required: true,
-                    minlength: 5
+                    minlength: 8
                 },
                 confirmPassword: {
                     required: true,
-                    minlength: 5,
+                    minlength: 8,
                     equalTo: '#password'
                 }
             },
@@ -413,11 +413,11 @@ Startuply = {
             messages: {
                 password: {
                     required: 'Please provide a password',
-                    minlength: 'Your password must be at least 5 characters long'
+                    minlength: 'Your password must be at least 8 characters long'
                 },
                 confirmPassword: {
                     required: 'Please provide a password',
-                    minlength: 'Your password must be at least 5 characters long',
+                    minlength: 'Your password must be at least 8 characters long',
                     equalTo: 'Please enter the same password as above'
                 }
             },
@@ -1137,6 +1137,46 @@ Startuply = {
     }
   });
 
+
+$(".validate-registration").click(function() {
+  
+  var params = {
+      "username" : username
+    };
+
+  $.ajax({
+    type: "GET",
+    url: "https://api.appknox.com/api/devknox_register",
+    data: params,
+    success: function(data){
+      if(data.response="") {
+         alert("Registered Successfully");
+      }
+      else {
+       alert("Username already exists");
+      }
+    }
+  });
+
+  var data = {
+    "username" : username,
+    "first_name" : first_name,
+    "last_name" : last_name,
+    "email" : email,
+    "pass1" : password,
+    "phone" : phone,
+    "company" : company
+};
+  $.ajax({
+    type: "POST",
+    url: "https://hawkins.appknox.com/register_devknox/",
+    data: data,
+    success: function(data){
+      /////////
+    }
+  });
+});
+
   function validation() {
     var name = $("#name").val();
     var email = $("#email").val();
@@ -1179,3 +1219,12 @@ $("#docs-page").click(function(ev){
      document.location = ev.currentTarget.href;
    }
  })
+function getParameterByName(name) {
+ name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+ var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+     results = regex.exec(location.search);
+ return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+$("input#first_name").val(getParameterByName("name"));
+$("input#email").val(getParameterByName("email"));
+$("input#company").val(getParameterByName("company"));
