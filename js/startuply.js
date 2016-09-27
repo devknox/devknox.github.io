@@ -785,12 +785,22 @@ Startuply = {
         if ( this.options.stickyMenuMode ) {
             if ( $(window).scrollTop() > this.options.stickyMenuOffset ) {
                 this.stickMenu();
-
+                $('.sign-up-button').css({"color": "black", "border-color": "black"});
+                $(".sign-up-button").hover(function(){
+                  $(this).css("color", "#1ac6ff");
+                  }, function(){
+                  $(this).css("color", "black");
+                });
                 $('.back-to-top').fadeIn();
 
             }else {
                 this.unstickMenu();
-
+                $('.sign-up-button').css({"color": "white", "border-color": "white"});
+                $(".sign-up-button").hover(function(){
+                  $(this).css("color", "white");
+                  }, function(){
+                  $(this).css("color", "white");
+                });
                 $('.back-to-top').fadeOut();
             }
 

@@ -4804,13 +4804,26 @@ ul.square {
 	position: absolute;
 	top: 0px;
 	z-index: 1;
+}
 
+.sign-up-button{
+	position: absolute;
+	top: 14px;
+	right: 300px;
+	color: white;
+	border-color: white;
+	border-width: 2px;
+	padding: 10px 24px;
+}
+
+.sign-up-button:hover{
+	background-color: #1d1d1d;
+	color: #1ac6ff
 }
 
 .invite-button{
 	margin-bottom: 200px;
 	margin-top: 30px;
-
 }
 
 .image-animate1{
@@ -4818,7 +4831,6 @@ ul.square {
 	top: 50px;
 	z-index: 3;
 }
-
 
 .slide-desc{
     position: relative;
@@ -6188,8 +6200,9 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 			border-width: 0;
 		}
 
-		body:not(.always-mobile) .navigation-header .navigation-brand .brand-logo {
-			display: none;
+		.brand-logo{
+			position: absolute;
+			top: 10px;
 		}
 
 		.installation-slider{
@@ -6237,10 +6250,11 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 				margin-left: -15px!important;
 				margin-top: 20px;
 		}
-
-
-
-
+		.sign-up-button{
+			top: 6px;
+			right: 200px;
+			padding: 8px 24px;
+		}
 }
 
 
@@ -6302,6 +6316,10 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 				margin-left: 0px!important;
 				margin-top: 20px;
 		}
+		.sign-up-button{
+			top: 5px;
+			right: 100px;
+		}
 }
 
 
@@ -6359,6 +6377,11 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 				width: 100%;
 				margin-left: 0px!important;
 				margin-top: 20px;
+		}
+		.sign-up-button{
+			top: 5px;
+			right: 50px;
+			padding: 10px 10px;
 		}
 
 }
@@ -6429,6 +6452,15 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 				width: 100%;
 				margin-left: 0px!important;
 				margin-top: 20px;
+		}
+		.sign-up-button{
+			top: 5px;
+			right: 50px;
+			padding: 10px 0px;
+			margin: 0px;
+		}
+		.brand-logo{
+			margin-left: -20px!important;
 		}
 
 
