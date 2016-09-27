@@ -1118,9 +1118,9 @@ Startuply = {
       event.preventDefault();
       var submitform = $("#form_id"); // Form submission.
       $.ajax({
-          url: form.action,
+          url: submitform.action,
           type: 'POST',
-          data: $(form).serialize()
+          data: $(submitform).serialize()
       }).done(function(msg) {
           alert(" Form Submitted Successfully, We will get back to you shortly!!");
           $("#form_id").trigger("reset");
