@@ -4807,13 +4807,14 @@ ul.square {
 }
 
 .sign-up-button{
-	position: absolute;
-	top: 14px;
-	right: 300px;
 	color: white;
 	border-color: white;
 	border-width: 2px;
 	padding: 10px 24px;
+}
+
+.show-button{
+	display: none;
 }
 
 .sign-up-button:hover{
@@ -6251,8 +6252,6 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 				margin-top: 20px;
 		}
 		.sign-up-button{
-			top: 6px;
-			right: 200px;
 			padding: 8px 24px;
 		}
 }
@@ -6265,14 +6264,12 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 			line-height: 2.5;
 			width: 100%;
 		}
-
 		.usage-slider{
 			margin-left: 0px;
 			margin-top: 20px;
 			line-height: 2.5;
 			width: 100%;
 		}
-
 		.controls{
 			height: 200px;
 		}
@@ -6294,7 +6291,6 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 		.marginTop{
 			margin-top: 0px!important;
 		}
-
 		.static-header.image-version .heading-block,
 		.static-header.video-version .heading-block {
 			padding-bottom: 0;
@@ -6312,13 +6308,20 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 			margin-left: 50px;
 		}
 		.gif-position{
-				width: 100%;
-				margin-left: 0px!important;
-				margin-top: 20px;
+			width: 100%;
+			margin-left: 0px!important;
+			margin-top: 20px;
 		}
 		.sign-up-button{
-			top: 5px;
-			right: 100px;
+			position: absolute;
+			top: 8px;
+			right: 60px
+		}
+		.hide-button{
+			display: none;
+		}
+		.show-button{
+			display: block;
 		}
 }
 
@@ -6379,9 +6382,16 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 				margin-top: 20px;
 		}
 		.sign-up-button{
-			top: 5px;
-			right: 50px;
+			position: absolute;
+			top: 8px;
+			right: 60px;
 			padding: 10px 10px;
+		}
+		.hide-button{
+			display: none;
+		}
+		.show-button{
+			display: block;
 		}
 
 }
@@ -6449,18 +6459,26 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 			margin-left: 30px;
 		}
 		.gif-position{
-				width: 100%;
-				margin-left: 0px!important;
-				margin-top: 20px;
-		}
-		.sign-up-button{
-			top: 5px;
-			right: 50px;
-			padding: 10px 0px;
-			margin: 0px;
+			width: 100%;
+			margin-left: 0px!important;
+			margin-top: 20px;
 		}
 		.brand-logo{
 			margin-left: -20px!important;
+		}
+		.sign-up-button{
+			position: absolute;
+			top: 8px;
+			right: 50px;
+			padding: 10px 0px;
+			margin: 0px;
+			max-width: 80px;
+		}
+		.hide-button{
+			display: none;
+		}
+		.show-button{
+			display: block;
 		}
 
 
