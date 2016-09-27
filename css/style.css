@@ -4762,6 +4762,10 @@ ul.square {
 	line-height: 24px;
 }
 
+.docs-menu{
+	margin-left: -80px!important;
+}
+
 .repo-url{
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -5399,6 +5403,15 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 
 .back-to-top:hover {
 	opacity: 1;
+}
+
+/* ----------------------------------------------------------------------------
+    Custom Styles
+---------------------------------------------------------------------------- */
+.devknox-image {
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 /* ----------------------------------------------------------------------------
@@ -6130,6 +6143,7 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 }
 
 }
+
 
 @media (min-width: 768px) and (max-width: 991px) {
 
@@ -8245,6 +8259,7 @@ blockquote {
 
 #sidebar li.active {
   	border:0 #eee solid;
+    background-color: #eee;
   	border-right-width:4px;
 }
 
