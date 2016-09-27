@@ -1119,16 +1119,30 @@ Startuply = {
 }
 
   $(".req-demo").click(function() {
+      event.preventDefault();
       var name = $("#name").val();
       var email = $("#email").val();
       var company = $("#company").val();
       if (validation()) // Calling validation function.
     {
-      $("#form_id").submit(); // Form submission.
-      alert(" Form Submitted Successfully, We will get back to you shortly!!");
-      $("#form_id").trigger("reset");
-       $(".show-form").hide();
-       $(".show-thanks").show();
+      event.preventDefault();
+      var submitform = $("#form_id"); // Form submission.
+      $.ajax({
+          url: submitform.action,
+          type: 'POST',
+          data: $(submitform).serialize()
+      }).done(function(msg) {
+          alert(" Form Submitted Successfully, We will get back to you shortly!!");
+          $("#form_id").trigger("reset");
+          $(".show-form").hide();
+          $(".show-thanks").show();
+      }).fail(function() {
+          alert("Error while submitting the form, please fill it up again");
+          $("#form_id").trigger("reset");
+      });
+
+
+
 
     }
   });
