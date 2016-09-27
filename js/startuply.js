@@ -1338,10 +1338,12 @@ $("#form_id").on("submit", function () {
   {
     event.preventDefault();
     var submitform = $("#form_id"); // Form submission.
+    var formdata = $(submitform).serialize()
+    $("#form_id :input").attr("disabled", true);
     $.ajax({
       url: submitform.attr('action'),
       type: 'POST',
-      data: $(submitform).serialize()
+      data: formdata
     }).done(function (msg) {
       toastr.success(" Form Submitted Successfully, We will get back to you shortly!!");
       $("#form_id").trigger("reset");
@@ -1349,6 +1351,7 @@ $("#form_id").on("submit", function () {
       $(".show-thanks").show();
     }).fail(function () {
       toastr.error("Error while submitting the form, please fill it up again");
+      $("#form_id :input").attr("disabled", false);
       $("#form_id").trigger("reset");
     });
   }
