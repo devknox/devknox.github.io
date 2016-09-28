@@ -5415,14 +5415,10 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
     padding-bottom: 50px !important;
 }
 .navigation-req-button {
-    float: right;
-    position: absolute;
-    top: 13px;
-    right: 80px;
     color: white;
     border-color: white;
     border-width: 2px;
-    padding: 5px 24px;
+    padding: 10px 24px;
     border-style: solid;
     border-radius: 30px;
 }
@@ -5437,8 +5433,12 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 
 .fixed-menu .navigation-header .container .navigation-req-button {
     background-color: #ea2127;
+		border-width: 0px;
 }
 
+.show-button{
+	display: none;
+}
 
 /* ----------------------------------------------------------------------------
     Theme styles
@@ -6220,10 +6220,6 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 			border-width: 0;
 		}
 
-		body:not(.always-mobile) .navigation-header .navigation-brand .brand-logo {
-			display: none;
-		}
-
 		.installation-slider{
 			margin-left: 120px;
 		}
@@ -6269,13 +6265,11 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 				margin-left: -15px!important;
 				margin-top: 20px;
 		}
-
-
-
-
+		.brand-logo{
+			position: absolute;
+			top: 10px;
+		}
 }
-
-
 @media (min-width: 425px) and (max-width: 767px) {
 		.installation-slider{
 			margin-left: 0px;
@@ -6333,6 +6327,18 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 				width: 100%;
 				margin-left: 0px!important;
 				margin-top: 20px;
+		}
+		.navigation-req-button{
+			position: absolute;
+			top: 8px;
+			right: 60px;
+			padding: 5px 24px;
+		}
+		.hide-button{
+			display: none;
+		}
+		.show-button{
+			display: block;
 		}
 }
 
@@ -6392,7 +6398,18 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 				margin-left: 0px!important;
 				margin-top: 20px;
 		}
-
+		.navigation-req-button{
+			position: absolute;
+			top: 8px;
+			right: 60px;
+			padding: 5px 24px;
+		}
+		.hide-button{
+			display: none;
+		}
+		.show-button{
+			display: block;
+		}
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -6462,8 +6479,9 @@ body:not(.always-mobile) .white-dropdown .navigation-bar > .dropdown:not(.featur
 				margin-left: 0px!important;
 				margin-top: 20px;
 		}
-
-
+		.hide-button{
+			display: none;
+		}
 }
 
 
