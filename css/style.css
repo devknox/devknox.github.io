@@ -4891,6 +4891,20 @@ body.always-mobile .navigation-header.white-dropdown .navigation-bar li.dropdown
     display: block;
   }
 }
+@media (max-width: 319px) {
+    .navigation-req-button {
+      position: absolute;
+      top: 8px;
+      right: 60px;
+      padding: 5px 24px;
+    }
+    .hide-button {
+      display: block;
+    }
+    .show-button {
+      display: none;
+    }
+}
 @media (min-width: 320px) and (max-width: 374px) {
   .installation-slider {
     margin-left: 0px;
