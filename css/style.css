@@ -5409,6 +5409,11 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
     margin-bottom: 5%;
 }
 
+.window-height-alt {
+    padding-top: 25px !important;
+    padding-bottom: 50px !important;
+}
+
 /* ----------------------------------------------------------------------------
     Theme styles
 ---------------------------------------------------------------------------- */
