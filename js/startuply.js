@@ -1334,6 +1334,7 @@ Startuply = {
 
 $("#form_id").on("submit", function () {
   event.preventDefault();
+  ga('send', 'event', 'form', 'submit', 'Beta Invite Submit');
   if ($(this).valid()) // Calling validation function.
   {
     event.preventDefault();
@@ -1380,5 +1381,6 @@ $("#docs-page").click(function (ev) {
 })
 
 $(".navigation-req-button").click(function() {
+    ga('send', 'event', 'button', 'click', 'Beta Invite');
     document.location = "/#beta-invite";
 })
