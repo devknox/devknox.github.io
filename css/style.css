@@ -3528,8 +3528,8 @@ header {
   z-index: 200;
 }
 .gif-animate {
-  width: 70%;
-  margin-left: 170px;
+  width: 60%;
+  margin-left: 200px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 .gif-position {
@@ -4101,6 +4101,11 @@ body.always-mobile .navigation-header.white-dropdown .navigation-bar li.dropdown
 }
 .justify-text {
     text-align:justify;
+}
+.desk-gif {
+    margin: 0 auto;
+    max-width: 700px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* ----------------------------------------------------------------------------
