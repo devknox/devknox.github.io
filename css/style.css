@@ -4957,8 +4957,17 @@ body.always-mobile .navigation-header.white-dropdown .navigation-bar li.dropdown
     margin-left: 0px!important;
     margin-top: 20px;
   }
+  .navigation-req-button {
+    position: absolute;
+    top: 8px;
+    right: 60px;
+    padding: 5px 24px;
+  }
   .hide-button {
     display: none;
+  }
+  .show-button {
+    display: block;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
