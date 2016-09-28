@@ -5413,6 +5413,31 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
     padding-top: 25px !important;
     padding-bottom: 50px !important;
 }
+.navigation-req-button {
+    float: right;
+    position: absolute;
+    top: 13px;
+    right: 80px;
+    color: white;
+    border-color: white;
+    border-width: 2px;
+    padding: 5px 24px;
+    border-style: solid;
+    border-radius: 30px;
+}
+
+.navigation-req-button a {
+    color: white;
+}
+
+.navigation-req-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);;
+}
+
+.fixed-menu .navigation-header .container .navigation-req-button {
+    background-color: #ea2127;
+}
+
 
 /* ----------------------------------------------------------------------------
     Theme styles
