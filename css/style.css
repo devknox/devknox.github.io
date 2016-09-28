@@ -4815,7 +4815,7 @@ body.always-mobile .navigation-header.white-dropdown .navigation-bar li.dropdown
     position: absolute;
     top: 8px;
     right: 60px;
-    padding: 5px 24px;
+    padding: 10px 24px;
   }
   .hide-button {
     display: none;
