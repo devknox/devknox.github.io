@@ -3537,6 +3537,10 @@ header {
   margin-left: 0px!important;
   margin-top: 20px;
 }
+
+.gif-image-pos{
+  margin-bottom: 0px!important;
+}
 ul.circle {
   list-style-type: disc;
   margin-left: 20px;
