@@ -490,7 +490,7 @@ blockquote:after {
 ---------------------------------------------------------------------------- */
 
 .preloader-mask {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -562,6 +562,9 @@ blockquote:after {
   border-color: inherit;
   border-bottom-color: transparent;
   border-radius: 50%;
+}
+.preloader-mask .preloader .clip.right {
+    position: absolute;
 }
 .preloader-mask .preloader .clip.left .circle {
   -webkit-transform: rotate(129deg);
@@ -4079,6 +4082,7 @@ body.always-mobile .navigation-header.white-dropdown .navigation-bar li.dropdown
 }
 .navigation-req-button a {
   color: white;
+  cursor: pointer;
 }
 .navigation-req-button:hover {
   background-color: rgba(255, 255, 255, 0.5);
