@@ -4738,6 +4738,7 @@ header {
 .gif-animate{
 	width: 70%;
 	margin-left: 170px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .gif-position{
@@ -5610,7 +5611,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 
 .static-header.image-version .heading-block,
 .static-header.video-version .heading-block {
-	padding-bottom: 46%;
+	padding-bottom: 51%;
 }
 
 .static-header.video-version .heading-block {
@@ -5726,6 +5727,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 
 .static-header .image-wrapper {
 	position: absolute;
+	margin-bottom: 30px;
 	bottom: 0;
 	left: 0;
 	right: 0;
