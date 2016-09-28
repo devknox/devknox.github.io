@@ -1378,3 +1378,7 @@ $("#docs-page").click(function (ev) {
     document.location = ev.currentTarget.href;
   }
 })
+
+$(".navigation-req-button").click(function() {
+    document.location.hash = "beta-invite";
+})
