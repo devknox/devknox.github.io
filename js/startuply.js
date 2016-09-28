@@ -1380,5 +1380,5 @@ $("#docs-page").click(function (ev) {
 })
 
 $(".navigation-req-button").click(function() {
-    document.location.hash = "beta-invite";
+    document.location = "/#beta-invite";
 })
