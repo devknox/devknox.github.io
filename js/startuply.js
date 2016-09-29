@@ -1413,7 +1413,7 @@ $('#registration').on("submit", function() {
         } else {
             $(this).trigger("reset");
             toastr.success("You have registered succesfully for devknox, you will be redirected on how to use Devknox");
-            window.setTimeout(window.location.href = "/documentation",4000);
+            window.setTimeout(function () {window.location.href = "/documentation"},5000);
         }
     }).fail(function() {
         toastr.error("Something went wrong");
