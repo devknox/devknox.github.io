@@ -1421,4 +1421,14 @@ $('#registration').on("submit", function() {
     });
 
   }
-})
+});
+
+function getParameterByName(name) {
+ name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+ var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+     results = regex.exec(location.search);
+ return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+$("input#first_name").val(getParameterByName("name"));
+$("input#email").val(getParameterByName("email"));
+$("input#company").val(getParameterByName("company"));
