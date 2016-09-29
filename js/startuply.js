@@ -1339,7 +1339,7 @@ $("#form_id").on("submit", function () {
   {
     event.preventDefault();
     var submitform = $("#form_id"); // Form submission.
-    var formdata = $(submitform).serialize()
+    var formdata = $(submitform).serialize();
     $("#form_id :input").attr("disabled", true);
     $.ajax({
       url: submitform.attr('action'),
@@ -1384,3 +1384,51 @@ $(".navigation-req-button").click(function() {
     ga('send', 'event', 'button', 'click', 'Beta Invite');
     document.location = "/#beta-invite";
 })
+
+$('#registration').on("submit", function() {
+  event.preventDefault();
+  var formData = $(this).serialize();
+  $("#form_id :input").attr("disabled", true);
+  var validator = $( this ).validate();
+  validator.resetForm();
+  if ($(this).valid()){
+    $.ajax({
+        url: "https://hawkins.appknox.com/api/devknox_register/",
+        type: 'POST',
+        dataType: 'json',
+        data: formData
+    }).done(function (msg) {
+        if(msg.status === "error") {
+            $("#form_id :input").attr("disabled", false);
+            toastr.error(msg.message);
+            if(msg.message.startsWith("Password")) {
+                validator.showErrors({
+                    "password": msg.message,
+                    "confirmPassword": msg.message
+                });
+            }
+            if(msg.message.startsWith("Username")) {
+                validator.showErrors({"username": msg.message});
+            }
+        } else {
+            $(this).trigger("reset");
+            toastr.success("You have registered succesfully for devknox, you will be redirected on how to use Devknox");
+            window.setTimeout(function () {window.location.href = "/documentation"},5000);
+        }
+    }).fail(function() {
+        toastr.error("Something went wrong");
+        $("#form_id :input").attr("disabled", false);
+    });
+
+  }
+});
+
+function getParameterByName(name) {
+ name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+ var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+     results = regex.exec(location.search);
+ return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+$("input#first_name").val(getParameterByName("name"));
+$("input#email").val(getParameterByName("email"));
+$("input#company").val(getParameterByName("company"));
