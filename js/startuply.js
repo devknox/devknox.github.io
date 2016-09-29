@@ -1393,7 +1393,7 @@ $('#registration').on("submit", function() {
   validator.resetForm();
   if ($(this).valid()){
     $.ajax({
-        url: "http://0.0.0.0:5000/api/devknox_register/",
+        url: "https://hawkins.appknox.com/api/devknox_register/",
         type: 'POST',
         dataType: 'json',
         data: formData
