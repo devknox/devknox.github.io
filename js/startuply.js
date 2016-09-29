@@ -1339,7 +1339,7 @@ $("#form_id").on("submit", function () {
   {
     event.preventDefault();
     var submitform = $("#form_id"); // Form submission.
-    var formdata = $(submitform).serialize()
+    var formdata = $(submitform).serialize();
     $("#form_id :input").attr("disabled", true);
     $.ajax({
       url: submitform.attr('action'),
@@ -1383,4 +1383,42 @@ $("#docs-page").click(function (ev) {
 $(".navigation-req-button").click(function() {
     ga('send', 'event', 'button', 'click', 'Beta Invite');
     document.location = "/#beta-invite";
+})
+
+$('#registration').on("submit", function() {
+  event.preventDefault();
+  var formData = $(this).serialize();
+  $("#form_id :input").attr("disabled", true);
+  var validator = $( this ).validate();
+  validator.resetForm();
+  if ($(this).valid()){
+    $.ajax({
+        url: "http://0.0.0.0:5000/api/devknox_register/",
+        type: 'POST',
+        dataType: 'json',
+        data: formData
+    }).done(function (msg) {
+        if(msg.status === "error") {
+            $("#form_id :input").attr("disabled", false);
+            toastr.error(msg.message);
+            if(msg.message.startsWith("Password")) {
+                validator.showErrors({
+                    "password": msg.message,
+                    "confirmPassword": msg.message
+                });
+            }
+            if(msg.message.startsWith("Username")) {
+                validator.showErrors({"username": msg.message});
+            }
+        } else {
+            $(this).trigger("reset");
+            toastr.success("You have registered succesfully for devknox, you will be redirected on how to use Devknox");
+            window.setTimeout(window.location.href = "/documentation",4000);
+        }
+    }).fail(function() {
+        toastr.error("Something went wrong");
+        $("#form_id :input").attr("disabled", false);
+    });
+
+  }
 })
