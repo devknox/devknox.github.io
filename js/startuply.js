@@ -1346,10 +1346,11 @@ $("#form_id").on("submit", function () {
       type: 'POST',
       data: formdata
     }).done(function (msg) {
-      toastr.success(" Form Submitted Successfully, We will get back to you shortly!!");
+      toastr.success(" Form Submitted Successfully, Let's Activate your Account");
       $("#form_id").trigger("reset");
       $(".show-form").hide();
       $(".show-thanks").show();
+      window.setTimeout(function () {window.location.href = "/register/?"+formdata},5000);
     }).fail(function () {
       toastr.error("Error while submitting the form, please fill it up again");
       $("#form_id :input").attr("disabled", false);
