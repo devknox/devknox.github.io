@@ -3495,7 +3495,7 @@ td.cart-list-item-price {
   transition: color 0.2s ease;
   padding: 11px 0;
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform: none;
   color: #ffffff;
 }
 .navigation-bar .dropdown-menu>li a:hover {
