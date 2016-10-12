@@ -3373,7 +3373,7 @@ td.cart-list-item-price {
   padding: 15px 10px;
   font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform: none;
   color: rgba(240, 240, 240, 0.8);
   line-height: 1;
   border-bottom: 2px solid transparent;
