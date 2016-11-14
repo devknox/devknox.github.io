@@ -3546,6 +3546,11 @@ ul.circle {
   margin-left: 20px;
   line-height: 24px;
 }
+ul.empty-circle {
+  list-style-type: circle;
+  margin-left: 20px;
+  line-height: 24px;
+}
 ul.square {
   list-style-type: square;
   margin-left: 20px;

@@ -17,7 +17,7 @@ permalink: /documentation/
   </div>
   <div class="banner">
     <div class="container">
-      Devknox v1.3 has been released -
+      Devknox v2.0 is here -
       <strong>
         <a href="#whats-new">See what&apos;s new</a>
       </strong>
@@ -31,6 +31,7 @@ permalink: /documentation/
         <li><a href="#introduction">Introduction</a></li>
         <li><a href="#whats-new">What's New</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#update-devknox">Updating Devknox</a></li>
         <li><a href="#install-devknox">Installing Devknox</a></li>
         <li><a href="#use-devknox">Using Devknox</a></li>
     	</ul>
@@ -40,7 +41,7 @@ permalink: /documentation/
       <div id="introduction" class="intro-section">
       <h3>Introduction</h3>
         Devknox is a developer friendly Android Studio plugin that helps Android developers detect and resolve security issues in their apps, while writing code.
-        Imagine Devknox to similar to what autocorrect is for English. As you write code, Devknox highlights possible security risks and also gives you a suggested solution which you can select and replace across your code.<br>
+        Imagine Devknox to similar to what autocorrect is for English. As you write code, Devknox highlights possible security risks and also gives you a suggested solution which you can select and replace across your code.<br />
         Yes, it is truly that simple! Let's build more secure apps!
        </div>
     	<hr class="col-md-12">
@@ -48,25 +49,55 @@ permalink: /documentation/
       <div id="whats-new">
       <h3>What's New</h3>
         <p>
-      The new roll-out of Devknox contains following improvements and features:
-      </p>
+          The new roll-out of Devknox contains following improvements and features:
+       </p>
          <ul class="circle">
-           <li>More Test Cases for Security Vulnerabilities</li>
-           <li>Feedback through Plugin</li>
-           <li>Deprecated Code Check</li>
-           <li>Security Bug Fixes</li>
+           <li>Revamped Report Window :
+            <ul class="empty-circle">
+             <li>Issue Name, Location, Fix Option, Suppress Option</li>
+            </ul>
+           </li>
+           <li>Suppress Inspection :
+             <ul class="empty-circle">
+               <li>Single Statement, For Method, For Class</li>
+             </ul>
+           </li>
+           <li> Issue Detection :
+             <ul class="empty-circle">
+               <li>Red Underlined Annotation</li>
+               <li>IDE Editor Marking and Quick Jumping to Issue in Editor Itself</li>
+               <li>Problem Synopsis as well as Detailed Information in Tooltip</li>
+             </ul>
+           </li>
+           <li>Quick Fix All Similar Issues at Once</li>
+           <li>Export Report to Xml and Html</li>
+           <li>User preferences for Issue Types
+             <ul class="empty-circle">
+               <li>Option to disable Inspections</li>
+             </ul>
+           </li>
+           <li>Various inspection scopes on scan(Module, File, Project)</li>
            <li>Fix plugin stability issues</li>
          </ul>
        </div>
     	<hr class="col-md-12">
       <div id="prerequisites">
       <h3>Minimum Requirements</h3>
-      <p>
         If you want to run Devknox on your PC, here's what it takes:
-      </p>
         <ul class="circle">
           <li>Java : 1.7</li>
           <li>Android Studio : 2.1.2</li>
+        </ul>
+      </div>
+      <hr class="col-md-12">
+      <div id="update-devknox" >
+        <h3>Updating Devknox</h3>
+         Follow the steps if you want to update Devknox from settings or else Devknox can be updated from the notification everytime IDE starts up
+        <ul class="circle">
+          <li>Go to <b>File</b> menu and click <b>Settings</b></li>
+          <li>In the <b>Settings</b> dialog, click <b>Plugins</b></li>
+          <li>Choose Devknox from the list of plugins installed and click on <b>update</b> in the right pane</li>
+          <li>Restart the IDE to start using Devknox</li>
         </ul>
       </div>
     	<hr class="col-md-12">
@@ -74,7 +105,7 @@ permalink: /documentation/
       <h3>Installing Devknox</h3>
       <p>
       To be able to use Devknox, you should specify the URLs of such Devknox repository in Android Studio. Follow the steps outlined below to add the URL:
-    </p>
+      </p>
          <ul class="circle">
            <li>Go to <b>File</b> menu and click <b>Settings</b></li>
            <li>In the Settings dialog, click <b>Plugins</b></li>
@@ -113,19 +144,22 @@ permalink: /documentation/
       <ul class="circle">
        <li>On the menu bar click on <b>Devknox</b> and select <b>Login</b></li>
        <li>On the login dialog box provide the credentials and click <b>Login</b></li>
-       <li>After succesfull login to Devknox select your module in the project pane which is in the left side of the IDE.
-         Right click on selected module and select <b>Devknox Scan</b> -> <b>Scan Module</b></li>
-       <li>If the report window doesn't pop up automatically, go to <b>View</b>-><b>Tool Windows</b> and select <b>Devknox Report:</b>
-         The Report Window has two parts. The left part shows the issues in a tree structure and the right part shows the overview of the issues</li>
-       <li>Expand the tree structure in the Devknox Report window to see all the issues. Click on the issue to see the details of the issue like the location,
-         suggestion etc on the right pane of devknox report window</li>
-       <li>Double Click on an issue on the left part of devknox report window to go to the exact location of the issue on the IDE. The issue is marked with
-          an mine icon <img src="/img/icon/mine.png" alt="Appknox Devknox" /> on the gutter area</li>
-       <li>Use the intention(bulb icon) <img src="/img/icon/bulb.png" alt="Appknox Devknox" /> to fix the issue automatically</li>
-       <li>Select <b>Devknox</b> in the menu bar and click on <b>Enable Devknox</b> to toggle viewing issue locations</li>
-       <li>Select <b>Devknox</b> in the menu bar and click on <b>Logout</b> logout from Devknox which disables functionality of Devknox</li>
+       <li>On successful login the plugin starts the scan in background and highlights the issues as red underlined annotation</li>
+       <li>To quickly jump to various Devknox issues, just point to right end of the editor and check out Devknox issues,
+          issues will be highlighted as various warning levels like yellow, red lines.
+          hovering over them will show the piece of code where the issues lie and clicking on them will take you to the corresponding line</li>
+       <li>On hovering over the issue, a tooltip pops up showing summary of issues and clicking on more shows detailed description of the issues</li>
+       <li>Click on the issue code and a (intention)bulb icon <img src="/img/icon/bulb.png" alt="Appknox Devknox" /> will appear, clicking on it will provide the option to quick fix</li>
+       </ul>
+       <ul class="circle">
+       <li>On the menu bar click on Devknox and select Devknox scan and choose scan scope(whole project, module, file, custom).
+          A report window pops up with Devknox issues. Expand as per choice to view particular issue details or expand the tree entirely using expand all icon <img src="/img/icon/expand-all.png" alt="Appknox Devknox" /></li>
+       <li>Select an issue to view details apply quick fix using problem resolution field</li>
+       <li>Select ad issue type and right click to get various options like suppress options and disabling inspection options</li>
+       <li>Use the export icon <img src="/img/icon/export.png" alt="Appknox Devknox" /> to export Devknox issues to XML or HTML</li>
+       <li>On the menu bar click on Devknox and select <b>About Devknox</b>, <b>Online Help</b> and <b>Feedback</b> to get an overview about Devknox, jump to online help and provide feedback to Devknox team respectively</li>
       </ul>
-      <img src="/img/features/devknox2.gif" alt="Devknox android application security tool" class="devknox-image" />
+      <img src="/img/features/usage.gif" alt="Devknox android application security tool" class="devknox-image" />
      </div>
     </div>
   </div>
