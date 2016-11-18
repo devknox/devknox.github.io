@@ -1,12 +1,22 @@
 $( document ).ready(function() {
-  $(".slide-down").click(function(){
-      $(".show-document").slideDown();
-      $('.slide-down').hide();
-      $('.slide-up').show();
+  $('.doc-slide-down').click(function(){
+      $('.doc-show-document').slideDown();
+      $('.doc-slide-down').hide();
+      $('.doc-slide-up').show();
     });
-  $(".slide-up").click(function(){
-    $(".show-document").slideUp();
-    $('.slide-up').hide();
-    $('.slide-down').show();
+  $('.doc-slide-up').click(function(){
+    $('.doc-show-document').slideUp();
+    $('.doc-slide-up').hide();
+    $('.doc-slide-down').show();
+  });
+  $('.faq-slide-down').click(function(){
+      $('.faq-show-document').slideDown();
+      $('.faq-slide-down').hide();
+      $('.faq-slide-up').show();
+    });
+  $('.faq-slide-up').click(function(){
+    $('.faq-show-document').slideUp();
+    $('.faq-slide-up').hide();
+    $('.faq-slide-down').show();
   });
 });
