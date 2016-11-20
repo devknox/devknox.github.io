@@ -1005,12 +1005,12 @@ Startuply = {
     if (this.options.stickyMenuMode) {
       if ($(window).scrollTop() > this.options.stickyMenuOffset) {
         this.stickMenu();
-
+        $(".blog-button a").css("color", "#1d1d1d");
         $('.back-to-top').fadeIn();
 
       } else {
         this.unstickMenu();
-
+        $(".blog-button a").css("color", "rgba(240, 240, 240, 0.8)");
         $('.back-to-top').fadeOut();
       }
 

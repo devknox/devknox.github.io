@@ -4105,6 +4105,11 @@ body.always-mobile .navigation-header.white-dropdown .navigation-bar li.dropdown
 .show-button {
   display: none;
 }
+
+.blog-button a {
+  color: rgba(240, 240, 240, 0.8);
+}
+
 .justify-text {
     text-align:justify;
 }
@@ -5849,12 +5854,6 @@ body.always-mobile .navigation-header.white-dropdown .navigation-bar li.dropdown
   }
   .navigation-header .navigation-bar>li:not(.featured)>a {
     padding: 25px 0;
-  }
-  .fixed-menu .navigation-header .navigation-bar.navigation-bar-left>li.active:not(.featured)>a, .navigation-header .navigation-bar.navigation-bar-left li:not(.featured).active>a, .navigation-header .navigation-bar.navigation-bar-right li:not(.featured).active>a, .navigation-bar>.dropdown:not(.featured):not(.opened) .dropdown-toggle, .navigation-header .navigation-bar>li:not(.featured)>a {
-    width: 100%;
-    border-style: solid;
-    border-width: 1px 0;
-    border-color: rgba(0, 0, 0, 0.15) transparent rgba(255, 255, 255, 0.05);
   }
   .navigation-bar>.dropdown:not(.featured)>.dropdown-menu>li:not(.opened):hover {
     background-color: transparent;
