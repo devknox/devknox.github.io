@@ -19,4 +19,34 @@ $( document ).ready(function() {
     $('.faq-slide-up').hide();
     $('.faq-slide-down').show();
   });
+  $('.faq-slide-up').click(function(){
+    $('.faq-show-document').slideUp();
+    $('.faq-slide-up').hide();
+    $('.faq-slide-down').show();
+  });
+  $('.pricing-start-button').click(function(){
+    $('.devknox-pricing-lite').hide();
+    $('.devknox-pricing').hide();
+    $('.submission-form').show();
+  });
+  $('.close-button').click(function(){
+    $('.devknox-pricing-lite').show();
+    $('.devknox-pricing').show();
+    $('.submission-form').hide();
+  });
+  $('#login-form-link').click(function(e) {
+  $("#login-form").delay(100).fadeIn(100);
+  $("#register-form").fadeOut(100);
+  $('#register-form-link').removeClass('active');
+  $(this).addClass('active');
+  e.preventDefault();
+});
+$('#register-form-link').click(function(e) {
+  $("#register-form").delay(100).fadeIn(100);
+  $("#login-form").fadeOut(100);
+  $('#login-form-link').removeClass('active');
+  $(this).addClass('active');
+  e.preventDefault();
+});
+
 });
