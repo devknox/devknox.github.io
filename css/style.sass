@@ -199,7 +199,7 @@
   color: #51f8d1
   font-family: 'Raleway', sans-serif
   font-size: 36px
-  margin-top: 30px
+  padding-top: 30px
 
 .client-img-section
   margin-top: 30px
@@ -336,6 +336,76 @@
 .pricing-panel-heading
   border-bottom: 1px solid #51f8d1!important
   text-align: center
+
+/* Start of scrollspy */
+
+#masthead
+  min-height: 270px
+  background-color: #000044
+  color: #aaaacc
+
+#masthead h1
+  font-size: 55px
+  line-height: 1
+
+#masthead .well
+  margin-top: 13%
+  background-color: #111155
+  border-color: #000033
+
+.icon-bar
+  background-color: #fff
+
+/* hide sidebar sub menus by default */
+
+#sidebar.nav .nav
+  display: none
+  font-size: 12px
+
+/* show sub menu when parent is active */
+
+#sidebar.nav>.active>ul
+  display: block
+
+@media screen and (min-width: 768px)
+  #masthead h1
+    font-size: 100px
+
+.navbar-bright
+  background-color: #111155
+  color: #fff
+
+.navbar-bright a, #masthead a, #masthead .lead
+  color: #aaaacc
+
+.navbar-bright li > a:hover
+  background-color: #000033
+
+.affix-top,.affix
+  position: static
+
+
+@media (min-width: 979px)
+  #sidebar.affix-top
+    position: static
+    margin-top: 30px
+    width: 228px
+
+
+  #sidebar.affix
+    position: fixed
+    top: 70px
+    width: 228px
+
+
+
+#sidebar li.active
+  border: 0 #eee solid
+  border-right-width: 4px
+
+
+/* End of scrollspy */
+
 
 /* Start of Media Queries */
 
