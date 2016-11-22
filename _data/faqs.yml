@@ -1,0 +1,66 @@
+left_faq:
+   - question: What is Appknox and what do we do?
+     answer: Appknox is a security company with expertise in the mobile domain.
+                We offer a cloud-based mobile security solution that detects threats
+                and vulnerabilities and provides suggestions to fix them.
+                By making apps more secure, we offer peace of mind to brands so
+                that you can concentrate on what you should be doing while
+                leaving your security concerns to us.
+   - question: Why should you choose Appknox?
+     answer:  Appknox is among the best mobile security solutions available globally.
+                  We use a human plus system approach to ensure you get an output
+                  that is of great quality. We not only help you find security
+                  issues but also continue to work with you to help you fix those issues.
+                  There are many more reasons why our customers love us;
+                  we’d love to share that with you on a call.
+   - question : How is the scanning done at Appknox?
+     answer : Your mobile application goes through a combination of human and
+                system efforts in a three stage process. We perform static,
+                dynamic and behavioral testing on your apps to ensure complete
+                mobile app security
+   - question : How accurate are Appknox findings?
+     answer : We assure almost zero false positives. In the rare case that you
+            do come across a false positive and it is acknowledged by Appknox,
+            we'll remove it from your score and report.
+   - question : How to resolve/fix issues found by Appknox?
+     answer :  At the end of your three stage scan process, you will received
+            a detailed report of your application's security condition.
+            This report explains each threat in detail and also provides
+            examples of compliant and non-compliants code to help you fix them.
+            Moreover, a dedicated security researcher is assigned to you who will
+            help you further to ensure these issues are fixed.
+
+right_faq :
+    - question: Will Appknox help us make our development agile?
+      answer :  Appknox is a security company with expertise in the mobile domain.
+                We are strong believers of agile development. Hence, we offer
+                Continuous Integration tools that you can use seamlessly with
+                services like Github, Jira, Jenkins, and more. We also offer
+                APIs which you can use to achieve complete mobile security while
+                maintaining an agile model of development.
+    - question : How confidential is my information with Appknox?
+      answer : Appknox respects your confidential information and makes sure all
+               your reports are only shared with your company.
+               We go a step ahead by making sure people without the necessary
+               authorization do not get access to your reports,
+               and that includes people within Appknox.
+    - question : Does Appknox provide refunds on subscriptions?
+      answer :  Appknox does not provide refunds on subscriptions.
+                We are confident you will find a lot of value in our findings.
+                However, if you are unhappy with our services, you can go ahead
+                and cancel your subscription with us at anytime. In case you've
+                subscribed for our annual protection plan, we will reimburse on
+                a pro-rata basis.
+    - question : What compliance checks does Appknox cover?
+      answer :  To make it clear, Appknox does not provide compliance certifications.
+                But, we do undertake security tests that are part of these compliance checks.
+                Our detailed test cases cover all these requirements so that it becomes
+                easier for you, as a business, to get a compliance certification done.
+                As of now our test cases include checks necessary
+                for PCI-DSS, HIPAA, SOX, GLBA and ISO 27001.
+    - question : How will Appknox work within my team to ensure complete mobile security?
+      answer :  Imagine Appknox as a small reliable security team within your team.
+                With Appknox, you get access to a dedicated security researcher
+                as well as account manager. Your account manager ensures you have
+                every need fulfilled and our security researchers work around the
+                clock to ensure you are secured from the eyes of an hacker.

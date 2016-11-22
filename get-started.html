@@ -271,11 +271,45 @@ keywords: devknox, android app security, security plugin, android studio securit
 <div class="faq-section">
   <div class="doc-header col-lg-offset-1">FAQs</div>
   <div class="col-lg-offset-1">
-    <button type="button" class="doc-slide-down">SHOW</button>
-    <button type="button" class="doc-slide-up">HIDE</button>
+    <button type="button" class="faq-slide-down">SHOW</button>
+    <button type="button" class="faq-slide-up">HIDE</button>
   </div>
   <div class="faq-show-document">
-    Hello
+    <section>
+    <div class="container ak-container" id="faq">
+        <h1 class="text-center pricing-heading">FAQs</h1>
+        <div class="horzr-sep-block ak-white-bg"></div>
+        <div class="horzr-sep-block ak-white-bg"></div>
+        <ul>
+          <li class="col-md-offset-1 col-md-5 gills-19">
+            {% for faq in site.data.faqs.left_faq %}
+            <div class="faq-region">
+              <div class="faq-quest-area">
+                  <i class="fa fa-caret-right faqArrow" aria-hidden="true"></i>
+                  <span class="faq-quest">{{faq.question}}</span>
+              </div>
+              <div class="faq-answer">
+                {{faq.answer}}
+              </div>
+            </div>
+            {% endfor %}
+          </li>
+          <li class="col-md-offset-1 col-md-5 gills-19">
+            {% for faq in site.data.faqs.right_faq %}
+            <div class="faq-region">
+              <div class="faq-quest-area">
+                  <i class="fa fa-caret-right faqArrow" aria-hidden="true"></i>
+                  <span class="faq-quest">{{faq.question}}</span>
+              </div>
+              <div class="faq-answer">
+                {{faq.answer}}
+              </div>
+            </div>
+            {% endfor %}
+          </li>
+        </ul>
+      </div>
+  </section>
   </div>
 </div>
 
