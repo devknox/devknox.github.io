@@ -3,6 +3,7 @@
 
 $nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
 
+
 /* Start of Header */
 
 .navbar-brand
@@ -368,9 +369,31 @@ $nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
   font-family: 'Raleway', sans-serif
 
 .documentation-section, .faq-section
-  button
+  .slider-button
     margin-left: 30px
-    margin-bottom: 20px
+    line-height: 18px
+    border-radius: 50%
+    color: #51f8d1
+    width: 36px
+    height: 36px
+    padding: 8px
+    text-align: center
+    font-family: 'Raleway', sans-serif
+    font-size: 36px
+    margin-top: -10px
+    background-color: #171c4f
+    cursor: pointer
+
+  .faq-slider-button
+    @extend .slider-button
+    background-color: #0a0f19
+
+.rotate-text
+  -webkit-transform: rotate(90deg)
+  -moz-transform: rotate(90deg)
+  -ms-transform: rotate(90deg)
+  -o-transform: rotate(90deg)
+  transform: rotate(90deg)
 
 /* Start of FAQ section */
 
