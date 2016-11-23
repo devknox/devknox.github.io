@@ -128,7 +128,7 @@ $nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
   color: #51f8d1
   font-family: 'Raleway', sans-serif
   font-size: 48px
-  margin-top: 100px
+  margin-top: 80px
 
 .main-sub-heading
   color: #e9fb97
@@ -512,6 +512,13 @@ $nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
 
 
 /* Start of Media Queries */
+@media only screen and (max-width: 1200px)
+  .main-heading, .main-sub-heading, .main-desc, .start-now-button
+    margin-top: 10px
+  .main-section
+    .col-md-offset-1
+      margin-top: 20px
+
 
 @media screen and (max-width: 990px) and (min-width: 768px)
   .main-heading
