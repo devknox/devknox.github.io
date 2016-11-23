@@ -1,6 +1,32 @@
 ---
 ---
 
+$nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
+
+/* Start of Header */
+
+.navbar-brand
+  img
+    margin-left: 50px
+
+.social-icons
+  float: right
+  margin-top: 13px
+  margin-left: 150px
+  img
+    padding-left: 10px
+    padding-right: 10px
+
+
+@for $i from 1 through length($nav-colors)
+  .navbar-nav li:nth-child(#{length($nav-colors)}n+#{$i})
+    a
+      color: lighten(nth($nav-colors, $i), 20%)!important
+    a:hover
+      color: #51f8d1!important
+
+/* End of Header */
+
 .devknox-feat
   background-color: black
   font-family: 'Raleway', sans-serif
@@ -512,6 +538,11 @@
   .feedback-box
     width: 75%
     padding: 20px
+  .social-icons
+    margin-left: 10px
+  .navbar-brand
+    img
+      margin-top: -10px 
 
 @media only screen and (max-width: 990px)
   .button-container
@@ -526,6 +557,13 @@
     text-align: center
 
 @media only screen and (max-width: 767px)
+  .social-icons
+    padding-right: 45px
+    margin-top: -34px
+    margin-left: auto
+    margin-right: auto
+    img
+      padding-left: 0px
   .main-heading
     margin-top: 30px
   .gif-container
