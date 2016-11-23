@@ -519,11 +519,18 @@ $nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
     .col-md-offset-1
       margin-top: 20px
 
+@media only screen and (max-width: 1024px)
+  .main-heading
+    font-size: 42px
+    margin-top: 5px
+  .main-sub-heading, .main-desc, .start-now-button
+    margin-top: 5px
 
 @media screen and (max-width: 990px) and (min-width: 768px)
   .main-heading
     margin-top: 30px
     font-size: 40px
+    text-align: center
   .main-sub-heading, .main-desc
     text-align: center
   .gif-container
@@ -584,6 +591,8 @@ $nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
     text-align: center
 
 @media only screen and (max-width: 767px)
+  .main-sub-heading, .main-desc
+    text-align: center
   .social-icons
     padding-right: 45px
     margin-top: -34px
@@ -591,8 +600,12 @@ $nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
     margin-right: auto
     img
       padding-left: 0px
+  .navbar-brand
+    img
+      margin-left: 0px
   .main-heading
     margin-top: 30px
+    text-align: center
   .gif-container
     display: none
   .security-container img
