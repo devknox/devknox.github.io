@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     faqControl();
     docControl();
+    formValidate();
 
 
   $('.pricing-start-button').click(function(){
@@ -72,5 +73,68 @@ docControl = function(){
     $('.doc-show-document').slideUp();
     $('.doc-slide-up').hide();
     $('.doc-slide-down').show();
+  });
+}
+
+formValidate = function(){
+  $('#signup-form').bootstrapValidator({
+    fields: {
+      username: {
+        validators: {
+          stringLength: {
+          min: 1,
+        },
+          notEmpty: {
+          message: 'Please enter your username'
+        }
+      }
+    },
+	  email: {
+      validators: {
+        notEmpty: {
+          message: 'Please enter your email address'
+        },
+          emailAddress: {
+            message: 'Please enter a valid email address'
+        }
+      }
+    },
+	  password: {
+      validators: {
+        notEmpty: {
+          message: 'Please enter your password'
+        }
+      }
+    },
+	  confirmPassword: {
+      validators: {
+        notEmpty: {
+          message: 'Please confirm your password'
+        },
+        identical: {
+          field: 'password',
+          message: 'The passwords does not match'
+        }
+      }
+    },
+   }
+ })
+  .on('success.form.bv', function(e) {
+      $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+          $('#signup-form').data('bootstrapValidator').resetForm();
+
+      // Prevent form submission
+      e.preventDefault();
+
+      // Get the form instance
+      var $form = $(e.target);
+
+      // Get the BootstrapValidator instance
+      var bv = $form.data('bootstrapValidator');
+
+      // Use Ajax to submit form data
+      $.post($form.attr('action'), $form.serialize(), function(result) {
+          console.log(result);
+      }, 'json');
   });
 }
