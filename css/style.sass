@@ -74,22 +74,13 @@ $nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
 .non-gradient-background
   background: #166f98
 
+$feat-colors: #1f2367, #171c4f, #06233c, #132d45
 
-.team-section
-  background: #1f2367
-  height: 550px
-
-.integration-section
-  background: #171c4f
-  height: 550px
-
-.dashboard-section
-  background: #06233c
-  height: 550px
-
-.testing-section
-  background: #132d45
-  height: 550px
+@for $i from 1 through length($feat-colors)
+  .devknox-feat2
+    .feat-sec:nth-child(#{length($feat-colors)}n+#{$i})
+      background: nth($feat-colors, $i)
+      height: 550px
 
 .report-section
   background: #282865
