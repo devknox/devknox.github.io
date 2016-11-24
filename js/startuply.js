@@ -119,22 +119,42 @@ formValidate = function(){
     },
    }
  })
-  .on('success.form.bv', function(e) {
-      $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-          $('#signup-form').data('bootstrapValidator').resetForm();
 
-      // Prevent form submission
-      e.preventDefault();
-
-      // Get the form instance
-      var $form = $(e.target);
-
-      // Get the BootstrapValidator instance
-      var bv = $form.data('bootstrapValidator');
-
-      // Use Ajax to submit form data
-      $.post($form.attr('action'), $form.serialize(), function(result) {
-          console.log(result);
-      }, 'json');
-  });
+.on("submit", function() {
+  event.preventDefault();
+  var formData = $(this).serialize();
+  $("#form_id :input").attr("disabled", true);
+  var validator = $( this ).validate();
+  validator.resetForm();
+  if ($(this).valid()){
+    // $.ajax({
+    //     url: "https://hawkins.appknox.com/api/devknox_register/",
+    //     type: 'POST',
+    //     dataType: 'json',
+    //     data: formData
+    // }).done(function (msg) {
+    //     if(msg.status === "error") {
+    //         $("#form_id :input").attr("disabled", false);
+    //         toastr.error(msg.message);
+    //         if(msg.message.startsWith("Password")) {
+    //             validator.showErrors({
+    //                 "password": msg.message,
+    //                 "confirmPassword": msg.message
+    //             });
+    //         }
+    //         if(msg.message.startsWith("Username")) {
+    //             validator.showErrors({"username": msg.message});
+    //         }
+    //     } else {
+    //         $(this).trigger("reset");
+    //         toastr.success("You have registered succesfully for devknox, you will be redirected on how to use Devknox");
+    //         window.setTimeout(function () {window.location.href = "/documentation"},5000);
+    //     }
+    // }).fail(function() {
+    //     toastr.error("Something went wrong");
+    //     $("#form_id :input").attr("disabled", false);
+    // });
+    alert("hello");
+  }
+});
 }
