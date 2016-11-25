@@ -175,3 +175,16 @@ formValidate = function(){
   return false;
 });
 }
+
+$('#sidebar').affix({
+  offset: {
+    top: 100
+  }
+});
+
+var $body = $(document.body);
+var navHeight = $('.navigation-navbar').outerHeight(true) + 10;
+$body.scrollspy({
+  target: '#leftCol',
+  offset: navHeight
+});
