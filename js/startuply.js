@@ -11,6 +11,8 @@ $( document ).ready(function() {
     $('.devknox-pricing-lite').hide();
     $('.devknox-pricing').hide();
     $('.submission-form').show();
+    $('.pricing-type-lite').show();
+    $('.pricing-type-devknox').hide();
   });
 
   $('.pricing-paid-button').click(function(){
@@ -18,6 +20,8 @@ $( document ).ready(function() {
     $('.devknox-pricing-lite').hide();
     $('.devknox-pricing').hide();
     $('.submission-form').show();
+    $('.pricing-type-devknox').show();
+    $('.pricing-type-lite').hide();
 
   });
   $('.close-button').click(function(){
