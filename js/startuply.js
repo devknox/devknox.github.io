@@ -123,38 +123,38 @@ formValidate = function(){
 .on("submit", function() {
   event.preventDefault();
   var formData = $(this).serialize();
-  $("#form_id :input").attr("disabled", true);
+  $("#signup-form :input").attr("disabled", true);
   var validator = $( this ).validate();
   validator.resetForm();
   if ($(this).valid()){
-    // $.ajax({
-    //     url: "https://hawkins.appknox.com/api/devknox_register/",
-    //     type: 'POST',
-    //     dataType: 'json',
-    //     data: formData
-    // }).done(function (msg) {
-    //     if(msg.status === "error") {
-    //         $("#form_id :input").attr("disabled", false);
-    //         toastr.error(msg.message);
-    //         if(msg.message.startsWith("Password")) {
-    //             validator.showErrors({
-    //                 "password": msg.message,
-    //                 "confirmPassword": msg.message
-    //             });
-    //         }
-    //         if(msg.message.startsWith("Username")) {
-    //             validator.showErrors({"username": msg.message});
-    //         }
-    //     } else {
-    //         $(this).trigger("reset");
-    //         toastr.success("You have registered succesfully for devknox, you will be redirected on how to use Devknox");
-    //         window.setTimeout(function () {window.location.href = "/documentation"},5000);
-    //     }
-    // }).fail(function() {
-    //     toastr.error("Something went wrong");
-    //     $("#form_id :input").attr("disabled", false);
-    // });
-    alert("hello");
+    $.ajax({
+        url: "",
+        type: 'POST',
+        dataType: 'json',
+        data: formData
+    }).done(function (msg) {
+        if(msg.status === "error") {
+            $("#signup-form :input").attr("disabled", false);
+            toastr.error(msg.message);
+            if(msg.message.startsWith("Password")) {
+                validator.showErrors({
+                    "password": msg.message,
+                    "confirmPassword": msg.message
+                });
+            }
+            if(msg.message.startsWith("Username")) {
+                validator.showErrors({"username": msg.message});
+            }
+        } else {
+            $(this).trigger("reset");
+            alert("You have registered succesfully for devknox, you will be redirected on how to use Devknox");
+            window.setTimeout(function () {window.location.href = "/documentation"},5000);
+        }
+    }).fail(function() {
+        alert("Something went wrong");
+        $("signup-form :input").attr("disabled", false);
+    });
   }
+  return false;
 });
 }
