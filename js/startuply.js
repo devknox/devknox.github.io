@@ -1,13 +1,24 @@
+var isPaid=false
+
 $( document ).ready(function() {
     faqControl();
     docControl();
     formValidate();
 
 
-  $('.pricing-start-button').click(function(){
+  $('.pricing-free-button').click(function(){
+    isPaid = false
     $('.devknox-pricing-lite').hide();
     $('.devknox-pricing').hide();
     $('.submission-form').show();
+  });
+
+  $('.pricing-paid-button').click(function(){
+    isPaid = true
+    $('.devknox-pricing-lite').hide();
+    $('.devknox-pricing').hide();
+    $('.submission-form').show();
+
   });
   $('.close-button').click(function(){
     $('.devknox-pricing-lite').show();
@@ -123,6 +134,7 @@ formValidate = function(){
 .on("submit", function() {
   event.preventDefault();
   var formData = $(this).serialize();
+  formData.isPaid = isPaid;
   $("#signup-form :input").attr("disabled", true);
   var validator = $( this ).validate();
   validator.resetForm();
