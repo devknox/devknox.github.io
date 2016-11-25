@@ -144,7 +144,7 @@ formValidate = function(){
   validator.resetForm();
   if ($(this).valid()){
     $.ajax({
-        url: "",
+        url: "https://hawkins.appknox.com/api/devknox_register/",
         type: 'POST',
         dataType: 'json',
         data: formData
@@ -163,11 +163,12 @@ formValidate = function(){
             }
         } else {
             $(this).trigger("reset");
-            alert("You have registered succesfully for devknox, you will be redirected on how to use Devknox");
-            window.setTimeout(function () {window.location.href = "/documentation"},5000);
+            $('.submission-form').hide();
+            $('.om-section').show ();
+
         }
     }).fail(function() {
-        alert("Something went wrong");
+        toastr.error("Something went wrong");
         $("signup-form :input").attr("disabled", false);
     });
   }
