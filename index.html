@@ -115,19 +115,25 @@ keywords: devknox, android app security, security plugin, android studio securit
       <!-- Wrapper for slides -->
 
       <div class="carousel-inner testimonial-section" role="listbox">
-        <div class="item active">
+        {% for testimonial in site.data.testimonials %}
+        <div class="item {{testimonial.class}}">
           <div class="feedback-box">
+
             <div class="row">
-              <div class="col-lg-3 align-center">
-                <div class="testimonial-sign">Srihari Yachamaneni</div>
-                <img src="/img/gallery/dev-19.png" class="img-responsive" alt="Devknox android application security tool">
+
+              <div class="col-lg-4 align-center">
+                <div class="testimonial-sign">{{testimonial.name}}</div>
+                <img src="{{testimonial.src}}" class="img-responsive" alt="Devknox android application security tool">
               </div>
-              <div class="col-lg-9">
-                <div class="testimonial-feedback">"Installation was easy. Scan report showed me some left over logs and PRNGs. Pretty handy tool. I will keep using it"</div>
+              <div class="col-lg-8">
+                <div class="testimonial-feedback">{{testimonial.desc}}</div>
               </div>
+
             </div>
+
           </div>
         </div>
+          {% endfor %}
       </div>
 
       <!-- Controls -->
