@@ -65,15 +65,10 @@ faqControl = function(){
     icon.toggleClass("fa-caret-right fa-caret-down");
 
   });
-  $('.faq-slide-down').click(function(){
-      $('.faq-show-document').slideDown();
-      $('.faq-slide-down').hide();
-      $('.faq-slide-up').show();
-    });
-  $('.faq-slide-up').click(function(){
-    $('.faq-show-document').slideUp();
-    $('.faq-slide-up').hide();
-    $('.faq-slide-down').show();
+  $('.doc-header, .faq-slider-section').click(function(){
+    $('.faq-show-document').slideToggle();
+    $('.faq-slide-down').toggle();
+    $('.faq-slide-up').toggle();
   });
 }
 
