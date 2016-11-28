@@ -25,7 +25,7 @@ $nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
 @for $i from 1 through length($nav-colors)
   .navbar-nav li:nth-child(#{length($nav-colors)}n+#{$i})
     a
-      color: lighten(nth($nav-colors, $i), 20%)!important
+      color: nth($nav-colors, $i)!important
     a:hover
       color: #51f8d1!important
 
