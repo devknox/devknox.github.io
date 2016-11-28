@@ -5,7 +5,6 @@ $( document ).ready(function() {
     docControl();
     formValidate();
 
-
   $('.pricing-free-button').click(function(){
     isPaid = false
     $('.devknox-pricing-lite').hide();
@@ -175,16 +174,3 @@ formValidate = function(){
   return false;
 });
 }
-
-$('#sidebar').affix({
-  offset: {
-    top: 100
-  }
-});
-
-var $body = $(document.body);
-var navHeight = $('.navigation-navbar').outerHeight(true) + 10;
-$body.scrollspy({
-  target: '#leftCol',
-  offset: navHeight
-});
