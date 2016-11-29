@@ -250,10 +250,21 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
   padding-top: 30px
 
 .client-list
-  padding-bottom: 30px
+  padding-bottom: 80px
 
 .client-img-section
   margin-top: 30px
+
+.client-feedback
+  background-color: #fff
+
+.client-section
+  padding-bottom: 30px
+
+.client-logo-container
+  width: 20%
+  float: left
+  height: 100px
 
 .footer-heading
   color: #51f8d1
@@ -674,6 +685,12 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
   .pricing-signup
     width: 300px
     margin: 20px auto
+  .client-logo-container
+    width: 30%
+  .client-section
+    margin-left: 5%
+  .client-logo-container:last-child
+    margin-left: 200px
 
 @media only screen and (max-width: 990px)
   .button-container
@@ -777,3 +794,9 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
   .contact-form-control
     width: 250px!important
     margin: 0 auto
+  .client-logo-container
+    width: 50%
+
+  @media screen and (max-width: 374px) and (min-width: 320px)
+    .client-logo-container
+      width: 100%
