@@ -1,0 +1,36 @@
+left_faq:
+   - question: What is Devknox and how does it work?
+     answer: Devknox is a security plugin for the Android Studio IDE and Intellij IDEA that detects and corrects security issues while coding, real time. Simply install the plugin and let Devknox detect, suggest and remediate all your security threats while you code and build your app.
+   - question: Does Devknox provide total security to any app I build?
+     answer: Devknox currently is only built for the Android Studio IDE. Devknox can be compared to a static code analyzer and ensures that your app at least passes basic security testing.
+   - question : Is Devknox compatible on both the Android and iOS development platforms/environment?
+     answer : I’m sure you are aware of the major security issues that arise on the app's put on the PlayStore as opposed to the AppStore. Devknox is built primarily for the Android Studio IDE Intellij IDEA with the objective to make the PlayStore as safe as the AppStore, or if not safer
+   - question : Is my source code secure when I use Devknox?
+     answer : Your source code is totally secured when you use the Devknox IDE plugin. All security analysis are performed locally on your machine itself and nothing get’s sent to our servers except in the case of verifying your login information.
+              In the case of your subscription to a higher Devknox plan, your APK/Binary is uploaded to the Devknox dashboard leaving your source code absolutely untouched.
+              Moreover, you need not worry about the security integrity of your code being compromised by stealing/tracking. We are a professional company working in the security domain and we make our living making sure that something like that never happens.
+   - question : How is Devknox different from using other static code analyzers?
+     answer : Most static code analyzers do pretty much the same thing and that is to ensure basic security of an app by analyzing code. However, unlike Devknox, most static code analyzers usually scan the ‘entire app’ during development or after production. Devknox gives you the power to detect threats instantly while coding and saves those precious much needed time. No other static code analyzer currently provides this feature.
+   - question: What is the optimum system requirements I need, to use Devknox? Will I lag while the plugin is running at the background?
+     answer: It is suggested to have recommended system specifications as mentioned by Android Studio/Intellij IDEA for smooth running of the IDE along with the Devknox plugin. As long as you have the recommended system requirements Devknox plugin will run fine similar to other code inspections and intentions that you use in the IDE.
+   - question: Is Devknox a free to use plugin?
+     answer: Devknox currently offers two plans which are; a) Devknox Lite b) Devknox
+             Devknox Lite - Gives you FREE lifetime access to a the devknox plugin and a free month access to detailed Static Application Security Testing (SAST) and Dynamic Application Security Testing (DAST) on the Devknox dashboard.
+             Devknox - Includes the Devknox plugin, Detailed SAST & DAST. Starts at $25/month for upto 5 users.
+right_faq :
+    - question: How many developers from a single company can use Devknox?
+      answer : There is no limit to the number of developers from any company using Devknox. You can check out our plans in detail using this LINK
+    - question : What is the data privacy policy at Devknox? Is my data safe if I use this plugin?
+      answer : All the security analysis is performed locally on your machine and nothing get’s sent to our servers except for verification of your login information. We do not store any of your data and you can be rest assured that it is completely safe within your security parameters.
+    - question : How efficient is the Devknox threat detection system? Will it be a bother to me, showing me unnecessary edit suggestions, when I code?
+      answer :  The Devknox plugin is very efficient in detecting security vulnerabilities as well as providing suggestions for quickfix. Devknox is updated with latest security standards when it comes to detecting security threats.
+                If you are not comfortable with the suggestions or annotations shown by Devknox you can disable or suppress those inspections from the report window. You can even disable inspections from the Settings menu. Refer to documentation(Usage Documentation) for details.
+    - question : I am using Devknox Lite, do I need to upgrade to Devknox?
+      answer :  It's not mandatory. With Devknox lite you get to use the devknox plugin for IDE(Android Studio and Intellij IDEA) along with 1 month free subscription to use Devknox dashboard features like SAST and DAST. After trying out Devknox lite its your wish to extend the subscription. Without subscription users will only be able to use the devknox plugin features. For plugin features checkout features in documentation.
+    - question : Who should use Devknox Lite and who should use Devknox?
+      answer : Devknox lite primarily focuses on IDE plugin to scan security vulnerabilities in code while development. There are currently about 25 types of security vulnerabilities which are being scanned in your code with the help of plugin.
+               Devknox provides a feature to upload your app as apk to our cloud hosted dashboard where your apk/binary will be scanned for extensive security vulnerabilities with SAST and DAST. Devknox plan provides way more number of security vulnerability checks than provided in the plugin.
+    - question : How can features in Devknox help my team?
+      answer : Devknox plugin for IDE detects security vulnerabilities and also provides quick fix solutions in the IDE itself. It also provides brief as well as summary of the issues that are detected so the developers are aware of the security vulnerabilities. Developers don't have to go through lots of documentation to fix security issues they can have with their code, they can trust on Devknox to find the possible security vulnerabilities and fix them with just a click.
+    - question : I have Signed Up for Devknox Lite. Do I have to Sign Up again to upgrade to Devknox?
+      answer : No you don't have to sign up again to upgrade to Devknox plan. With Devknox Lite you get 1 month free subscription for Devknox. After that you can login to Devknox dashboard(https://secure.devknox.io) and checkout the Pricing tab in the left column where you can pay to upgrade your plan.

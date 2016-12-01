@@ -1,12 +1,44 @@
-<footer id="footer" class="footer light-text">
-  <div class="col-md-12 align-center marginTop">
-    <img width="130" height="40" class="footer-logo" src="/img/logo.png" alt="Devknox Beta Logo" />
+<footer>
+  <div class="col-lg-6 col-md-6 col-sm-6 form-section">
+    <div class="footer-heading"> Get in Touch </div>
+      <form class="form lead-form form-light dark-text" id="form_id" method="post" action="" style="padding: 45px 20px 15px;">
+        <div class="form-group">
+          <div class="col-lg-2 col-md-2 col-sm-3 input-name"> Name </div>
+          <div class="col-lg-10 col-md-10 col-sm-9 ">
+            <input type="text" name="name" id="name" class="form-control required contact-form-control" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-2 col-md-2 col-sm-3 input-name"> Email</div>
+          <div class="col-lg-10 col-md-10 col-sm-9 ">
+            <input type="email" name="email" id="emailid" class="form-control required email contact-form-control" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-2 col-md-2 col-sm-3 input-name"> Message </div>
+          <div class="col-lg-10 col-md-10 col-sm-9 ">
+            <input type="text" name="message" id="message" class="form-control required contact-form-control" />
+          </div>
+        </div>
+      <div class="form-group">
+        <div class="col-lg-10 col-md-10 col-sm-10 input-button">
+          <input type="submit" value="Submit" class="btn btn-lg submit-button button-all" />
+        </div>
+      </div>
+    </form>
   </div>
-  <div class="copyright">Copyright © 2016. Devknox is a product from <a class="appknox-hyperlink" href="https://www.appknox.com" target="_blank">Appknox</a>. You must agree to our <a class="appknox-hyperlink" href="/privacy/">Privacy Policy</a> and <a class="appknox-hyperlink" href="/eula/">EULA</a>.</div>
-  <div></div>
+  <div class="col-lg-6 col-md-6 col-sm-6 contact-section">
+    <div class="address-section">
+      <div class="company-name"> XYSEC Labs </div>
+      <ul class="devknox-address">
+        <li>Singapore HQ </li>
+        <li>79 Ayer Rajah Crescent </li>
+        <li> #04-09 Singapore 139951 </li>
+        <li>Ph: +65 3158  5898 </li>
+      </div>
+  </div>
 </footer>
 
-<div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
 
 <!--[if lt IE 9]>
 <script type="text/javascript" src="/js/jquery-1.11.3.min.js?ver=1"></script>
@@ -22,8 +54,10 @@
 <script type="text/javascript" src="/js/jquery.countdown.js"></script>
 <script type="text/javascript" src="/js/jquery.waypoints.min.js"></script>
 <script type="text/javascript" src="/js/toastr.min.js"></script>
-<script type="text/javascript" src="/js/startuply.js?v2.0"></script>
+<script type="text/javascript" src="/js/main.js"></script>
 <script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -45,3 +79,18 @@
     })(document,"script","hs-analytics",300000);
   </script>
 <!-- End of Async HubSpot Analytics Code -->
+<script type="text/javascript">
+    $('#sidebar').affix({
+          offset: {
+            top: 200
+          }
+    });
+
+    var $body   = $(document.body);
+    var navHeight = $('.navbar').outerHeight(true) + 10;
+
+    $body.scrollspy({
+    	target: '#leftCol',
+    	offset: navHeight
+    });
+  </script>

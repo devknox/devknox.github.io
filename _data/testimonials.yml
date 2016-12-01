@@ -1,0 +1,16 @@
+- name: Gaurav Gladstone
+  src: /img/gallery/logo_1.png
+  desc: I was never aware about security issues while building apps before. This plug-in is great and very easy to use
+  class: active
+
+- name: Kunal Singh
+  src: /img/gallery/logo_2.png
+  desc: I have started using Devknox and it is great as of now. Thank you for the wonderful plugin and the support
+
+- name: Alpaslan Bak
+  imgclass: img_none
+  desc: I’m using Devknox right now and I have no problems with it so far. In my new project it has found problems in layout files and log entries in classes
+
+- name: Srihari Yachamaneni
+  src: /img/gallery/logo_4.png
+  desc: Installation was easy. Scan report showed me some leftover logs and PRNGs. Pretty handy tool. I will keep using it

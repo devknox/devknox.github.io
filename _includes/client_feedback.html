@@ -1,0 +1,12 @@
+<div class="client-section text-center">
+  <div class="client-heading">Trusted by Developers around the World!</div>
+  <div>
+    <div class="col-lg-12 client-img-section">
+      {% for client in site.data.clients %}
+      <div class="client-logo-container align-center">
+          <img src="{{client.src}}" alt="Devknox android application security tool">
+      </div>
+        {% endfor %}
+    </div>
+  </div>
+</div>

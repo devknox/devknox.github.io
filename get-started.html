@@ -1,0 +1,132 @@
+---
+layout: default
+title: Devknox - Security Plugin for Android Studio
+excerpt: Devknox is a security plugin for Android Studio that enables app developers to detect and resolve security issues as easy as spell check.
+keywords: devknox, android app security, security plugin, android studio security plugin, android studio plugin, appknox for developers, security plugin for app developers, security tools for developers, mobile app security tools
+---
+
+<div class="jumbotron gs-main-section">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-lg-offset-1 col-md-offset-1">
+      <div class="gs-main-heading"> Keep the lengthy security manuals aside.</div>
+      <div class="gs-main-sub-heading"> Choose a Plan, Register &amp; finally SignUp to start using Devknox.</div>
+    </div>
+    <div class="col-lg-7 col-md-7 align-center">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 devknox-pricing-lite">
+        <div class="pricing-heading">Devknox Lite</div>
+        <img src="/img/gallery/dev-23.png" class="img-responsive" alt="Devknox android application security tool">
+        <div class="pricing-desc">Single User <br/> Only IDE Plugin</div>
+        <button type="button" class="btn pricing-free-button button-all">START</button>
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 devknox-pricing">
+        <div class="pricing-heading">Devknox </div>
+        <img src="/img/gallery/dev-24.png" class="img-responsive" alt="Devknox android application security tool">
+        <div class="pricing-desc">upto 5 Users Includes SAST, DAST &amp; IDE Plugin</div>
+        <button type="button" class="btn pricing-paid-button button-all">START</button>
+      </div>
+      <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 col-lg-offset-3 col-md-offset-3 submission-form">
+        <div class="pricing-signup">
+          <div><button type="button" class="btn close-button">CANCEL</button></div>
+          <div class="pricing-type-lite"> Devknox Lite </div>
+          <div class="pricing-type-devknox"> Devknox</div>
+          <div class="gs-form-heading"> SignUp
+           </div>
+          <form id="signup-form" method="post">
+            <div class="form-group">
+              <div class="col-lg-4 input-name"> Username </div>
+              <div class="col-lg-8">
+                <input type="text" name="username" id="username" class="form-control signup-form-control" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-4 input-name"> Email </div>
+              <div class="col-lg-8">
+                <input type="email" name="email" id="email" class="form-control email signup-form-control" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-4 input-name"> Password </div>
+              <div class="col-lg-8">
+                <input type="password" name="password" class="form-control signup-form-control" data-minLength="5" data-error="some error" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-lg-4 input-name"> Confirm Password </div>
+              <div class="col-lg-8">
+                <input type="password" name="confirmPassword" class="form-control signup-form-control" data-match="#confirmPassword" data-minLength="5" data-match-error="some error 2" />
+                </div>
+              </div>
+						<div class="form-group">
+							<div class="row">
+								<div class="sign-up-container">
+									<input type="submit" name="login-submit" id="login-submit" class="form-control btn btn-signup button-all" value="Done">
+								</div>
+							</div>
+					  </div>
+    		  </form>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 col-lg-offset-3 col-md-offset-3 om-section">
+        <div class="pricing-signup">
+          <div><button type="button" class="btn close-button">CANCEL</button></div>
+          <div class="onboard-message">Successfully SignedUp!</div>
+          <div class="om-desc"> Awesome. You are now ready to use Devknox.</div>
+          <div>
+            <ul class="om-list">
+              <li>-Login to your Android IDE account</li>
+              <li>-Download the Devknox Plugin and Start!</li>
+            </ul>
+          </div>
+          <div class="om-help-text"> For more help or Instructions, <br>
+            check the <a href="/documentation" data-proofer-ignore> Documentation </a> or <a href="/get-started/#faqs" data-proofer-ignore> FAQs </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="faq-section" id="faqs">
+  <div class="doc-header col-lg-offset-1">FAQs</div>
+  <div class="col-lg-offset-1 faq-slider-section">
+    <div class="faq-slide-down faq-slider-button"> > </div>
+    <div class="faq-slide-up faq-slider-button rotate-text"> > </div>
+  </div>
+  <div class="faq-show-document">
+    <section class="faq-list">
+      <div class="container ak-container" id="faq">
+        <ul>
+          <li class="col-md-6 gills-19">
+            {% for faq in site.data.faqs.left_faq %}
+            <div class="faq-region">
+              <div class="faq-quest-area">
+                  <i class="fa fa-caret-right faqArrow" aria-hidden="true"></i>
+                  <span class="faq-quest">{{faq.question}}</span>
+              </div>
+              <div class="faq-answer">
+                {{faq.answer}}
+              </div>
+            </div>
+            {% endfor %}
+          </li>
+          <li class="col-md-6 gills-19">
+            {% for faq in site.data.faqs.right_faq %}
+            <div class="faq-region">
+              <div class="faq-quest-area">
+                  <i class="fa fa-caret-right faqArrow" aria-hidden="true"></i>
+                  <span class="faq-quest">{{faq.question}}</span>
+              </div>
+              <div class="faq-answer">
+                {{faq.answer}}
+              </div>
+            </div>
+            {% endfor %}
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="client-list">
+  {% include client_feedback.html %}
+</div>

@@ -1,0 +1,867 @@
+---
+---
+
+$nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
+
+
+/* Start of Header */
+
+.navbar-brand
+  img
+    margin-left: 50px
+
+.dk-navbar
+  background-color: #0a1018!important
+
+.social-icons
+  float: right
+  margin-top: 13px
+  margin-left: 150px
+  img
+    padding-left: 10px
+    padding-right: 10px
+
+
+@for $i from 1 through length($nav-colors)
+  .navbar-nav li:nth-child(#{length($nav-colors)}n+#{$i})
+    a
+      color: nth($nav-colors, $i)!important
+      font-family: 'Raleway', sans-serif
+    a:hover
+      color: #51f8d1!important
+
+/* End of Header */
+
+.devknox-feat
+  background-color: black
+  font-family: 'Raleway', sans-serif
+  margin-top: -150px
+
+.devknox-feat3
+  background-color: black
+
+.align-center img
+  display: block
+  margin-left: auto
+  margin-right: auto
+
+.gif-container img
+  padding: 0px!important
+  border: 18px solid #080808
+  border-radius: 10px
+  margin-top: 90px
+
+.vul-list
+  position: absolute
+  left: 57%
+  margin-top: 40px
+  color: #e1dfea
+  font-size: 14px
+
+.vul-table td
+  padding: 2px
+
+.vul-name
+  font-size: 24px
+  margin-bottom: 10px
+
+.carousel-button
+  background-image: none!important
+
+.feedback-box
+  width: 70%
+  background-color: #18588e
+  padding: 40px
+  margin: 0 auto
+  text-align: center
+  height: 250px
+
+.client-logo
+  width: 100px
+  position: absolute
+  margin: auto
+  top: 70px
+  left: 0
+  right: 0
+  bottom: 0
+
+.img_none
+  display: none!important
+
+.testimonial-section img
+  margin-top: 10px
+
+.row
+  margin-right: 0px!important
+  margin-left: 0px!important
+
+.non-gradient-background
+  background: #166f98
+
+$feat-colors: #1f2367, #171c4f, #06233c, #132d45
+
+@for $i from 1 through length($feat-colors)
+  .devknox-feat2
+    .feat-sec:nth-child(#{length($feat-colors)}n+#{$i})
+      background: nth($feat-colors, $i)
+      height: 550px
+
+.report-section
+  background: #282865
+  height: 470px
+
+.vuln-section
+  background: #292e6f
+  height: 470px
+
+.vuln-section img
+  margin-top: 50px
+
+.feat-section
+  background: #282865
+  height: 350px
+
+.feat-section img
+  margin-top: 80px
+
+.feedback-section
+  padding-bottom: 50px
+
+.main-section
+  background-color: #0e1624!important
+  margin-bottom: 150px!important
+  padding-right: 0px!important
+
+.gs-main-section
+  background-color: #0e1624!important
+  margin-bottom: 0px!important
+  padding-right: 0px!important
+
+
+.main-heading
+  color: #51f8d1
+  font-family: 'Raleway', sans-serif
+  font-size: 48px
+  margin-top: 80px
+
+.main-sub-heading
+  color: #e9fb97
+  font-family: 'Raleway', sans-serif
+  font-size: 20px
+  margin-top: 30px
+
+.gs-main-heading
+  color: #8d8fde
+  font-family: 'Raleway', sans-serif
+  font-size: 36px
+  margin-top: 70px
+
+.gs-main-sub-heading
+  color: #c6cad7
+  font-family: 'Open Sans', sans-serif
+  font-size: 16px
+  margin-top: 30px
+
+.main-desc
+  color: #c6cad7
+  font-family: 'Raleway', sans-serif
+  font-size: 16px
+  margin-top: 30px
+
+.button-all
+  background: none!important
+  background-color: none!important
+  border: 1px solid rgba(255, 255, 255, 0.3)!important
+  color: #51f8d1!important
+  font-family: 'Raleway', sans-serif!important
+  padding: 6px 30px!important
+
+.button-all:hover
+  border: 1px solid rgba(255, 255, 255, 0.8)!important
+  color: #51f8d1!important
+
+.start-now-button
+  width: 170px
+  font-family: 'Raleway', sans-serif
+  font-size: 18px!important
+  margin-top: 30px
+
+.feature-heading
+  color: #51f8d1
+  font-family: 'Raleway', sans-serif
+  font-size: 36px
+  margin-top: 20px
+
+.security-container img
+  position: absolute
+  margin: auto
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+.security-feature
+  color: #e1dfea
+  font-family: 'Open Sans', sans-serif
+  font-size: 20px
+  margin-top: 160px
+  margin-bottom: 30px
+
+.feature-list1
+  color: #8d8fde
+  font-family: 'Raleway', sans-serif
+  padding-top: 50px
+  font-size: 24px
+  margin-left: 20%
+
+.feature-list2
+  color: #00cdbf
+  font-family: 'Raleway', sans-serif
+  font-size: 36px
+  margin-left: 20%
+
+.devknox-feat2 img
+  margin-top: 50px
+
+.report-list
+  margin-top: 70px
+  li
+    list-style-type: none
+    color: #e1dfea
+    font-family: 'Open Sans', sans-serif
+    font-size: 16px
+    margin-left: 13%
+    margin-top: 30px
+
+.testimonial-sign
+  color: #e6e6e6
+  font-family: 'Raleway', sans-serif
+  font-size: 24px
+  margin-top: 33px
+
+.testimonial-feedback
+  color: #e6e6e6
+  font-family: 'Raleway', sans-serif
+  font-size: 24px
+  margin-top: 33px
+
+.feedback-text
+  color: #51f8d1
+  font-family: 'Raleway', sans-serif
+  font-size: 36px
+  padding: 20px
+
+.client-heading
+  color: #176d97
+  font-family: 'Raleway', sans-serif
+  font-size: 36px
+  padding-top: 30px
+
+.client-list
+  padding-bottom: 200px
+  background-color: #e6e6e6
+
+.client-img-section
+  margin-top: 30px
+  margin-bottom: 30px
+
+.client-feedback
+  background-color: #e6e6e6
+
+.client-section
+  padding-bottom: 200px
+  background-color: #e6e6e6
+
+.client-logo-container
+  width: 20%
+  float: left
+  height: 100px
+
+.footer-heading
+  color: #51f8d1
+  font-family: 'Raleway', sans-serif
+  font-size: 24px
+  margin-top: 30px
+  padding-left: 80px
+
+.form-section
+  .form-group
+    padding-left: 80px
+
+.contact-form-control
+  margin-bottom: 15px
+  width: 80%!important
+  background-color: #0a0f19!important
+  border: 1px solid #e1dfea!important
+
+.submit-button
+  width: 150px
+  padding-left: 80px
+  float: right
+
+
+.signup-form-control
+  margin-bottom: 15px
+  background-color: #1a222f!important
+  border: none!important
+  color: #fff!important
+
+.input-name
+  color: #8d8fde
+  font-family: 'Open Sans', sans-serif
+  font-size: 14px
+
+.form-section
+  background-color: #0a0f19
+  padding-bottom: 20px
+
+.contact-section
+  background-color: #0e1624
+  padding-top: 61px
+  padding-bottom: 103px
+
+.address-section
+  margin-left: 100px
+  border-left: 3px solid #51f8d1
+
+.company-name
+  color: #e6e6e6
+  font-family: 'Raleway', sans-serif
+  font-size: 36px
+  margin-left: 20px
+
+.devknox-address li
+  list-style-type: none
+  color: #e6e6e6
+  font-family: 'Raleway', sans-serif
+  font-size: 16px
+  margin-left: -20px
+
+.trail-section
+  width: 350px
+  margin: 0 auto
+
+.get-started-button
+  width: 350px
+  margin-top: 30px
+  background-color: #ffffff
+  color: #009a8f
+
+.get-started-button:hover
+  background-color: #f2f2f2
+  color: #009a8f!important
+
+.trail-section-text
+  color: #585aa8
+  font-family: 'Raleway', sans-serif
+  font-size: 16px
+  text-align: center
+  margin-top: 10px
+  padding-bottom: 20px
+
+.devknox-pricing-lite
+  background-color: #021022
+  padding: 40px
+  margin: 0 auto
+  text-align: center
+  margin-left: 50px
+  margin-right: 20px
+  margin-top: 50px
+  height: 400px
+  border-bottom: 1px solid #00cdbf
+  img
+    padding-top: 30px
+
+.devknox-pricing
+  background-color: #021022
+  padding: 40px
+  margin: 0 auto
+  text-align: center
+  margin-top: 50px
+  height: 400px
+  border-bottom: 1px solid #00cdbf
+  img
+    padding-top: 30px
+
+.pricing-heading
+  color: #00cdbf
+  font-family: 'Raleway', sans-serif
+  font-size: 30px
+
+.pricing-desc
+  color: #c6cad7
+  font-family: 'Open Sans', sans-serif
+  font-size: 16px
+  padding-top: 20px
+  padding-bottom: 20px
+
+.pricing-start-button
+  background-color: #021022!important
+  color: #00cdbf!important
+
+.documentation-section
+  background-color: #171c4f!important
+  padding-top: 70px
+  padding-bottom: 70px
+  color: #00cdbf
+
+.affix
+  top: 60px
+
+.affix-top
+  margin-top: 10px!important
+
+.version-text
+  color: #c6cad7
+
+.faq-section
+  background-color: #171c4f
+
+.doc-header
+  padding-bottom: 10px
+
+.faq-slider-button
+  padding-left: 10px!important
+
+.faq-section
+  .col-lg-offset-1
+    padding-bottom: 5px
+
+.doc-show-document
+  display: none
+
+.doc-slide-up
+  display: none
+
+.faq-show-document
+  display: none
+
+.faq-slide-up
+  display: none
+
+.submission-form
+  display: none
+
+.om-section
+  display: none
+
+.sign-up-container
+  width: 150px
+  margin: 0 auto
+  padding-left: 15px
+
+.btn-signup
+  width: 150px
+
+.close-button
+  text-decoration: none!important
+  float: right
+  display: block
+  font-size: 0.7em!important
+
+.onboard-message
+  color: #b9ff74
+  text-align: center
+  font-size: 36px
+  font-family: 'Raleway', sans-serif
+  margin-top: 40px
+
+.om-desc
+  font-size: 15px
+  color: #51f8d1
+  font-family: 'Raleway', sans-serif
+  text-align: center
+  margin-top: 30px
+
+.om-list
+  margin-top: 5px
+  padding-left: 15px
+  li
+    font-size: 15px
+    list-style-type: none
+    color: #e1dfea
+    font-family: 'Raleway', sans-serif
+
+.om-help-text
+  margin-top: 30px
+  font-size: 15px
+  color: #e1dfea
+  font-family: 'Raleway', sans-serif
+  padding-left: 20px
+  a
+    color: #8d8fde
+    text-decoration: underline
+
+.help-block
+  color: #ff1b10!important
+  font-size: 80%!important
+  margin-top: -15px!important
+
+.pricing-signup
+  margin-top: 30px
+  background-color: #0e1624!important
+  border: 1px solid #51f8d1!important
+  border-radius: 5px
+  padding: 10px
+
+.pricing-type-lite
+  margin-left: 15px
+  margin-top: 10px
+  font-size: 15px
+  color: #51f8d1
+  font-family: 'Raleway', sans-serif
+  display: none
+
+.pricing-type-devknox
+  margin-top: 10px
+  margin-left: 15px
+  font-size: 15px
+  color: #51f8d1
+  font-family: 'Raleway', sans-serif
+  display: none
+
+.faq-section
+  font-size: 16px
+
+.gs-form-heading
+  font-size: 18px
+  color: #51f8d1
+  font-family: 'Raleway', sans-serif
+  text-align: center
+  margin-top: 30px
+  padding-left: 30px
+
+.doc-header
+  padding: 20px 0px 20px 30px
+  font-size: 36px
+  color: #51f8d1
+  font-family: 'Raleway', sans-serif
+
+.faq-section
+  .slider-button
+    margin-left: 30px
+    line-height: 18px
+    border-radius: 50%
+    color: #51f8d1
+    width: 36px
+    height: 36px
+    padding: 8px
+    text-align: center
+    font-family: 'Raleway', sans-serif
+    font-size: 36px
+    margin-top: -10px
+    background-color: #171c4f
+    cursor: pointer
+
+  .faq-slider-button
+    @extend .slider-button
+    background-color: #0a0f19
+
+.rotate-text
+  -webkit-transform: rotate(90deg)
+  -moz-transform: rotate(90deg)
+  -ms-transform: rotate(90deg)
+  -o-transform: rotate(90deg)
+  transform: rotate(90deg)
+  padding-top: 5px!important
+
+.scrollspy-list
+  ul
+    li
+      width: 200px
+      a
+        color: #171c4f
+      a:hover
+        background-color: #585aa8!important
+        color: #fff
+    li.active
+      background-color: #8D8FDE!important
+      a
+        color: #fff!important
+/* Start of FAQ section */
+
+.faq-list
+  background-color: #8d8fde
+  li
+    list-style-type: none
+    margin-top: 20px
+
+.faq-region
+  margin-bottom: 20px
+
+.faqArrow
+  font-size: 15px
+  width: 20px
+
+.faq-quest
+  color: #0e1624
+  cursor: pointer
+  transition: all .4s ease-out
+
+.faq-quest:hover
+  color: #333
+
+.faq-answer
+  display: none
+  padding-top: 10px
+  padding-bottom: 20px
+  padding-left: 25px
+  text-align: justify
+  color: #0a0f19
+
+.image-pos
+  width: 100%
+  margin-left: 0!important
+  margin-top: 20px
+
+.devknox-image
+  width: 70%
+  margin-top: 5%
+  margin-bottom: 5%
+
+/* Start of Media Queries */
+@media only screen and (max-width: 1200px)
+  .main-heading, .main-sub-heading, .main-desc, .start-now-button
+    margin-top: 10px
+  .main-section
+    .col-md-offset-1
+      margin-top: 20px
+  .gs-form-heading
+    margin-bottom: 20px
+  .client-logo
+    top: 90px
+  .testimonial-section img
+    margin-top: 10px
+  .get-started-button
+    margin-top: 50px
+  .gif-container img
+    margin-top: 30px
+
+
+@media only screen and (max-width: 1024px)
+  .main-heading
+    font-size: 42px
+    margin-top: 5px
+  .main-sub-heading, .main-desc, .start-now-button
+    margin-top: 5px
+  .footer-heading
+    margin-top: 10px
+    padding-left: 20px
+  .form-section
+    .form-group
+      padding-left: 20px
+  .contact-section
+    padding-bottom: 83px
+  .contact-form-control
+    width: 100%!important
+  .submit-button
+    width: 100px
+  .gif-container img
+    margin-top: 30px
+@media screen and (max-width: 990px) and (min-width: 768px)
+  .main-heading
+    margin-top: 30px
+    font-size: 40px
+    text-align: center
+  .main-sub-heading, .main-desc
+    margin-top: 20px
+    text-align: center
+  .feature-heading
+    margin-top: 20px
+  .team-section
+    padding-right: 0px!important
+    height: 470px
+  .integration-section
+    padding-right: 0px!important
+    height: 470px
+  .dashboard-section
+    padding-right: 0px!important
+    height: 470px
+  .testing-section
+    padding-right: 0px!important
+    height: 470px
+  .devknox-feat2
+    .img-responsive
+      max-width: 90%
+  .feature-list1
+    padding-top: 20px
+  .report-list li
+    margin-left: 10px
+    margin-top: 10px
+  .vuln-section img
+    margin-top: 70px
+  .vul-list
+    margin-top: 60px
+    left: 58%
+    font-size: 12px
+  .vul-name
+    font-size: 20px
+    margin-bottom: 5px
+  .feat-section img
+    margin-top: 90px
+  .feedback-box
+    width: 75%
+    padding: 20px
+    height: 390px
+  .social-icons
+    margin-left: 10px
+  .navbar-brand
+    img
+      margin-top: -10px
+  .pricing-signup
+    width: 300px
+    margin: 20px auto
+  .client-logo-container
+    width: 30%
+  .client-section
+    margin-left: 5%
+  .client-logo-container:last-child
+    margin-left: 30%
+  .testimonial-feedback
+    margin-top: -185px
+  .testimonial-sign
+    margin-top: 150px
+  .carousel-button
+    top: 35px!important
+
+@media only screen and (max-width: 990px)
+  .button-container
+    width: 170px
+    margin: 20px auto 0px auto
+  .devknox-feat
+    margin-top: 0px
+  .gs-main-heading
+    text-align: center
+    margin-top: 30px
+  .gs-main-sub-heading
+    text-align: center
+  #leftCol
+    display: none!important
+  .devknox-image
+    width: 100%
+  .main-section
+    margin-bottom: 0px!important
+@media only screen and (max-width: 767px)
+  .main-sub-heading, .main-desc
+    text-align: center
+  .feedback-text
+    margin-top: 0px
+  .social-icons
+    padding-right: 45px
+    margin-top: -34px
+    margin-left: auto
+    margin-right: auto
+    img
+      padding-left: 0px
+  .navbar-brand
+    img
+      margin-left: 0px
+  .main-heading
+    margin-top: 30px
+    text-align: center
+  .gif-container
+    display: none
+  .security-container img
+    position: relative
+    top: 50px
+  .security-container
+    div:first-child
+      margin-left: 50px
+      div
+        margin-left: -30px
+  .security-feature
+    margin-top: 70px
+  .devknox-feat2
+    .img-responsive
+      max-width: 90%
+  .team-section
+    padding-right: 0px!important
+  .integration-section
+    padding-right: 0px!important
+  .dashboard-section
+    padding-right: 0px!important
+  .testing-section
+    padding-right: 0px!important
+  .vuln-section img
+    margin-top: 0px
+    padding-top: 50px
+    padding-left: 10px
+  .feat-section img
+    margin-top: 0px
+    padding-top: 50px
+    padding-left: 10px
+  .vul-list
+    left: 57%
+  .feat-section
+    height: 300px
+  .client-img-section img
+    margin-top: 10px
+  .devknox-pricing-lite
+    margin-left: 0px
+    margin-right: 0px
+  .gs-main-section
+    padding-left: 5px!important
+  .pricing-signup
+    width: 280px
+    margin: 20px auto
+  .footer-heading
+    text-align: center
+    margin-top: 0px
+    padding-top: 10px
+  .form-section
+    form
+      padding: 0px!important
+  .form-section
+    .form-group
+      width: 250px!important
+      margin: 20px auto
+      padding-left: 0px
+  .submit-button
+    float: none
+    width: 150px
+  .input-button
+    width: 150px
+    margin: 0 auto
+    padding-left: 5px!important
+  .address-section
+    width: 250px
+    margin: 0 auto
+  .contact-form-control
+    width: 250px!important
+    margin: 0 auto
+  .client-logo-container
+    width: 50%
+  .feedback-box
+    background-color: transparent
+    padding: 0px 3px 0px 3px
+    width: 100%
+    height: 400px
+  .testimonial-feedback
+    margin-top: -230px
+  .testimonial-sign
+    margin-top: 200px
+  .carousel-button
+    top: 15px!important
+  .client-list
+    padding-bottom: 300px
+
+
+  @media screen and (max-width: 374px) and (min-width: 320px)
+    .client-logo-container
+      width: 100%
+    .feedback-box
+      height: 450px
+    .testimonial-feedback
+      margin-top: -270px
+      font-size: 23px
+    .testimonial-sign
+      margin-top: 240px
+      font-size: 20px
+    .carousel-button
+      top: 40px!important
+    .trail-section
+      width: 300px
+    .get-started-button
+      width: 300px
+    .client-list
+      padding-bottom: 800px
