@@ -2,7 +2,8 @@ var isPaid=false
 
 $( document ).ready(function() {
     faqControl();
-    formValidate();
+    SignUpForm();
+    getInTouch();
 
   $('.pricing-free-button').click(function(){
     isPaid = false
@@ -71,7 +72,7 @@ faqControl = function(){
   });
 }
 
-formValidate = function(){
+SignUpForm = function(){
   $('#signup-form').bootstrapValidator({
     fields: {
       username: {
@@ -119,7 +120,6 @@ formValidate = function(){
   event.preventDefault();
   var formData = $(this).serialize();
   formData.isPaid = isPaid;
-  $("#signup-form :input").attr("disabled", true);
   var validator = $( this ).validate();
   validator.resetForm();
   if ($(this).valid()){
@@ -155,3 +155,57 @@ formValidate = function(){
   return false;
 });
 }
+
+getInTouch = function(){
+  $('#getin_touch').bootstrapValidator({
+    fields: {
+      name: {
+        validators: {
+          stringLength: {
+          min: 1,
+        },
+          notEmpty: {
+          message: 'Please enter your name'
+        }
+      }
+    },
+      email: {
+        validators: {
+          stringLength: {
+          min: 1,
+        },
+          notEmpty: {
+          message: 'Please enter your email id'
+        }
+      }
+    },
+      message: {
+        validators: {
+          stringLength: {
+          min: 1,
+        },
+          notEmpty: {
+          message: 'Please enter the message'
+        }
+      }
+    },
+   }
+ })
+
+ .on("submit", function() {
+   event.preventDefault();
+   var formData = $(this).serialize();
+   var validator = $( this ).validate();
+   validator.resetForm();
+   if ($(this).valid()){
+     $.ajax({
+
+     }).done(function (msg) {
+
+     }).fail(function() {
+
+     });
+   }
+   return false;
+ });
+ }
