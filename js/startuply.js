@@ -2,7 +2,6 @@ var isPaid=false
 
 $( document ).ready(function() {
     faqControl();
-    docControl();
     formValidate();
 
   $('.pricing-free-button').click(function(){
@@ -69,19 +68,6 @@ faqControl = function(){
     $('.faq-show-document').slideToggle();
     $('.faq-slide-down').toggle();
     $('.faq-slide-up').toggle();
-  });
-}
-
-docControl = function(){
-  $('.doc-slide-down').click(function(){
-      $('.doc-show-document').slideDown();
-      $('.doc-slide-down').hide();
-      $('.doc-slide-up').show();
-    });
-  $('.doc-slide-up').click(function(){
-    $('.doc-show-document').slideUp();
-    $('.doc-slide-up').hide();
-    $('.doc-slide-down').show();
   });
 }
 
