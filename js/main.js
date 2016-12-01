@@ -199,7 +199,10 @@ getInTouch = function(){
    validator.resetForm();
    if ($(this).valid()){
      $.ajax({
-
+       url: "https://hawkins.appknox.com/api/",
+       type: 'POST',
+       dataType: 'json',
+       data: formData
      }).done(function (msg) {
 
      }).fail(function() {
