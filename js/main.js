@@ -1,8 +1,8 @@
 var isPaid=false
 
-$( document ).ready(function() {
+$(document).ready(function() {
     faqControl();
-    formValidate();
+
 
   $('.pricing-free-button').click(function(){
     isPaid = false
@@ -26,6 +26,7 @@ $( document ).ready(function() {
     $('.devknox-pricing-lite').show();
     $('.devknox-pricing').show();
     $('.submission-form').hide();
+    $('.om-section').hide();
   });
   $('#login-form-link').click(function(e) {
   $("#login-form").delay(100).fadeIn(100);
@@ -42,6 +43,56 @@ $('#register-form-link').click(function(e) {
   e.preventDefault();
 });
 
+$('#signup-form').validate({
+  submitHandler: function (form) {
+    $.ajax({
+      url: "https://hawkins.appknox.com/api/devknox_register/",
+      type: 'POST',
+      dataType: 'json',
+      data: $(form).serialize()
+      }).done(function (msg) {
+          if(msg.status === "error") {
+              $("#signup-form :input").attr("disabled", false);
+              toastr.error(msg.message);
+              if(msg.message.startsWith("Password")) {
+                  validator.showErrors({
+                      "password": msg.message,
+                      "confirmPassword": msg.message
+                  });
+              }
+              if(msg.message.startsWith("Username")) {
+                  validator.showErrors({"username": msg.message});
+              }
+          } else {
+              $(this).trigger("reset");
+              $('.submission-form').hide();
+              $('.om-section').show();
+          }
+      }).fail(function() {
+          toastr.error("Something went wrong");
+          $("signup-form :input").attr("disabled", false);
+      });
+   return false;
+ }
+});
+
+$('#getin_touch').validate({
+  submitHandler: function (form) {
+    $.ajax({
+      url: "",
+      type: 'POST',
+      dataType: 'json',
+      data: $(form).serialize()
+      }).done(function (msg) {
+        $('.footer-heading').hide();
+        $('#getin_touch').hide();
+        $('.thanks-message').show();
+      }).fail(function() {
+
+      });
+   return false;
+    }
+  });
 });
 
 faqControl = function(){
@@ -69,89 +120,4 @@ faqControl = function(){
     $('.faq-slide-down').toggle();
     $('.faq-slide-up').toggle();
   });
-}
-
-formValidate = function(){
-  $('#signup-form').bootstrapValidator({
-    fields: {
-      username: {
-        validators: {
-          stringLength: {
-          min: 1,
-        },
-          notEmpty: {
-          message: 'Please enter your username'
-        }
-      }
-    },
-	  email: {
-      validators: {
-        notEmpty: {
-          message: 'Please enter your email address'
-        },
-          emailAddress: {
-            message: 'Please enter a valid email address'
-        }
-      }
-    },
-	  password: {
-      validators: {
-        notEmpty: {
-          message: 'Please enter your password'
-        }
-      }
-    },
-	  confirmPassword: {
-      validators: {
-        notEmpty: {
-          message: 'Please confirm your password'
-        },
-        identical: {
-          field: 'password',
-          message: 'The passwords does not match'
-        }
-      }
-    },
-   }
- })
-
-.on("submit", function() {
-  event.preventDefault();
-  var formData = $(this).serialize();
-  formData.isPaid = isPaid;
-  $("#signup-form :input").attr("disabled", true);
-  var validator = $( this ).validate();
-  validator.resetForm();
-  if ($(this).valid()){
-    $.ajax({
-        url: "https://hawkins.appknox.com/api/devknox_register/",
-        type: 'POST',
-        dataType: 'json',
-        data: formData
-    }).done(function (msg) {
-        if(msg.status === "error") {
-            $("#signup-form :input").attr("disabled", false);
-            toastr.error(msg.message);
-            if(msg.message.startsWith("Password")) {
-                validator.showErrors({
-                    "password": msg.message,
-                    "confirmPassword": msg.message
-                });
-            }
-            if(msg.message.startsWith("Username")) {
-                validator.showErrors({"username": msg.message});
-            }
-        } else {
-            $(this).trigger("reset");
-            $('.submission-form').hide();
-            $('.om-section').show ();
-
-        }
-    }).fail(function() {
-        toastr.error("Something went wrong");
-        $("signup-form :input").attr("disabled", false);
-    });
-  }
-  return false;
-});
 }
