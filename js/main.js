@@ -3,7 +3,6 @@ var isPaid=false
 $( document ).ready(function() {
     faqControl();
     SignUpForm();
-    getInTouch();
 
   $('.pricing-free-button').click(function(){
     isPaid = false
@@ -73,142 +72,37 @@ faqControl = function(){
 }
 
 SignUpForm = function(){
-  $('#signup-form').bootstrapValidator({
-    fields: {
-      username: {
-        validators: {
-          stringLength: {
-          min: 1,
-        },
-          notEmpty: {
-          message: 'Please enter your username'
-        }
-      }
-    },
-	  email: {
-      validators: {
-        notEmpty: {
-          message: 'Please enter your email address'
-        },
-          emailAddress: {
-            message: 'Please enter a valid email address'
-        }
-      }
-    },
-	  password: {
-      validators: {
-        notEmpty: {
-          message: 'Please enter your password'
-        }
-      }
-    },
-	  confirmPassword: {
-      validators: {
-        notEmpty: {
-          message: 'Please confirm your password'
-        },
-        identical: {
-          field: 'password',
-          message: 'The passwords does not match'
-        }
-      }
-    },
-   }
- })
-
-.on("submit", function() {
-  event.preventDefault();
-  var formData = $(this).serialize();
-  formData.isPaid = isPaid;
-  var validator = $( this ).validate();
-  validator.resetForm();
-  if ($(this).valid()){
-    $.ajax({
+  $('#signup-form').validate({
+    submitHandler: function (form) {
+      $.ajax({
         url: "https://hawkins.appknox.com/api/devknox_register/",
         type: 'POST',
         dataType: 'json',
         data: formData
-    }).done(function (msg) {
-        if(msg.status === "error") {
-            $("#signup-form :input").attr("disabled", false);
-            toastr.error(msg.message);
-            if(msg.message.startsWith("Password")) {
-                validator.showErrors({
-                    "password": msg.message,
-                    "confirmPassword": msg.message
-                });
+        }).done(function (msg) {
+            if(msg.status === "error") {
+                $("#signup-form :input").attr("disabled", false);
+                toastr.error(msg.message);
+                if(msg.message.startsWith("Password")) {
+                    validator.showErrors({
+                        "password": msg.message,
+                        "confirmPassword": msg.message
+                    });
+                }
+                if(msg.message.startsWith("Username")) {
+                    validator.showErrors({"username": msg.message});
+                }
+            } else {
+                $(this).trigger("reset");
+                $('.submission-form').hide();
+                $('.om-section').show ();
+
             }
-            if(msg.message.startsWith("Username")) {
-                validator.showErrors({"username": msg.message});
-            }
-        } else {
-            $(this).trigger("reset");
-            $('.submission-form').hide();
-            $('.om-section').show ();
-
-        }
-    }).fail(function() {
-        toastr.error("Something went wrong");
-        $("signup-form :input").attr("disabled", false);
-    });
-  }
-  return false;
-});
-}
-
-getInTouch = function(){
-  $('#getin_touch').bootstrapValidator({
-    fields: {
-      name: {
-        validators: {
-          stringLength: {
-          min: 1,
-        },
-          notEmpty: {
-          message: 'Please enter your name'
-        }
-      }
-    },
-      email: {
-        validators: {
-          stringLength: {
-          min: 1,
-        },
-          notEmpty: {
-          message: 'Please enter your email id'
-        }
-      }
-    },
-      message: {
-        validators: {
-          stringLength: {
-          min: 1,
-        },
-          notEmpty: {
-          message: 'Please enter the message'
-        }
-      }
-    },
+        }).fail(function() {
+            toastr.error("Something went wrong");
+            $("signup-form :input").attr("disabled", false);
+        });
+     return false;
    }
- })
-
- .on("submit", function() {
-   event.preventDefault();
-   var formData = $(this).serialize();
-   var validator = $( this ).validate();
-   validator.resetForm();
-   if ($(this).valid()){
-     $.ajax({
-       url: "https://hawkins.appknox.com/api/",
-       type: 'POST',
-       dataType: 'json',
-       data: formData
-     }).done(function (msg) {
-
-     }).fail(function() {
-
-     });
-   }
-   return false;
  });
- }
+}
