@@ -76,32 +76,6 @@ $nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
   text-align: center
   height: 250px
 
-blockquote
-  border-left: 0px solid #ccc!important
-  font-size: 24px!important
-  padding: 0px!important
-  margin: 0px!important
-
-blockquote:before
-  color: #fff
-  content: open-quote!important
-  font-size: 60px
-  line-height: 0.1em
-  margin-right: 5px
-  vertical-align: -21px
-
-blockquote:after
-  color: #fff
-  content: close-quote!important
-  font-size: 60px
-  line-height: 0.1em
-  margin-left: 5px
-  vertical-align: -21px
-
-label.error
-  color: #ff1b10!important
-  font-size: 80%!important
-
 .client-logo
   width: 100px
   position: absolute
@@ -311,23 +285,14 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
   padding-left: 80px
 
 .form-section
-  height: 345px
   .form-group
     padding-left: 80px
 
 .contact-form-control
-  margin-bottom: 7px
+  margin-bottom: 15px
   width: 80%!important
   background-color: #0a0f19!important
   border: 1px solid #e1dfea!important
-
-.thanks-message
-  display: none
-  font-size: 36px
-  text-align: center
-  margin-top: 50px
-  color:  #e1dfea
-  font-family: 'Raleway', sans-serif
 
 .submit-button
   width: 150px
@@ -353,7 +318,7 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
 .contact-section
   background-color: #0e1624
   padding-top: 61px
-  height: 345px
+  padding-bottom: 103px
 
 .address-section
   margin-left: 100px
@@ -460,7 +425,7 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
 
 .faq-section
   .col-lg-offset-1
-    padding-bottom: 10px
+    padding-bottom: 5px
 
 .doc-show-document
   display: none
@@ -527,7 +492,10 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
     color: #8d8fde
     text-decoration: underline
 
-
+.help-block
+  color: #ff1b10!important
+  font-size: 80%!important
+  margin-top: -15px!important
 
 .pricing-signup
   margin-top: 30px
@@ -577,7 +545,7 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
     color: #51f8d1
     width: 36px
     height: 36px
-    padding: 6px
+    padding: 8px
     text-align: center
     font-family: 'Raleway', sans-serif
     font-size: 36px
@@ -841,7 +809,6 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
     margin-top: 0px
     padding-top: 10px
   .form-section
-    height: auto
     form
       padding: 0px!important
   .form-section
@@ -877,6 +844,7 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
     top: 15px!important
   .client-list
     padding-bottom: 300px
+
 
   @media screen and (max-width: 374px) and (min-width: 320px)
     .client-logo-container

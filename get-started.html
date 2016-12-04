@@ -31,29 +31,29 @@ keywords: devknox, android app security, security plugin, android studio securit
           <div class="pricing-type-devknox"> Devknox</div>
           <div class="gs-form-heading"> SignUp
            </div>
-          <form id="signup-form">
+          <form id="signup-form" method="post">
             <div class="form-group">
               <div class="col-lg-4 input-name"> Username </div>
               <div class="col-lg-8">
-                <input type="text" name="username" id="username" class="form-control signup-form-control" required/>
+                <input type="text" name="username" id="username" class="form-control signup-form-control" />
               </div>
             </div>
             <div class="form-group">
               <div class="col-lg-4 input-name"> Email </div>
               <div class="col-lg-8">
-                <input type="email" name="email" id="email" class="form-control email signup-form-control" required />
+                <input type="email" name="email" id="email" class="form-control email signup-form-control" />
               </div>
             </div>
             <div class="form-group">
               <div class="col-lg-4 input-name"> Password </div>
               <div class="col-lg-8">
-                <input type="password" name="password" id="password" class="form-control signup-form-control" data-rule-password="true" minLength="8" required />
+                <input type="password" name="password" class="form-control signup-form-control" data-minLength="5" data-error="some error" />
               </div>
             </div>
             <div class="form-group">
               <div class="col-lg-4 input-name"> Confirm Password </div>
               <div class="col-lg-8">
-                <input type="password" name="confirmPassword" class="form-control signup-form-control" data-rule-password="true" data-rule-equalTo="#password" minLength="8" required />
+                <input type="password" name="confirmPassword" class="form-control signup-form-control" data-match="#confirmPassword" data-minLength="5" data-match-error="some error 2" />
                 </div>
               </div>
 						<div class="form-group">
