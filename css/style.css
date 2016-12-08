@@ -3538,6 +3538,10 @@ header {
   margin-top: 20px;
 }
 
+.lead-form a:hover {
+  text-decoration: none!important;
+}
+
 .gif-image-pos{
   margin-bottom: 0px!important;
 }
