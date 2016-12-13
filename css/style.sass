@@ -124,20 +124,34 @@ label.error
 .non-gradient-background
   background: #166f98
 
-$feat-colors: #1f2367, #171c4f, #06233c, #132d45
+$feat-colors: #1f2367, #171c4f, #06233c
+$height: 550px
 
 @for $i from 1 through length($feat-colors)
   .devknox-feat2
     .feat-sec:nth-child(#{length($feat-colors)}n+#{$i})
       background: nth($feat-colors, $i)
-      height: 550px
+      height: $height
+
+.feat-number
+  color: #e1dfea
+  font-family: 'Raleway', sans-serif
+  font-size: 56px
+  margin-top: 30px
 
 .report-section
   background: #282865
   height: 470px
 
+.image-reduce
+  width: 65%
+
 .vuln-section
   background: #292e6f
+  height: 470px
+
+.all-section
+  background: #132d45
   height: 470px
 
 .vuln-section img
