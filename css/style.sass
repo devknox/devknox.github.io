@@ -1,9 +1,6 @@
 ---
 ---
 
-$nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
-
-
 /* Start of Header */
 
 .navbar-brand
@@ -22,14 +19,13 @@ $nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
     padding-right: 10px
 
 
-@for $i from 1 through length($nav-colors)
-  .navbar-nav li:nth-child(#{length($nav-colors)}n+#{$i})
+.navbar-nav
+  li
     a
-      color: nth($nav-colors, $i)!important
+      color: #8d8fde!important
       font-family: 'Raleway', sans-serif
     a:hover
       color: #51f8d1!important
-
 /* End of Header */
 
 .devknox-feat
