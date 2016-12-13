@@ -108,16 +108,8 @@ faqControl = function(){
         }
       }
     });
-
     faqEle.find(".faq-answer").slideToggle(400);
-
     var isClosed = icon.hasClass("fa-caret-right");
     icon.toggleClass("fa-caret-right fa-caret-down");
-
-  });
-  $('.doc-header, .faq-slider-section').click(function(){
-    $('.faq-show-document').slideToggle();
-    $('.faq-slide-down').toggle();
-    $('.faq-slide-up').toggle();
   });
 }
