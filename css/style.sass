@@ -267,7 +267,7 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
 .report-list
   margin-top: 30px
   li
-  
+
     color: #e1dfea
     font-family: 'Open Sans', sans-serif
     font-size: 16px
@@ -629,6 +629,8 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
       background-color: #8D8FDE!important
       a
         color: #fff!important
+
+
 /* Start of FAQ section */
 
 .faq-list
@@ -669,6 +671,32 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
   width: 70%
   margin-top: 5%
   margin-bottom: 5%
+
+.tooltips
+  position: relative
+  display: inline-block
+  border-bottom: 1px dotted #fff
+  cursor: pointer
+
+.tooltips:hover
+  border-bottom: 0px dotted #fff
+
+.tooltips .tooltipstext
+  visibility: hidden
+  width: 500px
+  background-color: rgba(black, 0.5)
+  color: #fff
+  text-align: center
+  border-radius: 6px
+  padding: 5px 0
+  margin-left: -250px
+
+  position: absolute
+  z-index: 1
+
+.tooltips:hover .tooltipstext
+  visibility: visible
+
 
 /* Start of Media Queries */
 @media only screen and (max-width: 1200px)
