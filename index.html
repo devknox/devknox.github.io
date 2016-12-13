@@ -73,10 +73,11 @@ keywords: devknox, android app security, security plugin, android studio securit
     <div class="col-lg-6 col-md-6 col-sm-6 report-section">
       <div class="feature-list1">Detailed</div>
       <div class="feature-list2">Reports</div>
+      <div class="report-list-heading"> Devknox reporting gives you insights to: </div>
       <ul class="report-list">
-        <li> > Details of the vulnerabilties</li>
-        <li> > Impact and location of vulnerabilties </li>
-        <li> > Suggestions to prevent and cure the same</li>
+        <li>How your app fares across 26 test cases with the Devknox IDE and 36 additional test cases with Devknox Plus’s SAST &amp; DAST </li>
+        <li>Ensuring the app you are building, meets industry compliance standards like OWASP Top 10, HIPAA and PCI-DSS </li>
+        <li>Details of commonly exploited vulnerabilities, quick fixes and alternate suggestions on how to fix them </li>
       </ul>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 vuln-section align-center">
@@ -96,9 +97,7 @@ keywords: devknox, android app security, security plugin, android studio securit
         {% for testimonial in site.data.testimonials %}
         <div class="item {{testimonial.class}}">
           <div class="feedback-box">
-
             <div class="row">
-
               <div class="col-lg-4 col-md-4 align-center">
                 <div class="testimonial-sign">{{testimonial.name}}</div>
                 <div class="client-logo-section">
@@ -108,9 +107,7 @@ keywords: devknox, android app security, security plugin, android studio securit
               <div class="col-lg-8 col-md-8">
                 <div class="testimonial-feedback"><blockquote>{{testimonial.desc}}</blockquote></div>
               </div>
-
             </div>
-
           </div>
         </div>
           {% endfor %}
