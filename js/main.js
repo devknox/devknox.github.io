@@ -94,7 +94,7 @@ $(document).ready(function() {
           $('#getin_touch').hide();
           $('.thanks-message').show();
         }).fail(function() {
-
+          toastr.error("Something went wrong");
         });
      return false;
       }
@@ -112,7 +112,7 @@ $(document).ready(function() {
           $('#getin_touch').hide();
           $('.thanks-message').show();
         }).fail(function() {
-
+          toastr.error("Something went wrong");
         });
      return false;
       }
