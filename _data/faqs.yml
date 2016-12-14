@@ -18,7 +18,7 @@ right_faq :
             <p> <b>Devknox Lite</b> - Gives you FREE lifetime access to the Devknox plugin for Android Studio </p>
             <p> <b>Devknox Plus</b> -  Includes the Devknox plugin, as well as Detailed SAST & DAST, starting at $25/month for upto 5 users. </p>
   - question: How many developers from a single company can use Devknox?
-    answer : There is no limit to the number of developers from any company using Devknox. You can check out our plans in detail using this LINK
+    answer : There is no limit to the number of developers from any company using Devknox. You can check out our plans in detail using this <a class="linker" onclick="$('html,body').scrollTop(0);"> LINK </a>
   - question : What is the data privacy policy at Devknox? Is my data safe if I use this plugin?
     answer : All the security analysis is performed locally on your machine and nothing get's sent to our servers except for verification of your login information. We do not store any of your data and you can be rest assured that it is completely safe within your security parameters.
   - question : How efficient is the Devknox threat detection system? Will it be a bother to me, showing me unnecessary edit suggestions, when I code?
