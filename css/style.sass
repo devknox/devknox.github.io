@@ -122,14 +122,20 @@ label.error
 .non-gradient-background
   background: #166f98
 
-$feat-colors: #1f2367, #171c4f, #06233c
-$height: 550px
 
-@for $i from 1 through length($feat-colors)
+$feat-colors1: #171c4d, #1f2367, #363977
+$feat-colors2: #132d45, #06233c, #00132a
+
+
+@for $i from 1 through length($feat-colors1)
   .devknox-feat2
-    .feat-sec:nth-child(#{length($feat-colors)}n+#{$i})
-      background: nth($feat-colors, $i)
-      height: $height
+    .feat-sec:nth-child(#{length($feat-colors1)}n+#{$i})
+      background: nth($feat-colors1, $i)
+
+@for $i from 1 through length($feat-colors2)
+  .devknox-feat3
+    .feat-sec2:nth-child(#{length($feat-colors2)}n+#{$i})
+      background: nth($feat-colors2, $i)
 
 .feat-number
   color: #e1dfea
@@ -137,20 +143,14 @@ $height: 550px
   font-size: 56px
   margin-top: 30px
 
-.report-section
-  background: #282865
+.feat-sec
+  height: 550px
+
+.feat-sec2
   height: 470px
 
 .image-reduce
   width: 65%
-
-.vuln-section
-  background: #292e6f
-  height: 470px
-
-.all-section
-  background: #132d45
-  height: 470px
 
 .vuln-section img
   margin-top: 50px
@@ -815,10 +815,9 @@ a.anchor
   .report-list-heading
     font-size: 12px
     margin-left: 0px
-  .report-section, .all-section
+  .feat-sec2
     height: 370px
   .vuln-section
-    height: 370px
     img
       width: 80%
   .vul-list
@@ -988,7 +987,7 @@ a.anchor
     margin-top: 0px
   .feature-list1
     padding-top: 20px
-  .feat-sec, .all-section, .report-section, .vuln-section
+  .feat-sec, .feat-sec2
     height: 415px!important
   .report-list
     li
