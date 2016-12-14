@@ -99,7 +99,6 @@ $(document).ready(function() {
      return false;
       }
     });
-  });
 
   $('#talk_to_us').validate({
     submitHandler: function (form) {
@@ -119,7 +118,6 @@ $(document).ready(function() {
       }
     });
   });
-
 
 
 faqControl = function(){
