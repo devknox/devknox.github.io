@@ -101,6 +101,27 @@ $(document).ready(function() {
     });
   });
 
+  $('#talk_to_us').validate({
+    submitHandler: function (form) {
+      $.ajax({
+        url: "",
+        type: 'POST',
+        dataType: 'json',
+        data: $(form).serialize()
+        }).done(function (msg) {
+          $('.footer-heading').hide();
+          $('#getin_touch').hide();
+          $('.thanks-message').show();
+        }).fail(function() {
+
+        });
+     return false;
+      }
+    });
+  });
+
+
+
 faqControl = function(){
   $('.faq-quest-area').on('click touchend', function(ev) {
     var faqEle = $(ev.currentTarget).parent();
