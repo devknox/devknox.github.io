@@ -108,9 +108,8 @@ $(document).ready(function() {
         dataType: 'json',
         data: $(form).serialize()
         }).done(function (msg) {
-          $('.footer-heading').hide();
-          $('#getin_touch').hide();
-          $('.thanks-message').show();
+          $('.ttu-content').hide();
+          $('.ttu-thanks-message').show();
         }).fail(function() {
           toastr.error("Something went wrong");
         });
