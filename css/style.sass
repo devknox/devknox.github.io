@@ -768,6 +768,31 @@ a.anchor
   height: 50px
   background-color: #0a1018
 
+$error-font-color: #51f8d1, #51f8d1, #8d8fde, #51f8d1
+$error-font-size: 24px, 100px, 24px, 24px
+$error-padding-top: 40px, 0px, 20px, 100px
+@for $i from 1 through length($error-font-color)
+  .error-content
+    text-align: center
+    height: 100%
+    background-color: #0e1624
+    padding-bottom: 100px
+    ul
+      padding-left: 0px
+      li
+        list-style-type: none
+    div:nth-child(#{length($error-font-color)}n+#{$i})
+      color: nth($error-font-color, $i)
+      font-size: nth($error-font-size, $i)
+      padding-top: nth($error-padding-top, $i)
+      font-family: 'Raleway', sans-serif
+    div:last-child
+      ul
+        padding-top: 30px
+        li
+          padding-top: 10px
+          color: #8d8fde
+          font-size: 16px
 /* End of 404 page */
 
 
