@@ -3,14 +3,14 @@ left_faq:
      answer: Devknox is a security plugin for the Android Studio IDE that detects and corrects security issues as you write code, real-time. Simply install the plugin and let Devknox detect, suggest and remediate all your security threats while you code and build your app.
    - question : Is Devknox available for both the Android and iOS development platforms?
      answer : Devknox is currently available only for the Android Studio IDE. We are currently working on a similar plugin for Xamarin to facilitate usage by iOS developers.
-   - question : Is my source code secure when I use Devknox?
-     answer : <p>Your source code is totally secured when you use the Devknox IDE plugin. All security analysis are performed locally on your machine itself and nothing get’s sent to our servers except verifying your login information.</p> <p> In the case you subscribe to the Devknox Plus plan, your binary file (.apk) is uploaded to the Devknox dashboard leaving your source code absolutely untouched. </p>
+   - question : What is the data privacy policy at Devknox? Is my data safe if I use this plugin?
+     answer : All the security analysis is performed locally on your machine and nothing get's sent to our servers except for verification of your login information. We do not store any of your data and you can be rest assured that it is completely safe within your security parameters.
+   - question: I am currently using Devknox Lite. How can I upgrade to Devknox Plus?
+     answer: To upgrade to Devknox plus or to renew Devknox Plus Subscription please visit <a class="linker" target="_blank" href="https://secure.devknox.io">here</a>. Login with your Devknox credentials. Click on Pricing tab in the left column of the Dasboard and proceed with the payment
    - question : How is Devknox different from using other static code analyzers?
      answer : Most static code analyzers do pretty much the same thing and that is to ensure basic security of an app by analyzing code. However, unlike Devknox, most static code analyzers usually scan the ‘entire app’ during development or after production. Devknox gives you the power to detect threats instantly while coding and enables you to take care of security as you build your app. We all know how time-consuming and difficult it is to go back and fix issues after production.
    - question: What is the optimum system requirements needed to use Devknox? Will it cause performance issues in my IDE?
      answer: It is suggested to have the recommended system specifications as mentioned by Android Studio/Intellij IDE for smooth running of the IDE along with the Devknox plugin. As long as you have the recommended system requirements Devknox plugin will run fine similar to any other plugin or add-on that you might be using.
-
-
 
 right_faq :
   - question: Is Devknox a free to use plugin?
@@ -18,12 +18,14 @@ right_faq :
             <p> <b>Devknox Lite</b> - Gives you FREE lifetime access to the Devknox plugin for Android Studio </p>
             <p> <b>Devknox Plus</b> -  Includes the Devknox plugin, as well as Detailed SAST & DAST, starting at $25/month for upto 5 users. </p>
   - question: How many developers from a single company can use Devknox?
-    answer : There is no limit to the number of developers from any company using Devknox. You can check out our plans in detail using this LINK
-  - question : What is the data privacy policy at Devknox? Is my data safe if I use this plugin?
-    answer : All the security analysis is performed locally on your machine and nothing get's sent to our servers except for verification of your login information. We do not store any of your data and you can be rest assured that it is completely safe within your security parameters.
+    answer : There is no limit to the number of developers from any company using Devknox. You can check out our plans in detail using this <a class="linker" onclick="$('html,body').scrollTop(0);"> LINK </a>
+  - question : Is my source code secure when I use Devknox?
+    answer : <p>Your source code is totally secured when you use the Devknox IDE plugin. All security analysis are performed locally on your machine itself and nothing get’s sent to our servers except verifying your login information.</p> <p> In the case you subscribe to the Devknox Plus plan, your binary file (.apk) is uploaded to the Devknox dashboard leaving your source code absolutely untouched. </p>
   - question : How efficient is the Devknox threat detection system? Will it be a bother to me, showing me unnecessary edit suggestions, when I code?
     answer :  The Devknox plugin is very efficient in detecting security vulnerabilities as well as providing suggestions for quickfix. Devknox is updated with latest security standards when it comes to detecting security threats.
               If you are not comfortable with the suggestions or annotations shown by Devknox you can disable or suppress those inspections from the report window. You can even disable inspections from the Settings menu. Refer to documentation(Usage Documentation) for details.
   - question : I am currently using Devknox Lite, why should I upgrade to Devknox Plus?
     answer :  While It's not mandatory to upgrade to Devknox Plus, we recommend that all developers serious about catering to new age customer demands with a focus on maximum security make an upgrade to Devknox Plus.
               Devknox Plus comes with access to an advanced threat detection system add-on, with detailed Static Application Security Testing  and Dynamic Application Security Testing on the Devknox dashboard.
+  - question: How can I upload my apk to Dashboard?
+    answer: Uploading apk to dasboard for SAST and DAST requires Devknox Plus Subscription. Once you have the subscription, on the IDE click on Devknox->Dashboard->Build and Upload. To check out your uploaded file click on the link in the notification balloon on the IDE after successfull upload or Click on Devknox->Dashboard->Open Dashboard on the IDE, which takes you to the Dasboard login page . Login with Devknox credentials and checkout your apps statistics there. You can also visit <a class="linker" target="_blank" href="https://secure.devknox.io">here</a> for Devknox Dashboard.

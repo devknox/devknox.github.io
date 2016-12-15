@@ -9,27 +9,65 @@ permalink: /get-started/
 <div class="jumbotron gs-main-section">
   <div class="row">
     <div class="col-lg-4 col-md-4 col-lg-offset-1 col-md-offset-1">
-      <div class="gs-main-heading"> Keep the lengthy security manuals aside.</div>
-      <div class="gs-main-sub-heading"> Choose a Plan, Register &amp; finally SignUp to start using Devknox.</div>
+      <div class="gs-main-heading"> Security testing is now as easy as spell check</div>
+      <div class="gs-main-sub-heading"> Simply choose a plan, SignUp and start scanning your mobile application with Devknox</div>
     </div>
     <div class="col-lg-7 col-md-7 align-center">
       <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 devknox-pricing-lite">
         <div class="pricing-heading">Devknox Lite</div>
         <img src="/img/gallery/dev-23.png" class="img-responsive" alt="Devknox android application security tool">
-        <div class="pricing-desc">Single User <br/> Only IDE Plugin</div>
-        <button type="button" class="btn pricing-free-button button-all">START</button>
+        <div class="pricing-desc">
+          <table>
+            <tr>
+              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+              <td>IDE Plugin</td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+              <td>25 Test Cases</td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-times" aria-hidden="true"></i></td>
+              <td>SAST</td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-times" aria-hidden="true"></i></td>
+              <td>DAST</td>
+            </tr>
+          </table>
+        </div>
+        <button type="button" class="btn pricing-free-button button-all" onclick="$('html,body').scrollTop(0);">GET STARTED</button>
       </div>
       <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 devknox-pricing">
-        <div class="pricing-heading">Devknox </div>
+        <div class="pricing-heading">Devknox Plus </div>
         <img src="/img/gallery/dev-24.png" class="img-responsive" alt="Devknox android application security tool">
-        <div class="pricing-desc">upto 5 Users Includes SAST, DAST &amp; IDE Plugin</div>
-        <button type="button" class="btn pricing-paid-button button-all">START</button>
+        <div class="pricing-desc">
+          <table>
+            <tr>
+              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+              <td>IDE Plugin</td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+              <td>25 + 36 Advanced Test Cases</td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+              <td>SAST</td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+              <td>DAST</td>
+            </tr>
+          </table>
+        </div>
+        <button type="button" class="btn pricing-paid-button button-all" onclick="$('html,body').scrollTop(0);">GET STARTED</button>
       </div>
       <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 col-lg-offset-3 col-md-offset-3 submission-form">
         <div class="pricing-signup">
           <div><button type="button" class="btn close-button">CANCEL</button></div>
           <div class="pricing-type-lite"> Devknox Lite </div>
-          <div class="pricing-type-devknox"> Devknox</div>
+          <div class="pricing-type-devknox"> Devknox Plus</div>
           <div class="gs-form-heading"> SignUp
            </div>
           <form id="signup-form">
@@ -86,12 +124,71 @@ permalink: /get-started/
     </div>
   </div>
 </div>
+
+
+<div class="talk-to-us">
+  <div class="cta-text">Need Devknox for multiple users in your organization?</div>
+  <div class="cta-button-section">
+    <a type="button" data-proofer-ignore class="btn button-all" data-toggle="modal" data-target="#contact-form">Talk To Us</a>
+  </div>
+  <!-- Start of Modal -->
+  <div class="modal fade ttu-modal" tabindex="-1" role="dialog" id="contact-form" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title ttu-title">Talk To Us</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row ttu-content">
+            <div class="col-lg-12 input-container">
+              <form class="form lead-form form-light dark-text" id="talk_to_us" method="post" action="" style="padding: 45px 20px 15px;">
+                <div class="form-group">
+                  <div class="col-lg-3 col-md-3 col-sm-3 input-name"> Name </div>
+                  <div class="col-lg-9 col-md-9 col-sm-9 input-container">
+                    <input type="text" name="name" id="ttu-name" class="form-control contact-form-control" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-lg-3 col-md-3 col-sm-3 input-name"> Work Email</div>
+                  <div class="col-lg-9 col-md-9 col-sm-9 input-container">
+                    <input type="email" name="email" id="ttu-emailid" class="form-control email contact-form-control" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-lg-3 col-md-3 col-sm-3 input-name"> Company </div>
+                  <div class="col-lg-9 col-md-9 col-sm-9 input-container">
+                    <input type="text" name="company" id="ttu-company" class="form-control contact-form-control" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-lg-3 col-md-3 col-sm-3 input-name"> Message </div>
+                  <div class="col-lg-9 col-md-9 col-sm-9 input-container">
+                    <textarea rows="3" cols="50" type="text" name="message" id="ttu-message" class="form-control contact-form-control" required></textarea>
+                  </div>
+                </div>
+              <div class="form-group">
+                <div class="col-lg-10 col-md-10 col-sm-10 input-button">
+                  <input type="submit" value="Submit" class="btn btn-lg ttu-button button-all" />
+                </div>
+              </div>
+            </form>
+            </div>
+          </div>
+          <div class="ttu-thanks-message">
+            Thank you for getting in touch, we'll get back to you shortly!!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of Modal -->
+</div>
+
+
+<a class="anchor" id="faq_section"></a>
 <div class="faq-section" id="faqs">
   <div class="doc-header col-lg-offset-1">FAQs</div>
-  <div class="col-lg-offset-1 faq-slider-section">
-    <div class="faq-slide-down faq-slider-button"> > </div>
-    <div class="faq-slide-up faq-slider-button rotate-text"> > </div>
-  </div>
   <div class="faq-show-document">
     <section class="faq-list">
       <div class="container ak-container" id="faq">
@@ -127,7 +224,12 @@ permalink: /get-started/
     </section>
   </div>
 </div>
-
-<div class="client-list">
+<div class="client-feedback">
   {% include client_feedback.html %}
+  <div class="trail-section">
+    <div class="trail-section-text"> Find out why these devs love Devknox </div>
+    <div class="trail-button-section">
+      <a type="button" data-proofer-ignore class="btn get-started-button" onclick="$('html,body').scrollTop(0);">Get Started for Free</a>
+    </div>
+  </div>
 </div>

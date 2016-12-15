@@ -1,9 +1,6 @@
 ---
 ---
 
-$nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
-
-
 /* Start of Header */
 
 .navbar-brand
@@ -22,20 +19,21 @@ $nav-colors: #00cdbf, #00cdbf, #8d8fde, #8d8fde
     padding-right: 10px
 
 
-@for $i from 1 through length($nav-colors)
-  .navbar-nav li:nth-child(#{length($nav-colors)}n+#{$i})
+.navbar-nav
+  li
     a
-      color: nth($nav-colors, $i)!important
+      color: #8d8fde!important
       font-family: 'Raleway', sans-serif
+      font-weight: 600!important
     a:hover
       color: #51f8d1!important
-
 /* End of Header */
 
 .devknox-feat
   background-color: black
   font-family: 'Raleway', sans-serif
   margin-top: -150px
+  padding-bottom: 20px
 
 .devknox-feat3
   background-color: black
@@ -100,7 +98,7 @@ blockquote:after
 
 label.error
   color: #ff1b10!important
-  font-size: 80%!important
+  font-size: 12px!important
 
 .client-logo
   width: 100px
@@ -124,24 +122,43 @@ label.error
 .non-gradient-background
   background: #166f98
 
-$feat-colors: #1f2367, #171c4f, #06233c, #132d45
 
-@for $i from 1 through length($feat-colors)
+$feat-colors1: #171c4d, #1f2367, #363977
+$feat-colors2: #132d45, #06233c, #00132a
+
+
+@for $i from 1 through length($feat-colors1)
   .devknox-feat2
-    .feat-sec:nth-child(#{length($feat-colors)}n+#{$i})
-      background: nth($feat-colors, $i)
-      height: 550px
+    .feat-sec:nth-child(#{length($feat-colors1)}n+#{$i})
+      background: nth($feat-colors1, $i)
 
-.report-section
-  background: #282865
+@for $i from 1 through length($feat-colors2)
+  .devknox-feat3
+    .feat-sec2:nth-child(#{length($feat-colors2)}n+#{$i})
+      background: nth($feat-colors2, $i)
+
+.feat-number
+  color: #e1dfea
+  font-family: 'Raleway', sans-serif
+  font-size: 56px
+  margin-top: 30px
+
+.feat-sec
+  height: 550px
+
+.feat-sec2
   height: 470px
 
-.vuln-section
-  background: #292e6f
-  height: 470px
+.image-reduce
+  width: 65%
+
+.devknox-feat3
+  .feat-sec2:first-child
+    img
+      padding-top: 50px
 
 .vuln-section img
-  margin-top: 50px
+  padding-top: 50px
 
 .feat-section
   background: #282865
@@ -237,7 +254,7 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
 .security-feature-desc
   color: #e1dfea
   font-family: 'Open Sans', sans-serif
-  font-size: 14px
+  font-size: 16px
   padding-bottom: 20px
 
 .feature-list1
@@ -256,13 +273,19 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
 .devknox-feat2 img
   margin-top: 50px
 
+.report-list-heading
+  color: #e1dfea
+  font-family: 'Open Sans', sans-serif
+  font-size: 14px
+  margin-left: 18%
+  margin-top: 10px
+
 .report-list
-  margin-top: 70px
+  margin-top: 30px
   li
-    list-style-type: none
     color: #e1dfea
     font-family: 'Open Sans', sans-serif
-    font-size: 16px
+    font-size: 14px
     margin-left: 13%
     margin-top: 30px
 
@@ -318,11 +341,12 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
   padding-left: 80px
 
 .form-section
-  height: 345px
+  height: 400px
   .form-group
     padding-left: 80px
 
 .contact-form-control
+  color: #f2f2f2!important
   margin-bottom: 7px
   width: 80%!important
   background-color: #0a0f19!important
@@ -360,9 +384,10 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
 .contact-section
   background-color: #0e1624
   padding-top: 61px
-  height: 345px
+  height: 400px
 
 .address-section
+  margin-top: 40px
   margin-left: 100px
   border-left: 3px solid #51f8d1
 
@@ -380,14 +405,19 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
   margin-left: -20px
 
 .trail-section
-  width: 350px
+  width: 360px
   margin: 0 auto
 
+.trail-button-section
+  padding-top: 10px
+  padding-bottom: 30px
+
 .get-started-button
-  width: 350px
-  margin-top: 30px
+  width: 360px
+  margin-top: 10px
   background-color: #ffffff
   color: #009a8f
+  font-size: 16px!important
 
 .get-started-button:hover
   background-color: #f2f2f2
@@ -396,20 +426,19 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
 .trail-section-text
   color: #585aa8
   font-family: 'Raleway', sans-serif
-  font-size: 16px
+  font-size: 20px
   text-align: center
-  margin-top: 10px
-  padding-bottom: 20px
+  padding-top: 90px
 
 .devknox-pricing-lite
   background-color: #021022
   padding: 40px
   margin: 0 auto
-  text-align: center
   margin-left: 50px
+  text-align: center
   margin-right: 20px
   margin-top: 50px
-  height: 400px
+  height: 530px
   border-bottom: 1px solid #00cdbf
   img
     padding-top: 30px
@@ -418,9 +447,9 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
   background-color: #021022
   padding: 40px
   margin: 0 auto
-  text-align: center
   margin-top: 50px
-  height: 400px
+  text-align: center
+  height: 530px
   border-bottom: 1px solid #00cdbf
   img
     padding-top: 30px
@@ -430,12 +459,30 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
   font-family: 'Raleway', sans-serif
   font-size: 30px
 
+.devknox-pricing
+  .pricing-desc
+    text-align: left
+    width: 150px
+    margin: auto
+
+.devknox-pricing-lite
+  .pricing-desc
+    text-align: left
+    width: 130px
+    margin: auto
+
 .pricing-desc
   color: #c6cad7
   font-family: 'Open Sans', sans-serif
-  font-size: 16px
+  font-size: 14px
   padding-top: 20px
   padding-bottom: 20px
+  height: 220px
+  table
+    height: 100px
+    tr
+      td
+        padding: 5px
 
 .pricing-start-button
   background-color: #021022!important
@@ -446,6 +493,11 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
   padding-top: 70px
   padding-bottom: 70px
   color: #00cdbf
+
+#whats-new, #introduction, #prerequisites, #install-devknox, #update-devknox, #use-devknox
+  margin-top: -30px
+  padding-top: 30px
+  padding-bottom: 20px
 
 .affix
   top: 60px
@@ -468,18 +520,6 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
 .faq-section
   .col-lg-offset-1
     padding-bottom: 10px
-
-.doc-show-document
-  display: none
-
-.doc-slide-up
-  display: none
-
-.faq-show-document
-  display: none
-
-.faq-slide-up
-  display: none
 
 .submission-form
   display: none
@@ -534,8 +574,6 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
     color: #8d8fde
     text-decoration: underline
 
-
-
 .pricing-signup
   margin-top: 30px
   background-color: #0e1624!important
@@ -560,6 +598,7 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
   display: none
 
 .faq-section
+  font-family: 'Open Sans', sans-serif
   font-size: 16px
 
 .gs-form-heading
@@ -571,10 +610,16 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
   padding-left: 30px
 
 .doc-header
-  padding: 20px 0px 20px 30px
+  padding: 10px
   font-size: 36px
   color: #51f8d1
   font-family: 'Raleway', sans-serif
+
+a.anchor
+  display: block
+  position: relative
+  top: -50px
+  visibility: hidden
 
 .faq-section
   .slider-button
@@ -596,14 +641,6 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
     @extend .slider-button
     background-color: #0a0f19
 
-.rotate-text
-  -webkit-transform: rotate(90deg)
-  -moz-transform: rotate(90deg)
-  -ms-transform: rotate(90deg)
-  -o-transform: rotate(90deg)
-  transform: rotate(90deg)
-  padding-top: 5px!important
-
 .scrollspy-list
   ul
     li
@@ -617,10 +654,12 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
       background-color: #8D8FDE!important
       a
         color: #fff!important
+
+
 /* Start of FAQ section */
 
 .faq-list
-  background-color: #8d8fde
+  background-color: #c7c8f9
   li
     list-style-type: none
     margin-top: 20px
@@ -658,6 +697,109 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
   margin-top: 5%
   margin-bottom: 5%
 
+.tooltips
+  position: relative
+  display: inline-block
+  border-bottom: 1px dotted #fff
+  cursor: pointer
+
+.tooltips:hover
+  border-bottom: 0px dotted #fff
+
+.tooltips .tooltipstext
+  visibility: hidden
+  width: 500px
+  background-color: rgba(black, 0.5)
+  color: #fff
+  text-align: center
+  border-radius: 6px
+  padding: 5px 0
+  margin-left: -250px
+
+  position: absolute
+  z-index: 1
+
+.tooltips:hover .tooltipstext
+  visibility: visible
+
+.talk-to-us
+  background-color: #0a0f19
+  color: #51f8d1
+  text-align: center
+  padding: 30px
+  font-size: 24px
+  font-family: 'Raleway', sans-serif
+
+.cta-button-section
+  padding-top: 20px
+
+.linker
+  text-decoration: none!important
+  cursor: pointer
+
+.ttu-title
+  color: #8d8fde
+
+.ttu-thanks-message
+  display: none
+  color: #8d8fde
+
+.ttu-button
+  color: #8d8fde!important
+  border: 1px solid #8d8fde!important
+
+.ttu-button:hover
+  $tcolor: #8d8fde
+  $tamount: 30
+  border: 1px solid #8d8fde!important
+  color: darken($tcolor, $tamount)!important
+
+.input-container
+  .contact-form-control
+    margin-bottom: 5px
+  label.error
+    margin-left: -200px
+
+
+/* Start of 404 page */
+
+.top-strip-band
+  width: 100%
+  height: 50px
+  background-color: #0a1018
+
+$error-font-color: #51f8d1, #51f8d1, #8d8fde, #51f8d1
+$error-font-size: 24px, 100px, 24px, 24px
+$error-padding-top: 40px, 0px, 20px, 100px
+@for $i from 1 through length($error-font-color)
+  .error-content
+    text-align: center
+    height: 100%
+    background-color: #0e1624
+    padding-bottom: 150px
+    ul
+      padding-left: 0px
+      li
+        list-style-type: none
+    div:nth-child(#{length($error-font-color)}n+#{$i})
+      color: nth($error-font-color, $i)
+      font-size: nth($error-font-size, $i)
+      padding-top: nth($error-padding-top, $i)
+      font-family: 'Raleway', sans-serif
+    div:last-child
+      ul
+        padding-top: 30px
+        li
+          a
+            padding-top: 10px
+            color: #8d8fde
+            font-size: 16px
+          a:hover
+            text-decoration: none
+            color: darken(#8d8fde, 10)
+/* End of 404 page */
+
+
 /* Start of Media Queries */
 @media only screen and (max-width: 1200px)
   .main-heading, .main-sub-heading, .main-desc, .start-now-button
@@ -671,11 +813,15 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
     top: 90px
   .testimonial-section img
     margin-top: 10px
-  .get-started-button
-    margin-top: 50px
   .gif-container img
     margin-top: 30px
-
+  .trail-section-text
+    padding-top: 30px
+  .report-list
+    li
+      font-size: 12px
+  .report-list-heading
+    font-size: 12px
 
 @media only screen and (max-width: 1024px)
   .main-heading
@@ -697,6 +843,12 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
     width: 100px
   .gif-container img
     margin-top: 30px
+  .report-list
+    li
+      font-size: 12px
+  .report-list-heading
+    font-size: 12px
+
 @media screen and (max-width: 990px) and (min-width: 768px)
   .main-heading
     margin-top: 30px
@@ -724,11 +876,29 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
       max-width: 90%
   .feature-list1
     padding-top: 20px
-  .report-list li
-    margin-left: 10px
-    margin-top: 10px
-  .vuln-section img
-    margin-top: 70px
+    font-size: 20px
+  .feature-list2
+    font-size: 30px
+  .feat-number
+    font-size: 40px
+    margin-top: 3px
+  .feat-sec
+    height: 350px!important
+  .report-list
+    margin-top: 0px
+    padding-left: 0px!important
+    li
+      margin-left: 10px
+      margin-top: 10px
+      font-size: 12px
+  .report-list-heading
+    font-size: 12px
+    margin-left: 0px
+  .feat-sec2
+    height: 370px
+  .vuln-section
+    img
+      width: 80%
   .vul-list
     margin-top: 60px
     left: 58%
@@ -747,6 +917,7 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
   .navbar-brand
     img
       margin-top: -10px
+      margin-left: 35px
   .pricing-signup
     width: 300px
     margin: 20px auto
@@ -762,10 +933,12 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
     margin-top: 150px
   .carousel-button
     top: 35px!important
+  .trail-section-text
+    padding-top: 200px
 
 @media only screen and (max-width: 990px)
   .button-container
-    width: 170px
+    width: 250px
     margin: 20px auto 0px auto
   .devknox-feat
     margin-top: 0px
@@ -780,6 +953,7 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
     width: 100%
   .main-section
     margin-bottom: 0px!important
+
 @media only screen and (max-width: 767px)
   .main-section
     padding-left: 0px!important
@@ -813,8 +987,8 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
   .security-feature
     margin-top: 70px
   .devknox-feat2
-    .img-responsive
-      max-width: 90%
+    img
+      margin-top: 30px
   .team-section
     padding-right: 0px!important
   .integration-section
@@ -886,6 +1060,21 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
     top: 15px!important
   .client-list
     padding-bottom: 300px
+  .trail-section-text
+    padding-top: 300px
+  .feat-number
+    margin-top: 0px
+  .feature-list1
+    padding-top: 20px
+  .feat-sec, .feat-sec2
+    height: 415px!important
+  .report-list
+    li
+      font-size: 12px
+  .report-list-heading
+    font-size: 12px
+  .input-container label.error
+    margin-left: 0px
 
   @media screen and (max-width: 374px) and (min-width: 320px)
     .client-logo-container
@@ -906,3 +1095,12 @@ $feat-colors: #1f2367, #171c4f, #06233c, #132d45
       width: 300px
     .client-list
       padding-bottom: 800px
+    .trail-section-text
+      padding-top: 800px
+    #talk_to_us
+      padding: 0px!important
+    .input-container
+      padding-left: 0px!important
+      padding-right: 0px!important
+    .pricing-signup
+      width: 255px
