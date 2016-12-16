@@ -6,8 +6,8 @@ $(document).ready(function() {
 
   $('.pricing-free-button').click(function(){
     isPaid = false
-    $('.devknox-pricing-lite').css("visibility","hidden");
-    $('.devknox-pricing').css("visibility","hidden");
+    $('.devknox-pricing-lite').hide();
+    $('.devknox-pricing').hide();
     $('.submission-form').show();
     $('.pricing-type-lite').show();
     $('.pricing-type-devknox').hide();
@@ -15,8 +15,8 @@ $(document).ready(function() {
 
   $('.pricing-paid-button').click(function(){
     isPaid = true
-    $('.devknox-pricing-lite').css("visibility","hidden");
-    $('.devknox-pricing').css("visibility","hidden");
+    $('.devknox-pricing-lite').hide();
+    $('.devknox-pricing').hide();
     $('.submission-form').show();
     $('.pricing-type-devknox').show();
     $('.pricing-type-lite').hide();
@@ -24,8 +24,8 @@ $(document).ready(function() {
   });
 
   $('.close-button').click(function(){
-    $('.devknox-pricing-lite').css("visibility","visible");
-    $('.devknox-pricing').css("visibility","visible");
+    $('.devknox-pricing-lite').show();
+    $('.devknox-pricing').show();
     $('.submission-form').hide();
     $('.om-section').hide();
   });
