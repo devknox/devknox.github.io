@@ -10,10 +10,14 @@
 .dk-navbar
   background-color: #0a1018!important
 
+.extra-padding img
+  padding-top: 30px
+
 .social-icons
-  float: right
-  margin-top: 13px
-  margin-left: 150px
+  width: 200px
+  display: block
+  margin-left: 115px
+  margin-top: 30px
   img
     padding-left: 10px
     padding-right: 10px
@@ -25,6 +29,10 @@
       color: #8d8fde!important
       font-family: 'Raleway', sans-serif
       font-weight: 600!important
+    a.button-all
+      margin-top: 7px
+      color: #51f8d1!important
+      margin-right: 30px
     a:hover
       color: #51f8d1!important
 /* End of Header */
@@ -176,6 +184,7 @@ $feat-colors2: #132d45, #06233c, #00132a
   padding-right: 0px!important
 
 .gs-main-section
+  min-height: 700px
   background-color: #0e1624!important
   margin-bottom: 0px!important
   padding-right: 0px!important
@@ -323,6 +332,7 @@ $feat-colors2: #132d45, #06233c, #00132a
 
 .client-feedback
   background-color: #e6e6e6
+  padding-bottom: 90px
 
 .client-section
   padding-bottom: 200px
@@ -405,30 +415,21 @@ $feat-colors2: #132d45, #06233c, #00132a
   margin-left: -20px
 
 .trail-section
-  width: 360px
+  width: 100%
+  text-align: center
   margin: 0 auto
+  background-color: #021022
 
 .trail-button-section
   padding-top: 10px
   padding-bottom: 30px
-
-.get-started-button
-  width: 360px
-  margin-top: 10px
-  background-color: #ffffff
-  color: #009a8f
-  font-size: 16px!important
-
-.get-started-button:hover
-  background-color: #f2f2f2
-  color: #009a8f!important
 
 .trail-section-text
   color: #585aa8
   font-family: 'Raleway', sans-serif
   font-size: 20px
   text-align: center
-  padding-top: 90px
+  padding-top: 40px
 
 .devknox-pricing-lite
   background-color: #021022
@@ -737,22 +738,29 @@ a.anchor
   text-decoration: none!important
   cursor: pointer
 
+.ttu-contents
+  background-color: #0a0f19!important
+  top: 60px
+
+.ttu-header
+  border: none!important
+  span
+    color: #fff
+
 .ttu-title
-  color: #8d8fde
+  color: #51f8d1
+  font-size: 24px
+  margin-top: 10px
+  padding-left: 80px
+  text-align: left
 
 .ttu-thanks-message
   display: none
   color: #8d8fde
 
 .ttu-button
-  color: #8d8fde!important
-  border: 1px solid #8d8fde!important
-
-.ttu-button:hover
-  $tcolor: #8d8fde
-  $tamount: 30
-  border: 1px solid #8d8fde!important
-  color: darken($tcolor, $tamount)!important
+  margin-top: 20px
+  margin-left: 130px
 
 .input-container
   .contact-form-control
@@ -822,6 +830,11 @@ $error-padding-top: 40px, 0px, 20px, 100px
       font-size: 12px
   .report-list-heading
     font-size: 12px
+  .vuln-section
+    img
+      padding-top: 20px
+    .feature-list2
+      padding-bottom: 10px
 
 @media only screen and (max-width: 1024px)
   .main-heading
@@ -899,6 +912,7 @@ $error-padding-top: 40px, 0px, 20px, 100px
   .vuln-section
     img
       width: 80%
+      padding-top: 20px
   .vul-list
     margin-top: 60px
     left: 58%
@@ -912,8 +926,6 @@ $error-padding-top: 40px, 0px, 20px, 100px
     width: 75%
     padding: 20px
     height: 390px
-  .social-icons
-    margin-left: 10px
   .navbar-brand
     img
       margin-top: -10px
@@ -933,8 +945,10 @@ $error-padding-top: 40px, 0px, 20px, 100px
     margin-top: 150px
   .carousel-button
     top: 35px!important
-  .trail-section-text
-    padding-top: 200px
+  .client-feedback
+    padding-bottom: 200px
+  .extra-padding img
+    padding-top: 0px  
 
 @media only screen and (max-width: 990px)
   .button-container
@@ -953,7 +967,10 @@ $error-padding-top: 40px, 0px, 20px, 100px
     width: 100%
   .main-section
     margin-bottom: 0px!important
-
+  .tooltips .tooltipstext
+    background-color: #000
+    width: 100px
+    margin-left: 0px
 @media only screen and (max-width: 767px)
   .main-section
     padding-left: 0px!important
@@ -962,12 +979,9 @@ $error-padding-top: 40px, 0px, 20px, 100px
   .feedback-text
     margin-top: 0px
   .social-icons
-    padding-right: 45px
-    margin-top: -34px
+    width: 150px
     margin-left: auto
     margin-right: auto
-    img
-      padding-left: 0px
   .navbar-brand
     img
       margin-left: 0px
@@ -997,10 +1011,13 @@ $error-padding-top: 40px, 0px, 20px, 100px
     padding-right: 0px!important
   .testing-section
     padding-right: 0px!important
-  .vuln-section img
-    margin-top: 0px
-    padding-top: 50px
-    padding-left: 10px
+  .vuln-section
+    img
+      margin-top: 0px
+      padding-top: 0px
+      padding-left: 10px
+    .feature-list2
+      padding-bottom: 10px
   .feat-section img
     margin-top: 0px
     padding-top: 50px
@@ -1058,10 +1075,6 @@ $error-padding-top: 40px, 0px, 20px, 100px
     margin-top: 200px
   .carousel-button
     top: 15px!important
-  .client-list
-    padding-bottom: 300px
-  .trail-section-text
-    padding-top: 300px
   .feat-number
     margin-top: 0px
   .feature-list1
@@ -1075,6 +1088,29 @@ $error-padding-top: 40px, 0px, 20px, 100px
     font-size: 12px
   .input-container label.error
     margin-left: 0px
+  .ttu-title
+    text-align: center
+    padding-left: 0px
+  .ttu-button
+    margin-left: 0px
+  .navbar-nav
+    li
+      a.button-all
+        margin-top: 0px!important
+        border: none!important
+        color: #8d8fde!important
+        margin-right: 0px
+        padding: 10px 15px!important
+  #talk_to_us
+    .input-name
+      text-align: left
+      padding-bottom: 5px
+  .client-feedback
+    padding-bottom: 300px
+  .tooltips
+    border: none
+    .tooltipstext
+      display: none!important
 
   @media screen and (max-width: 374px) and (min-width: 320px)
     .client-logo-container
@@ -1089,14 +1125,6 @@ $error-padding-top: 40px, 0px, 20px, 100px
       font-size: 20px
     .carousel-button
       top: 40px!important
-    .trail-section
-      width: 300px
-    .get-started-button
-      width: 300px
-    .client-list
-      padding-bottom: 800px
-    .trail-section-text
-      padding-top: 800px
     #talk_to_us
       padding: 0px!important
     .input-container
@@ -1104,3 +1132,5 @@ $error-padding-top: 40px, 0px, 20px, 100px
       padding-right: 0px!important
     .pricing-signup
       width: 255px
+    .client-feedback
+      padding-bottom: 800px

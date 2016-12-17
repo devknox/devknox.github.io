@@ -117,7 +117,7 @@ permalink: /get-started/
             </ul>
           </div>
           <div class="om-help-text"> For more help or Instructions, <br>
-            check the <a href="/documentation" data-proofer-ignore> Documentation </a> or <a href="/get-started/#faqs" data-proofer-ignore> FAQs </a>
+            check the <a href="/documentation"> Documentation </a> or <a href="/get-started/#faqs"> FAQs </a>
           </div>
         </div>
       </div>
@@ -129,13 +129,13 @@ permalink: /get-started/
 <div class="talk-to-us">
   <div class="cta-text">Need Devknox for multiple users in your organization?</div>
   <div class="cta-button-section">
-    <a type="button" data-proofer-ignore class="btn button-all" data-toggle="modal" data-target="#contact-form">Talk To Us</a>
+    <a type="button" class="btn button-all" data-toggle="modal" data-target="#contact-form">Talk To Us</a>
   </div>
   <!-- Start of Modal -->
   <div class="modal fade ttu-modal" tabindex="-1" role="dialog" id="contact-form" aria-labelledby="gridSystemModalLabel">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
+      <div class="modal-content ttu-contents">
+        <div class="modal-header ttu-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title ttu-title">Talk To Us</h4>
         </div>
@@ -144,26 +144,26 @@ permalink: /get-started/
             <div class="col-lg-12 input-container">
               <form class="form lead-form form-light dark-text" id="talk_to_us" method="post" action="" style="padding: 45px 20px 15px;">
                 <div class="form-group">
-                  <div class="col-lg-3 col-md-3 col-sm-3 input-name"> Name </div>
-                  <div class="col-lg-9 col-md-9 col-sm-9 input-container">
+                  <div class="col-lg-4 col-md-3 col-sm-3 input-name"> Name </div>
+                  <div class="col-lg-8 col-md-9 col-sm-9 input-container">
                     <input type="text" name="name" id="ttu-name" class="form-control contact-form-control" required />
                   </div>
                 </div>
                 <div class="form-group">
-                  <div class="col-lg-3 col-md-3 col-sm-3 input-name"> Work Email</div>
-                  <div class="col-lg-9 col-md-9 col-sm-9 input-container">
+                  <div class="col-lg-4 col-md-3 col-sm-3 input-name"> Email</div>
+                  <div class="col-lg-8 col-md-9 col-sm-9 input-container">
                     <input type="email" name="email" id="ttu-emailid" class="form-control email contact-form-control" required />
                   </div>
                 </div>
                 <div class="form-group">
-                  <div class="col-lg-3 col-md-3 col-sm-3 input-name"> Company </div>
-                  <div class="col-lg-9 col-md-9 col-sm-9 input-container">
+                  <div class="col-lg-4 col-md-3 col-sm-3 input-name"> Company </div>
+                  <div class="col-lg-8 col-md-9 col-sm-9 input-container">
                     <input type="text" name="company" id="ttu-company" class="form-control contact-form-control" required />
                   </div>
                 </div>
                 <div class="form-group">
-                  <div class="col-lg-3 col-md-3 col-sm-3 input-name"> Message </div>
-                  <div class="col-lg-9 col-md-9 col-sm-9 input-container">
+                  <div class="col-lg-4 col-md-3 col-sm-3 input-name"> Message </div>
+                  <div class="col-lg-8 col-md-9 col-sm-9 input-container">
                     <textarea rows="3" cols="50" type="text" name="message" id="ttu-message" class="form-control contact-form-control" required></textarea>
                   </div>
                 </div>
@@ -226,10 +226,10 @@ permalink: /get-started/
 </div>
 <div class="client-feedback">
   {% include client_feedback.html %}
-  <div class="trail-section">
-    <div class="trail-section-text"> Find out why these devs love Devknox </div>
-    <div class="trail-button-section">
-      <a type="button" data-proofer-ignore class="btn get-started-button" onclick="$('html,body').scrollTop(0);">Get Started for Free</a>
-    </div>
+</div>
+<div class="trail-section">
+  <div class="trail-section-text"> Find out why these devs love Devknox </div>
+  <div class="trail-button-section">
+    <a class="btn btn-lg button-all" onclick="$('html,body').scrollTop(0);">Get Started for Free</a>
   </div>
 </div>
