@@ -185,12 +185,18 @@ $feat-colors2: #132d45, #06233c, #00132a
   padding-top: 70px!important
   padding-bottom: 70px!important
 
+.feature-text
+  background-color: #0a0f19
+  color: #51f8d1
+  padding: 30px
+  font-size: 36px
+  font-family: "Raleway", sans-serif
+
 .gs-main-section
   min-height: 700px
   background-color: #0e1624!important
   margin-bottom: 0px!important
   padding-right: 0px!important
-
 
 .main-heading
   color: #51f8d1
@@ -519,6 +525,7 @@ $feat-colors2: #132d45, #06233c, #00132a
     padding-bottom: 10px
 
 .submission-form
+  margin-top: 50px
   display: none
 
 .om-section
@@ -579,19 +586,19 @@ $feat-colors2: #132d45, #06233c, #00132a
   padding: 10px
 
 .pricing-type-lite
-  margin-left: 15px
-  margin-top: 10px
-  font-size: 15px
+  margin-top: 40px
+  font-size: 24px
   color: #51f8d1
   font-family: 'Raleway', sans-serif
+  text-align: center
   display: none
 
 .pricing-type-devknox
-  margin-top: 10px
-  margin-left: 15px
-  font-size: 15px
+  margin-top: 40px
+  font-size: 24px
   color: #51f8d1
   font-family: 'Raleway', sans-serif
+  text-align: center
   display: none
 
 .faq-section
@@ -604,7 +611,6 @@ $feat-colors2: #132d45, #06233c, #00132a
   font-family: 'Raleway', sans-serif
   text-align: center
   margin-top: 30px
-  padding-left: 30px
 
 .doc-header
   padding: 10px
@@ -764,6 +770,12 @@ a.anchor
   label.error
     margin-left: -200px
 
+.learn-more
+  font-size: 9px
+  cursor: pointer
+
+.learn-more:hover, .learn-more:link
+  text-decoration: none!important
 
 /* Start of 404 page */
 
@@ -945,6 +957,9 @@ $error-padding-top: 40px, 0px, 20px, 100px
     padding-bottom: 200px
   .extra-padding img
     padding-top: 0px
+  .gif-container
+    img
+      max-width: none
 
 @media only screen and (max-width: 990px)
   .button-container

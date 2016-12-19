@@ -16,9 +16,9 @@ right_faq :
   - question: Is Devknox a free to use plugin?
     answer: <p>Devknox currently offers two plans which are - a) Devknox Lite b) Devknox Plus </p>
             <p> <b>Devknox Lite</b> - Gives you FREE lifetime access to the Devknox plugin for Android Studio </p>
-            <p> <b>Devknox Plus</b> -  Includes the Devknox plugin, as well as Detailed SAST & DAST, starting at $25/month for upto 5 users. </p>
+            <p> <b>Devknox Plus</b> -  Includes the Devknox plugin, as well as Detailed SAST & DAST, at $9/month/user </p>
   - question: How many developers from a single company can use Devknox?
-    answer : There is no limit to the number of developers from any company using Devknox. You can check out our plans in detail using this <a class="linker" onclick="$('html,body').scrollTop(0);"> LINK </a>
+    answer : There is no limit to the number of developers from any company using Devknox. You can check out our plans in detail <a class="linker" onclick="$('html,body').scrollTop(0);"> HERE </a>
   - question : Is my source code secure when I use Devknox?
     answer : <p>Your source code is totally secured when you use the Devknox IDE plugin. All security analysis are performed locally on your machine itself and nothing get’s sent to our servers except verifying your login information.</p> <p> In the case you subscribe to the Devknox Plus plan, your binary file (.apk) is uploaded to the Devknox dashboard leaving your source code absolutely untouched. </p>
   - question : How efficient is the Devknox threat detection system? Will it be a bother to me, showing me unnecessary edit suggestions, when I code?
