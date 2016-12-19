@@ -16,3 +16,4 @@ _site
 .bundle/
 coverage
 assets/
+.env

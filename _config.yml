@@ -27,3 +27,4 @@ exclude:
   - LICENSE
   - config.ru
   - vendor
+  - .env
