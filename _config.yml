@@ -28,3 +28,4 @@ exclude:
   - config.ru
   - vendor
   - .env
+  - deploy.sh
