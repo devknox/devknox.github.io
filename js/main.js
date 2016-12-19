@@ -50,12 +50,12 @@ $(document).ready(function() {
   $('#signup-form').validate({
     submitHandler: function (form) {
       var formData = $(form).serialize();
-      formData.isPaid = isPaid;
+      paidPricing = isPaid;
       $.ajax({
         url: "https://hawkins.appknox.com/api/devknox_register/",
         type: 'POST',
         dataType: 'json',
-        data: formData
+        data: formData + "Paid = " + paidPricing
         }).done(function (msg) {
             if(msg.status === "error") {
                 $("#signup-form :input").attr("disabled", false);
