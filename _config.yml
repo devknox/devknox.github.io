@@ -29,3 +29,4 @@ exclude:
   - vendor
   - .env
   - deploy.sh
+  - s3_website.yml
