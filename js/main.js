@@ -120,7 +120,7 @@ $(document).ready(function() {
 
 
 faqControl = function(){
-  $('.faq-quest-area').on('click touchend', function(ev) {
+  $('.faq-quest-area').on('click', function(ev) {
     var faqEle = $(ev.currentTarget).parent();
     var icon = $(ev.currentTarget).parent().find("i");
     var displayCurEle = faqEle.css("display");
