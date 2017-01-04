@@ -103,7 +103,7 @@ $(document).ready(function() {
   $('#talk_to_us').validate({
     submitHandler: function (form) {
       $.ajax({
-        url: "https://hawkins.appknox.com/api/send/talktousdevknox/yum/yum",
+        url: "https://hawkins.appknox.com/api/send/talktousdevknox/1029041/tnjyfm",
         type: 'POST',
         dataType: 'json',
         data: $(form).serialize()
