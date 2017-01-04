@@ -85,7 +85,7 @@ $(document).ready(function() {
   $('#getin_touch').validate({
     submitHandler: function (form) {
       $.ajax({
-        url: "",
+        url: "https://hawkins.appknox.com/api/send/getintouchdevknox/1029041/tn7rs9",
         type: 'POST',
         dataType: 'json',
         data: $(form).serialize()
@@ -103,7 +103,7 @@ $(document).ready(function() {
   $('#talk_to_us').validate({
     submitHandler: function (form) {
       $.ajax({
-        url: "",
+        url: "https://hawkins.appknox.com/api/send/talktousdevknox/yum/yum",
         type: 'POST',
         dataType: 'json',
         data: $(form).serialize()
