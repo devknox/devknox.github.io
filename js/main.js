@@ -2,7 +2,7 @@ var isPaid=false
 
 $(document).ready(function() {
     faqControl();
-
+    onboardingTour();
 
   $('.pricing-free-button').click(function(){
     isPaid = false
@@ -135,5 +135,14 @@ faqControl = function(){
     faqEle.find(".faq-answer").slideToggle(400);
     var isClosed = icon.hasClass("fa-caret-right");
     icon.toggleClass("fa-caret-right fa-caret-down");
+  });
+}
+
+onboardingTour = function(){
+  $(".onboard-tour-step1").show();
+  $('.onboard-tour-button').click(function(event){
+    $("div[class^='onboard-tour-step']").hide();
+    target = "." + $(event.target).data("next-tour")
+    $(target).show()
   });
 }
