@@ -142,7 +142,15 @@ onboardingTour = function(){
   $(".onboard-tour-step1").show();
   $('.onboard-tour-button').click(function(event){
     $("div[class^='onboard-tour-step']").hide();
-    target = "." + $(event.target).data("next-tour")
-    $(target).show()
+    target = "." + $(event.target).data("next-tour");
+    $(target).show();
+    if(isPaid == true){
+      $('.devknox-plus').show();
+    }
+    else {
+      $('.devknox-lite').show();
+    }
   });
+
+
 }
