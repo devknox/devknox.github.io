@@ -144,16 +144,15 @@ permalink: /documentation/
        <p>
         Here you can see the updates previous versions:
       </p>
-      <a class="anchor" id="faq_section"></a>
       <section>
-        <div class="container ak-container" id="faq">
+        <div class="container ak-container">
           {% for log in site.data.change_logs %}
-          <div class="faq-region">
-            <div class="faq-quest-area">
-                <i class="fa fa-caret-right faqArrow" aria-hidden="true"></i>
-                <b><span class="faq-quest">{{log.version}}</span></b>
+          <div class="dropdown-region">
+            <div class="dropdown-quest-area">
+                <i class="fa fa-caret-right dropdownArrow" aria-hidden="true"></i>
+                <b><span class="dropdown-quest">v{{log.version}}</span></b>
             </div>
-            <div class="faq-answer">
+            <div class="dropdown-answer">
               {{log.description}}
             </div>
           </div>
