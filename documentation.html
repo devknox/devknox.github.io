@@ -29,6 +29,7 @@ permalink: /documentation/
         <li><a href="#install-devknox">Installing Devknox</a></li>
         <li><a href="#update-devknox">Updating Devknox</a></li>
         <li><a href="#use-devknox">Using Devknox</a></li>
+        <li><a href="#change-log">Change Log</a></li>
     	</ul>
     </div>
 
@@ -136,6 +137,29 @@ permalink: /documentation/
           <li>Click on <b>Build and Upload</b> once you are ready to upload the binary apk for SAST and DAST tests on Dashboard. On clicking a background task starts to build the apk and upload it to Devknox dasboard. The progress is indicated by a progress bar at the bottom of the IDE. Once the upload is complete you'll get a notification balloon to navigate to Devknox dashboard. Click on the link on the notification baloon to go to Devknox dashboard.</li>
           <li>One can also click on <b>Open Dashboard</b> option under <b>Dashboard</b> menu to navaigate to Devknox Dashboard.</li>
         </ul>
+     </div>
+     <hr class="col-md-12">
+     <div id="change-log" class="change-log">
+       <h3>Change Log</h3>
+       <p>
+        Here you can see the updates previous versions:
+      </p>
+      <a class="anchor" id="faq_section"></a>
+      <section>
+        <div class="container ak-container" id="faq">
+          {% for log in site.data.change_logs %}
+          <div class="faq-region">
+            <div class="faq-quest-area">
+                <i class="fa fa-caret-right faqArrow" aria-hidden="true"></i>
+                <span class="faq-quest">{{log.version}}</span>
+            </div>
+            <div class="faq-answer">
+              {{log.description}}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
      </div>
     </div>
   </div>
