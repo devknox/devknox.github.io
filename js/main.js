@@ -1,7 +1,7 @@
 var isPaid=false
 
 $(document).ready(function() {
-    faqControl();
+    dropdownControl();
 
 
   $('.pricing-free-button').click(function(){
@@ -119,20 +119,20 @@ $(document).ready(function() {
   });
 
 
-faqControl = function(){
-  $('.faq-quest-area').on('click', function(ev) {
-    var faqEle = $(ev.currentTarget).parent();
+dropdownControl = function(){
+  $('.dropdown-quest-area').on('click', function(ev) {
+    var dropdownEle = $(ev.currentTarget).parent();
     var icon = $(ev.currentTarget).parent().find("i");
-    var displayCurEle = faqEle.css("display");
-    $(".faq-answer").each(function(){
-      if($(this).parent()[0] !== faqEle[0]){
+    var displayCurEle = dropdownEle.css("display");
+    $(".dropdown-answer").each(function(){
+      if($(this).parent()[0] !== dropdownEle[0]){
         $(this).stop().slideUp(400);
         if($(this).parent().find("i").hasClass("fa-caret-down")){
           $(this).parent().find("i").toggleClass("fa-caret-right fa-caret-down");
         }
       }
     });
-    faqEle.find(".faq-answer").slideToggle(400);
+    dropdownEle.find(".dropdown-answer").slideToggle(400);
     var isClosed = icon.hasClass("fa-caret-right");
     icon.toggleClass("fa-caret-right fa-caret-down");
   });

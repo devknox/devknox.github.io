@@ -12,7 +12,7 @@ permalink: /documentation/
   </div>
   <div class="banner">
     <div class="container version-text">
-      Devknox v2.2.0 is here -
+      Devknox v2.3.0 is here -
       <strong>
         <a href="#whats-new">See what&apos;s new</a>
       </strong>
@@ -29,6 +29,7 @@ permalink: /documentation/
         <li><a href="#install-devknox">Installing Devknox</a></li>
         <li><a href="#update-devknox">Updating Devknox</a></li>
         <li><a href="#use-devknox">Using Devknox</a></li>
+        <li><a href="#change-log">Change Log</a></li>
     	</ul>
     </div>
 
@@ -41,22 +42,13 @@ permalink: /documentation/
        </div>
     	<hr class="col-md-12">
       <div id="whats-new">
-      <h3>What's New</h3>
+      <h3>What's New(v2.3.0)</h3>
         <p>
           The new roll-out of Devknox contains following improvements and features:
        </p>
-        <h5>Devknox Lite &amp; Devknox Plus:</h5>
           <ul class="circle">
+           <li>Addition of 5 more security checks</li>
            <li>Fix plugin stablity issues</li>
-           <li>Subscription status</li>
-          </ul>
-         <h5>Devknox Plus Only:</h5>
-          <ul class="circle">
-           <li>Exclusive access to the Devknox dashboard for Static and Dynamic analysis</li>
-           <li>Unlimited Static and Dynamic analysis for your app</li>
-           <li>Integration of Github and Jira issues</li>
-           <li>Historical view of vulnerabilities found in your app from previous builds</li>
-           <li>Detailed reporting with suggestions to fix vulnerabilities detected</li>
           </ul>
        </div>
     	<hr class="col-md-12">
@@ -145,6 +137,28 @@ permalink: /documentation/
           <li>Click on <b>Build and Upload</b> once you are ready to upload the binary apk for SAST and DAST tests on Dashboard. On clicking a background task starts to build the apk and upload it to Devknox dasboard. The progress is indicated by a progress bar at the bottom of the IDE. Once the upload is complete you'll get a notification balloon to navigate to Devknox dashboard. Click on the link on the notification baloon to go to Devknox dashboard.</li>
           <li>One can also click on <b>Open Dashboard</b> option under <b>Dashboard</b> menu to navaigate to Devknox Dashboard.</li>
         </ul>
+     </div>
+     <hr class="col-md-12">
+     <div id="change-log" class="change-log">
+       <h3>Change Log</h3>
+       <p>
+        Here you can see the updates previous versions:
+      </p>
+      <section>
+        <div class="container ak-container">
+          {% for log in site.data.change_logs %}
+          <div class="dropdown-region">
+            <div class="dropdown-quest-area">
+                <i class="fa fa-caret-right dropdownArrow" aria-hidden="true"></i>
+                <b><span class="dropdown-quest">v{{log.version}}</span></b>
+            </div>
+            <div class="dropdown-answer">
+              {{log.description}}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
      </div>
     </div>
   </div>
