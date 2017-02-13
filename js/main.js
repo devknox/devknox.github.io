@@ -52,7 +52,7 @@ $(document).ready(function() {
       var formData = $(form).serializeArray();
       formData.push({name: "isPaid", value: isPaid});
       $.ajax({
-        url: "https://hawkins.appknox.com/api/devknox_register/",
+        url: "https://hawkins.appknox.com/api/devknox_register_now/",
         type: 'POST',
         dataType: 'json',
         data: $.param(formData)
