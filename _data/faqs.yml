@@ -14,7 +14,7 @@ left_faq:
    - question: What are the security checks that come with Devknox Lite ?
      answer: Security checks that come with Devknox Lite are - Debug Logging, Error Logging, Verbose Logging, Debug Logging Function, Error Logging Function, Verbose Logging Function,
              DES Encryption, Insecure File Access Mode, AES CBC Encryption, AES ECB Encryption, RSA No Padding, AES Encryption Alt,
-             RSA Weak Key Pair Generator, Predictable pseudo random number generator(PRNG), Null Cipher, Unencrypted Socket, Webview With Javascript, Possible TapJacking Attack, Android AllowBackup Vulnerability, Android No AllowBackup Attribute, Android Debuggable Enabled, Unprotected Activity, Unprotected Services, Blowfish Weak Key Pair Generator
+             RSA Weak Key Pair Generator, Predictable pseudo random number generator(PRNG), Null Cipher, Unencrypted Socket, Webview With Javascript, Possible TapJacking Attack, Android AllowBackup Vulnerability, Android No AllowBackup Attribute, Android Debuggable Enabled, Unprotected Activity, Unprotected Services, Blowfish Weak Key Pair Generator, Cannonicalize URL, Hardcoded AES Key, External Storage Check, GeoLocation Privacy Breach, Broadcast Sensitive Information
 
 right_faq :
   - question: Is Devknox a free to use plugin?
