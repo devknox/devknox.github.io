@@ -18,6 +18,9 @@ keywords: "devknox, appknox, mobile security, android studio plugin, appknox for
 # Build settings
 markdown: kramdown
 
+gems:
+  - jekyll-assets
+
 exclude:
   - Rakefile
   - README.md
@@ -30,3 +33,9 @@ exclude:
   - .env
   - deploy.sh
   - s3_website.yml
+
+assets:
+  compress:
+     css: true
+     js: true
+  digest: true
