@@ -6,7 +6,7 @@ permalink: /register/
 
 <div class="register-container">
   <div class="register-form">
-    <form id="signup-form">
+    <form id="register-form">
       <div class="gs-form-heading"> Sign Up </div>
       <div class="form-group">
         <div class="col-lg-4 input-name"> Username </div>
@@ -15,9 +15,23 @@ permalink: /register/
         </div>
       </div>
       <div class="form-group">
+        <div class="col-lg-4 input-name"> Company </div>
+        <div class="col-lg-8">
+          <input type="text" name="company" id="auto_company" class="form-control signup-form-control" readonly />
+        </div>
+      </div>
+      <div class="form-group email-seperator">
         <div class="col-lg-4 input-name"> Email </div>
         <div class="col-lg-8">
-          <input type="email" name="email" id="email" class="form-control email signup-form-control" required />
+          <div class="col-lg-6 input-email">
+            <input type="text" name="email_initial" id="email_initial" class="form-control signup-form-control" required />
+          </div>
+          <div class="col-lg-1 input-email">
+            <span>@</span>
+          </div>
+          <div class="col-lg-5 input-email">
+            <input type="text" name="email_domain" id="auto_domain" class="form-control signup-form-control" readonly />
+          </div>
         </div>
       </div>
       <div class="form-group">

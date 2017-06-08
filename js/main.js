@@ -2,6 +2,7 @@ var isPaid=false
 
 $(document).ready(function() {
     dropdownControl();
+    autoFillRegisterForm();
 
 
   $('.pricing-free-button').click(function(){
@@ -117,6 +118,32 @@ $(document).ready(function() {
       }
     });
   });
+
+autoFillRegisterForm = function(){
+  var company = document.getElementById('auto_company').value = window.location.search.substring(1).split("&")[0].split("=")[1];
+  var domain = document.getElementById('auto_domain').value = window.location.search.substring(1).split("&")[1].split("=")[1];
+  $('#register-form').validate({
+    submitHandler: function (form) {
+      data = {
+        "username" : document.getElementById('username').value,
+        "company" : company,
+        "email" : document.getElementById('email_initial').value + "@" + domain,
+        "password": document.getElementById('password').value
+      }
+      $.ajax({
+        url: "",
+        type: 'POST',
+        dataType: 'json',
+        data: data
+        }).done(function (msg) {
+          alert("done");
+        }).fail(function() {
+          toastr.error("Something went wrong");
+        });
+     return false;
+      }
+    });
+}
 
 
 dropdownControl = function(){
