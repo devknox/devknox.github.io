@@ -132,7 +132,8 @@ autoFillRegisterForm = function(){
         "username" : document.getElementById('username').value,
         "company" : company,
         "email" : document.getElementById('email_initial').value + "@" + domain,
-        "password": document.getElementById('password').value
+        "password": document.getElementById('password').value,
+        "confirmPassword": document.getElementById('confirmPassword').value
       }
       $.ajax({
         url: "https://hawkins.appknox.com/api/devknox_register/",
