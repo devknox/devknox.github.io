@@ -147,6 +147,7 @@ autoFillRegisterForm = function(){
         }).done(function (msg) {
           $('.register-form').hide();
           $('.thanks-section').show();
+          $("#register-form")[0].reset();
         }).fail(function() {
           toastr.error("Something went wrong");
         });
