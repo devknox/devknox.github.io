@@ -545,7 +545,7 @@ $feat-colors2: #132d45, #06233c, #00132a
 .btn-signup
   width: 150px
 
-.close-button
+.close-button, .thanks-section-close
   text-decoration: none!important
   float: right
   display: block
@@ -828,6 +828,41 @@ $error-padding-top: 40px, 0px, 20px, 100px
 
 /* End of 404 page */
 
+/* Start of Register Page */
+
+
+.email-seperator
+  .input-email
+    padding-left: 0px
+    padding-right: 0px
+    span
+      font-size: 18px
+      color: #FFF
+      position: relative
+      left: 5px
+      top: 5px
+
+.thanks-section
+  display: none
+
+.register-container
+  background-color: #021022
+  padding: 100px
+  .gs-form-heading
+    margin-bottom: 30px
+  form, .thanks-section
+    width: 500px
+    margin: 30px auto
+  form
+    background-color: #0e1624
+    border: 1px solid #51f8d1
+  ul.om-list
+    li
+      list-style-type: circle
+
+
+
+/* End of Register Page */
 
 /* Start of Media Queries */
 @media only screen and (max-width: 1200px)
@@ -1138,6 +1173,22 @@ $error-padding-top: 40px, 0px, 20px, 100px
     border: none
     .tooltipstext
       display: none!important
+  .register-container
+    padding: 50px 10px
+    form, .thanks-section
+      width: 350px
+    .input-name
+      font-size: 10px
+      margin-top: 10px
+      margin-left: -5px
+    .signup-form-control
+      font-size: 10px
+      margin-left: 5px
+  .email-seperator
+    .input-email
+      span
+        font-size: 16px
+        left: 10px
 
   @media screen and (max-width: 374px) and (min-width: 320px)
     .client-logo-container
@@ -1164,3 +1215,19 @@ $error-padding-top: 40px, 0px, 20px, 100px
     .trail-conditions
       margin-top: 20px
       font-size: 12px
+    .register-container
+      padding: 50px 10px
+      form, .thanks-section
+        width: 300px
+      .input-name
+        font-size: 10px
+        margin-top: 10px
+        margin-left: -5px
+      .signup-form-control
+        font-size: 10px
+        margin-left: 5px
+    .email-seperator
+      .input-email
+        span
+          font-size: 16px
+          left: 8px
