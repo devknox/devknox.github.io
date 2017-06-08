@@ -399,20 +399,6 @@ $feat-colors2: #132d45, #06233c, #00132a
   background-color: #0a0f19
   padding-bottom: 20px
 
-.email-seperator
-  .input-email
-    padding-left: 0px
-    padding-right: 0px
-    span
-      font-size: 18px
-      color: #FFF
-      position: relative
-      left: 5px
-      top: 5px
-
-.thanks-section
-  display: none
-
 .contact-section
   background-color: #0e1624
   padding-top: 61px
@@ -844,6 +830,21 @@ $error-padding-top: 40px, 0px, 20px, 100px
 
 /* Start of Register Page */
 
+
+.email-seperator
+  .input-email
+    padding-left: 0px
+    padding-right: 0px
+    span
+      font-size: 18px
+      color: #FFF
+      position: relative
+      left: 5px
+      top: 5px
+
+.thanks-section
+  display: none
+
 .register-container
   background-color: #021022
   padding: 100px
@@ -1179,7 +1180,12 @@ $error-padding-top: 40px, 0px, 20px, 100px
     .signup-form-control
       font-size: 10px
       margin-left: 5px
-      
+  .email-seperator
+    .input-email
+      span
+        font-size: 16px
+        left: 10px
+
   @media screen and (max-width: 374px) and (min-width: 320px)
     .client-logo-container
       width: 100%
@@ -1216,3 +1222,8 @@ $error-padding-top: 40px, 0px, 20px, 100px
       .signup-form-control
         font-size: 10px
         margin-left: 5px
+    .email-seperator
+      .input-email
+        span
+          font-size: 16px
+          left: 8px
