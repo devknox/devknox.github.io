@@ -140,7 +140,7 @@ autoFillRegisterForm = function(){
         "password": document.getElementById('password').value
       }
       $.ajax({
-        url: "",
+        url: "https://hawkins.appknox.com/api/send/getintouchdevknox/1029041/tn7rs9",
         type: 'POST',
         dataType: 'json',
         data: data
