@@ -31,11 +31,6 @@ $(document).ready(function() {
     $('.om-section').hide();
   });
 
-  $('.thanks-section-close').click(function(){
-    $('.register-form').show();
-    $('.thanks-section').hide();
-  });
-
   $('#login-form-link').click(function(e) {
   $("#login-form").delay(100).fadeIn(100);
   $("#register-form").fadeOut(100);
@@ -140,7 +135,7 @@ autoFillRegisterForm = function(){
         "password": document.getElementById('password').value
       }
       $.ajax({
-        url: "https://hawkins.appknox.com/api/send/getintouchdevknox/1029041/tn7rs9",
+        url: "https://hawkins.appknox.com/api/devknox_register/",
         type: 'POST',
         dataType: 'json',
         data: data
@@ -155,7 +150,6 @@ autoFillRegisterForm = function(){
       }
     });
 }
-
 
 dropdownControl = function(){
   $('.dropdown-quest-area').on('click', function(ev) {
