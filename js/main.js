@@ -31,6 +31,11 @@ $(document).ready(function() {
     $('.om-section').hide();
   });
 
+  $('.thanks-section-close').click(function(){
+    $('.register-form').show();
+    $('.thanks-section').hide();
+  });
+
   $('#login-form-link').click(function(e) {
   $("#login-form").delay(100).fadeIn(100);
   $("#register-form").fadeOut(100);
@@ -120,8 +125,12 @@ $(document).ready(function() {
   });
 
 autoFillRegisterForm = function(){
-  var company = document.getElementById('auto_company').value = window.location.search.substring(1).split("&")[0].split("=")[1];
-  var domain = document.getElementById('auto_domain').value = window.location.search.substring(1).split("&")[1].split("=")[1];
+  var companyEncoded = window.location.search.substring(1).split("&")[0];
+  var domainEncoded = window.location.search.substring(1).split("&")[1];
+  var companyDecoded = atob(companyEncoded).split("=")[1];
+  var domainDecoded = atob(domainEncoded).split("=")[1];
+  var company = document.getElementById('auto_company').value = companyDecoded;
+  var domain = document.getElementById('auto_domain').value = domainDecoded;
   $('#register-form').validate({
     submitHandler: function (form) {
       data = {
@@ -136,7 +145,8 @@ autoFillRegisterForm = function(){
         dataType: 'json',
         data: data
         }).done(function (msg) {
-          alert("done");
+          $('.register-form').hide();
+          $('.thanks-section').show();
         }).fail(function() {
           toastr.error("Something went wrong");
         });
