@@ -31,7 +31,7 @@ task :minify do
   compressed = 0
   Dir.glob('_site/**/*.*') do |file|
     case File.extname(file)
-    when '.css', '.gif', '.html', '.jpg', '.jpeg', '.js', '.png', '.xml'
+    when '.gif', '.html', '.jpg', '.jpeg', '.png', '.xml'
       puts "Processing: #{file}"
       original += File.size(file).to_f
       min = Reduce.reduce(file)
