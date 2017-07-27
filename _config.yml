@@ -40,7 +40,7 @@ assets:
     css: true
     js: true
   autowrite: true
-  cache: false
+  cache_type: memory
   skip_baseurl_with_cdn: false
   skip_prefix_with_cdn: false
   prefix: "/assets"
