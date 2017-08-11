@@ -6,6 +6,7 @@
 # Distributed under terms of the MIT license.
 #
 
+rm -rf ./_site/*
 bundle exec jekyll build
 bundle exec rake minify
 
