@@ -323,7 +323,6 @@ DEPENDENCIES
   coveralls
   github-pages
   html-proofer
-  jekyll
   jekyll-assets
   rack-jekyll
   reduce
