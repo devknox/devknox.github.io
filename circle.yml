@@ -6,7 +6,6 @@ dependencies:
   override:
     - gem install bundler --conservative
     - bundle check || bundle install
-    - bundle update
 
 test:
   pre:
